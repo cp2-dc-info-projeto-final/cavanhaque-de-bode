@@ -3,10 +3,11 @@
 Projeto Final do Curso Técnico Integrado de Desenvolvimento de Sistemas - Colégio Pedro II - Campus Duque de Caxias
 
 **Integrantes:**
- - Fulano
- - Beltrano
- - Ciclano
-
+ - Vinicius Ramos de Menezes Costa da Silva   
+ - Luiz Felipe Bissoli Lopes   
+ - João Pedro Nobrega Queiroz
+ - Antônio Simões Diniz da Cunha Reis
+ 
  ## Descrição do Projeto
 
  Nunc aliquet lobortis tristique. In pretium nisi vitae viverra venenatis. Ut iaculis sem quis arcu ornare interdum. In id condimentum arcu, sed ornare sem. Aliquam consequat at dolor eget sagittis. Praesent nec ante eget felis porttitor cursus eget suscipit urna. Sed consequat consectetur tristique.
