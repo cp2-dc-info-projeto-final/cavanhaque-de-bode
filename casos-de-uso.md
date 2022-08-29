@@ -11,7 +11,7 @@
 
  - Administrador
  - Funcionário
- - Cliente 
+ - 
 
 ## Diagrama de Casos de Uso
 
