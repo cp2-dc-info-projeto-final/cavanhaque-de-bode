@@ -4,7 +4,7 @@ Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nis
 
 **Lista das Funcionalidades:**
 
- - [Funcionalidade 1](#Funcionalidade-X)
+ - [Funcionalidade x](#Funcionalidade-X)
  - [Funcionalidade Y](#Funcionalidade-Y)
  - [Funcionalidade Z](#Funcionalidade-Z)
 
