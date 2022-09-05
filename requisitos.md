@@ -4,12 +4,12 @@
 
 ### RF 01
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit nulla vel diam vehicula, eu porttitor nulla aliquam.
+O software deverá fazer login de usuário.
 
 ### RF 02
 
-Nullam laoreet, mauris ac tempor vulputate, orci metus aliquet augue, at accumsan odio mi eu sapien. Aliquam tincidunt metus ut aliquet vehicula. Aliquam vitae arcu sed lacus fermentum sagittis.
-
+O software deverá agendar
+ 
 ## Requisitos Não-Funcionais
 
 ### RNF 01
