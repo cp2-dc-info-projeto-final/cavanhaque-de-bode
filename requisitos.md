@@ -4,11 +4,34 @@
 
 ### RF 01
 
-O software deverá fazer login de usuário.
+O software deverá possuir uma página inicial que botões clícáveis que levarão para as telas de login, agendamento e perfil.
 
 ### RF 02
 
-O software deverá agendar
+O software deverá possuir um botão clicável que levará para página inicial.
+
+## RF 03
+
+O software deverá possuir uma tela de agendamentos.
+
+## RF 0
+
+.
+
+## RF 0
+
+.
+
+## RF 0
+
+.
+## RF 0
+
+.
+## RF 0
+
+.
+
  
 ## Requisitos Não-Funcionais
 
