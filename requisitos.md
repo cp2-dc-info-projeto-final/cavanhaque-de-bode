@@ -4,30 +4,32 @@
 
 ### RF 01
 
-O software deverá possuir uma página inicial que botões clícáveis que levarão para as telas de login, agendamento e perfil.
+O software deverá possuir a todo momento uma página inicial que botões clícáveis que levarão para as páginas de login, agendamento e perfil.
 
 ### RF 02
 
-O software deverá possuir um botão clicável que levará para página inicial.
+O software deverá possuir a todo momento um botão clicável que levará para página inicial.
 
 ## RF 03
 
-O software deverá possuir uma tela de agendamentos.
+O página principal do software deverá possuir uma aba rolável que apresentará diversas informações sobre o sistema.
 
 ## RF 0
 
-.
+A página de login do software deverá conter um campo digitável que receberá o nome de usuário do ator.
 
 ## RF 0
 
-.
+A página de login do software deverá conter um campo digitável que receberá a senha do ator.
 
 ## RF 0
 
-.
+A página de login do software possuirá um botão clicável nomeado "Fazer Cadastro" que redirecionará o ator para a página de cadastro de cliente.
+
 ## RF 0
 
-.
+
+
 ## RF 0
 
 .

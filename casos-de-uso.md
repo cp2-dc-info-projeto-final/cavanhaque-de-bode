@@ -21,12 +21,12 @@
 
 ### CDU 01
 
-Usuário tenta entrar na página de Perfil.
-
 #### Atores
  - Administrador
  - Funcionário
  - Cliente 
+
+Usuário tenta entrar na página de Perfil.
 
 **Fluxo Principal**
 
@@ -40,12 +40,12 @@ Usuário tenta entrar na página de Perfil.
 
 ### CDU 02
 
-Usuário tenta acessar a página de Agendamento.
-
 #### Atores
  - Administrador
  - Funcionário
  - Cliente 
+
+Usuário tenta acessar a página de Agendamento.
 
 **Fluxo Principal**
 
@@ -59,18 +59,144 @@ Usuário tenta acessar a página de Agendamento.
 
 ### CDU 03
 
-Duis nec orci quis velit faucibus hendrerit tempus vel libero.
+#### Atores
+ - Administrador
+ - Funcionário
+ - Cliente 
+
+Usuário tenta acessar a página de Login
 
 **Fluxo Principal**
 
-1. Praesent interdum lectus sit amet augue tincidunt imperdiet.
-2. Duis ac dolor vel nisi imperdiet vehicula et non sem.
-3. Nunc imperdiet tortor consequat, lobortis purus non, interdum risus.
+1. Usuário seleciona o botão Login.
+2. Usuário é redirecionado para a página de login.
 
 **Fluxo Alternativo A**
 
-1. Aliquam efficitur arcu ac fermentum egestas.
-2. Pellentesque ac diam vitae erat bibendum hendrerit.
-3. Mauris sed purus sit amet lectus efficitur placerat et eu diam.
-4. Aenean ullamcorper tellus quis nibh porttitor congue.
-5. Phasellus laoreet erat eget condimentum dictum.
+1. Usuário seleciona o botão login.
+2. Usuário já está logado, então é redirecionado para página principal
+
+### CDU 0
+
+#### Atores
+ - 
+ - 
+ - 
+
+-
+
+**Fluxo Principal**
+
+1. 
+2. 
+3. 
+4.
+5.
+
+**Fluxo Alternativo A**
+
+1. 
+2. 
+3. 
+4. 
+5.
+
+### CDU 0
+
+#### Atores
+ - 
+ - 
+ - 
+
+-
+
+**Fluxo Principal**
+
+1. 
+2. 
+3. 
+4.
+5.
+
+**Fluxo Alternativo A**
+
+1. 
+2. 
+3. 
+4. 
+5.
+
+### CDU 0
+
+#### Atores
+ - 
+ - 
+ - 
+
+-
+
+**Fluxo Principal**
+
+1. 
+2. 
+3. 
+4.
+5.
+
+**Fluxo Alternativo A**
+
+1. 
+2. 
+3. 
+4. 
+5.
+
+### CDU 0
+
+#### Atores
+ - 
+ - 
+ - 
+
+-
+
+**Fluxo Principal**
+
+1. 
+2. 
+3. 
+4.
+5.
+
+**Fluxo Alternativo A**
+
+1. 
+2. 
+3. 
+4. 
+5.
+
+### CDU 0
+
+#### Atores
+ - 
+ - 
+ - 
+
+-
+
+**Fluxo Principal**
+
+1. 
+2. 
+3. 
+4.
+5.
+
+**Fluxo Alternativo A**
+
+1. 
+2. 
+3. 
+4. 
+5.
