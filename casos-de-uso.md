@@ -2,9 +2,9 @@
 
 ## Lista dos Casos de Uso
 
- - [CDU 01](#CDU-01): Usuário entra na página de Perfil.
+ - [CDU 01](#CDU-01): Usuário tenta acessar a página de Perfil.
  - [CDU 02](#CDU-02): Usuário tenta acessar a página de Agendamento.
- - [CDU 03](#CDU-03): Duis nec orci quis velit faucibus hendrerit tempus vel libero.
+ - [CDU 03](#CDU-03): Usuário tenta acessar a página de Login
 
 
 ## Lista dos Atores
@@ -26,7 +26,7 @@
  - Funcionário
  - Cliente 
 
-Usuário tenta entrar na página de Perfil.
+Usuário tenta acessar a página de Perfil.
 
 **Fluxo Principal**
 
