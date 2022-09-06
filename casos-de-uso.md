@@ -55,7 +55,7 @@ Usuário tenta acessar a página de Agendamento.
 **Fluxo Alternativo A**
 
 1. Usuário seleciona o botão agendamento.
-2. Usuário é redirecionado para área de cadastro pois não está logado no sistema.
+2. Usuário é redirecionado para área de login pois não está logado no sistema.
 
 ### CDU 03
 
