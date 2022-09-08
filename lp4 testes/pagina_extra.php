@@ -1,3 +1,5 @@
+<?php include "conecta_mysql.inc"; ?>
+
 <html>
     <head>
         <title>Dados Cadastrados</title>
@@ -37,12 +39,9 @@
         }
 
         if($erro == 0){
-            $mysqli = mysqli_connect("localhost","estudante","123","ds302");
             $sql = "INSERT INTO cliente (nome,email,data_nasc,cartao)";
             $sql .= "VALUES ('$nome','$email','$data_nasc', '$bandeiraCartao');";  
             mysqli_query($mysqli,$sql);
-            mysqli_close($mysqli);
-
             echo "Nome: $nome <br>";
             echo "E-mail: $email <br>";
             echo "Data de nascimento: $data_nasc <br>";
@@ -50,7 +49,6 @@
         }
     }
     else if($operacao == "exibir"){
-        $mysqli = mysqli_connect("localhost","estudante","123","ds302");
         $sql = "SELECT * FROM cliente;"; 
         $res = mysqli_query($mysqli,$sql);
         $linhas = mysqli_num_rows($res);
@@ -62,11 +60,9 @@
             echo "Bandeira do cartao: ".$cliente["cartao"]."<br>";
             echo "=================================="."<br>"; 
         }
-    mysqli_close($mysqli);
     }
     else if($operacao == "buscar"){
         $nome = $_POST["nome"];
-        $mysqli = mysqli_connect("localhost","estudante","123","ds302");
         $sql = "SELECT * FROM cliente WHERE nome like '%$nome%';";  
         $res = mysqli_query($mysqli,$sql);
         $linhas = mysqli_num_rows($res);
@@ -78,9 +74,9 @@
             echo "Bandeira do cartao: ".$cliente["cartao"]."<br>";
             echo "=================================="."<br>"; 
         }
-        mysqli_close($mysqli);
     }
 
 ?>
     </body>
 </html>
+<?php mysqli_close($mysqli); ?>
