@@ -26,9 +26,54 @@ A página de login deverá conter um botão clicável "enviar" que confirmará a
 
 A página de login do software possuirá um botão clicável nomeado "Fazer Cadastro" que redirecionará o ator para a página de cadastro de cliente.
 
-### RF 0
+### RF 07
 
-.
+O sistema deverá possuir uma página para cadastramento de cliente, que poderá ser acessivel pela página login.
+
+### RF 08
+
+A página de cadastro deverá possuir diveros campos completáveis que receberão dados como email, nome e senha, que serão armazenados no banco de dados.
+
+### RF 09
+
+O sistema deverá possuir uma página de cadastro de funcionários, que será acessivel pela página de perfil do administrador.
+
+### RF 09
+
+A página de cadastro de funcionário deverá possuir diveros campos que receberão dados como email, nome, senha e código de funcionário, que serão armazenados no banco de dados.
+
+### RF 10
+
+O sistema deverá possuir uma página de agendamento exclusiva para o cliente, que será acessivel pela página principal.
+
+### RF 11
+
+A página de agendamento do cliente do sistema deverá possuir um campo de seleção, que mostrará os funcionários disponíveis na barbearia, após essa seleção, aparecerá um calendário clicável com os dias dispóniveis de acordo com a disponibilidade dos funcionários e após selecionar o dia, aparecerão os horaríos disponíveis para o cliente realizar seu corte.
+
+### RF 12
+
+O sistema deverá possuir uma página de agendamento exclusiva para o funcionário, que será acessivel pela página principal.
+
+### RF 13
+
+A página de agendamento do funionário deverá possuir um bloco listando todos os horários agendados no perfil do funcionáio que acessou a página.
+
+### RF 14
+
+O sistema deverá possuir uma página de agendamento exclusiva para o administrador, que possuirá um bloco com seleção de todos os funcionários cadastrados no sistema, e que ao selecionar um funcionário, aparecerá todos os horários agendados para o funcionário selecionado.
+
+### RF 15
+
+O sistema possuirá uma página de perfil única para cada login usuário que será acessivel pela página principal.
+
+### RF 16
+
+A página de perfil do usuário
+
+
+### RF 17
+
+
 
  
 ## Requisitos Não-Funcionais
