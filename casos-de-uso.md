@@ -68,27 +68,27 @@ Usuário tenta acessar a página de Login
 
 **Fluxo Principal**
 
-1. Usuário seleciona o botão Login.
-2. Usuário é redirecionado para a página de login.
+1. Usuário aperta a o botão Login.
+2. Usuário é redirecionado para a página de "login".
 
 **Fluxo Alternativo A**
 
-1. Usuário seleciona o botão login.
+1. Usuário aperta o botão "login".
 2. Usuário já está logado, então é redirecionado para página principal
 
-### CDU 0
+### CDU 4
 
-#### Atores
- - 
- - 
- - 
-
--
+#### Atores 
+- Administrador
+- Funcionário
+- Cliente 
+ 
+usuario faz logout
 
 **Fluxo Principal**
 
-1. 
-2. 
+1.O usuário aperta o botao "logout"
+2.
 3. 
 4.
 5.
