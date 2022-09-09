@@ -41,3 +41,6 @@ TELA DE PERFIL(ADMIN) = POSSUIRÁ UM BLOCO COM TODOS OS FUNCIONÁRIOS CADASTRADO
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
+FALTA = README.MD(DESCRIÇÃO E DIAGRAMAS), REQUISITOS NÃO FUNCIONAIS E CASOS DE USO)
+		
+
