@@ -64,18 +64,20 @@ O sistema deverá possuir uma página de agendamento exclusiva para o administra
 
 ### RF 15
 
-O sistema possuirá uma página de perfil única para cada login usuário que será acessivel pela página principal.
+O sistema possuirá uma página de perfil única para cada usuário que logar no sistema, a página será acessivel pela página principal.
 
 ### RF 16
 
-A página de perfil do usuário
-
+A página de perfil do usuário(cliente), deverá possuir um bloco com linhas de texto contendo todos os dados armazenados do cliente (email, nome, senha), mais uma opção de cancelamento de agendamentos feitos pelo mesmo.
 
 ### RF 17
 
+A página de perfil do usuário(funcionário), possuirá um bloco com linhas de texto contendo todos os dados armazenados do funcionário (nome, senha, email e cod de funcionário).
 
+### RF 18
 
- 
+A página de perfil do usuário(administrador), possuirá um bloco com todos os funcionários cadastrados com seus códigos e respectivos nomes comum botão clicável que redirecionará para tela de cadastramento de funcionários.
+
 ## Requisitos Não-Funcionais
 
 ### RNF 01
