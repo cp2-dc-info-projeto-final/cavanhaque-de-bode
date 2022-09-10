@@ -4,7 +4,7 @@
 
  - [CDU 01](#CDU-01): Usuário tenta acessar a página de Perfil.
  - [CDU 02](#CDU-02): Usuário tenta acessar a página de Agendamento.
- - [CDU 03](#CDU-03): Usuário tenta acessar a página de Login
+ - [CDU 03](#CDU-03): Usuário tenta acessar a página de Login.
 
 
 ## Lista dos Atores
