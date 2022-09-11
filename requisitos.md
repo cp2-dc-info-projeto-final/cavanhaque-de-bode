@@ -40,7 +40,7 @@ O sistema deverá possuir uma página de cadastro de funcionários, que será ac
 
 ### RF 09
 
-A página de cadastro de funcionário deverá possuir diveros campos que receberão dados como email, nome, senha e código de funcionário, que serão armazenados no banco de dados.
+A página de cadastro de funcionário deverá possuir diversos campos que receberão dados como email, nome, senha e código de funcionário, que serão armazenados no banco de dados.
 
 ### RF 10
 
