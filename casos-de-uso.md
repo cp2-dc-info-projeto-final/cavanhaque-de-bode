@@ -147,11 +147,38 @@ Usuário tenta fazer logout
 
 1. O usuário seleciona a opção "Agendamento" no menu principal.
 2. O usuário seleciona opção "cadastrar Agendamento".
-3. O sistema solicita os dados necessários para o agendamento do cliente .
+3. O sistema solicita os dados necessários para o agendamento do cliente.
 4. O usuário não fornece todos os dados necessários.
 5. O sistema apresenta a mensagem "Favor preencher todos os dados corretamente.
 
 ### CDU 7
+
+#### Atores
+ - Administrador
+ - Cliente
+
+Usuario tenta excluir agendamento
+
+**Fluxo Principal**
+
+1. O usuário seleciona a opção "Agendamento" no menu principal.
+2. O usuário seleciona a opção Excluir Agendamento. 
+3. O sistema solicita o código do agendamento a ser excluído.
+4. O usuário fornece o código e confirma a operação.
+5. O sistema verifica se o código de agendamento existe.
+6. O sistema exclui o agendamento e em seguida mostra a mensagem "agendamento excluído".
+
+**Fluxo Alternativo A**
+
+1. O usuário seleciona a opção "Agendamento" no menu principal.
+2. O usuário seleciona a opção Excluir Agendamento. 
+3. O sistema solicita o código do agendamento a ser excluído.
+4. O usuário fornece um código errado e confirma a operação.
+5. O sistema verifica que o código está errado. 
+6. O sistema apresenta na tela a mensagem "Código de agendamento não reconhecido".
+7. O sistema redireciona o usuário para o caso de uso 3 do fluxo principal.
+
+### CDU 8
 
 #### Atores
  - Administrador
@@ -171,7 +198,7 @@ Usuário tenta visualizar os clientes agendados.
 2. O usuário aperta a opção Cancelar.
 3. O sistema redireciona o usuário para a tela de menu.
 
-### CDU 7
+### CDU 
 
 #### Atores
  - 
