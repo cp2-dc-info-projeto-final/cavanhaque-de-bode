@@ -82,8 +82,31 @@ A página de perfil do administrador, possuirá um bloco com todos os funcionár
 
 ### RNF 01
 
-Nulla facilisi. Etiam tempus dolor et odio tincidunt fermentum. Donec pharetra nulla eu euismod maximus. Maecenas eu mauris tincidunt, pulvinar tellus sed, blandit eros.
+O sistema devera enviar um relatório de todos os horarios agendados em um dia.
 
 ### RNF 02
 
-Nam id enim ut quam faucibus scelerisque at non diam. Morbi eget eleifend lectus, quis fringilla elit. Morbi iaculis, elit vel accumsan hendrerit, ipsum purus varius lacus, eget facilisis massa mauris ac ipsum.
+O sistema devera se comunicar com o mysql.
+
+### RNF 03
+
+O sistema devera ler as linguagens .PHP, .JS, .CSS, .HTML.
+
+### RNF 04
+
+O usuario poderá alterar seus dados.
+
+### RNF 05
+
+Se o usuário já possuir um cadastro, ele podera entrar no site através do seu login.
+
+### RNF 06
+
+
+
+### RNF 07
+
+
+
+### RNF 08
+
