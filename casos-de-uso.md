@@ -4,7 +4,12 @@
 
  - [CDU 01](#CDU-01): Usuário tenta acessar a página de Perfil.
  - [CDU 02](#CDU-02): Usuário tenta acessar a página de Agendamento.
- - [CDU 03](#CDU-03): Usuário tenta acessar a página de Login.
+ - [CDU 03](#CDU-03): Usuário tenta fazer login.
+ - [CDU 04](#CDU-04): Usuário tenta fazer logout.
+ - [CDU 05](#CDU-05): 
+ - [CDU 06](#CDU-06): Usuario tenta excluir agendamento
+ - [CDU 07](#CDU-07):
+
 
 
 ## Lista dos Atores
@@ -57,26 +62,7 @@ Usuário tenta acessar a página de Agendamento.
 1. Usuário seleciona o botão agendamento.
 2. Usuário é redirecionado para área de login pois não está logado no sistema.
 
-### CDU 03
-
-#### Atores
- - Administrador
- - Funcionário
- - Cliente 
-
-Usuário tenta acessar a página de Login.
-
-**Fluxo Principal**
-
-1. Usuário aperta a o botão Login.
-2. Usuário é redirecionado para a página de "login".
-
-**Fluxo Alternativo A**
-
-1. Usuário aperta o botão "login".
-2. Usuário já está logado, então é redirecionado para página principal.
-
-### CDU 4
+### CDU 3
 
 #### Atores
 - Administrador
@@ -105,7 +91,7 @@ Usuário tenta fazer login.
 2. O Usuário cancela a realização do login pressionando um botão "cancelar", exibido na tela.
 3. O usuário é redirecionado para a tela de menu.
 
-### CDU 5
+### CDU 4
 
 #### Atores
 - Administrador
@@ -128,7 +114,7 @@ Usuário tenta fazer logout
 3. O usuário aperta o botão "não".
 4. O usuário retorna para a grade de horários.
 
-### CDU 6
+### CDU 5
 
 #### Atores
 - Cliente
@@ -151,7 +137,7 @@ Usuário tenta fazer logout
 4. O usuário não fornece todos os dados necessários.
 5. O sistema apresenta a mensagem "Favor preencher todos os dados corretamente.
 
-### CDU 7
+### CDU 6
 
 #### Atores
  - Administrador
@@ -178,7 +164,7 @@ Usuario tenta excluir agendamento
 6. O sistema apresenta na tela a mensagem "Código de agendamento não reconhecido".
 7. O sistema redireciona o usuário para o caso de uso 3 do fluxo principal.
 
-### CDU 8
+### CDU 7
 
 #### Atores
  - Administrador
@@ -198,77 +184,3 @@ Usuário tenta visualizar os clientes agendados.
 2. O usuário aperta a opção Cancelar.
 3. O sistema redireciona o usuário para a tela de menu.
 
-### CDU 
-
-#### Atores
- - 
- - 
- - 
-
--
-
-**Fluxo Principal**
-
-1. 
-2. 
-3. 
-4.
-5.
-
-**Fluxo Alternativo A**
-
-1. 
-2. 
-3. 
-4. 
-5.
-
-### CDU 0
-
-#### Atores
- - 
- - 
- - 
-
--
-
-**Fluxo Principal**
-
-1. 
-2. 
-3. 
-4.
-5.
-
-**Fluxo Alternativo A**
-
-1. 
-2. 
-3. 
-4. 
-5.
-
-### CDU 0
-
-#### Atores
- - 
- - 
- - 
-
--
-
-**Fluxo Principal**
-
-1. 
-2. 
-3. 
-4.
-5.
-
-**Fluxo Alternativo A**
-
-1. 
-2. 
-3. 
-4. 
-5.
