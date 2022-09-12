@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php include('conectamysqlcdb.inc') ?>
 <html>
     <head>
         <title>Cavanhaque de Bode</title>
@@ -27,5 +27,6 @@
         </form><br>
         
         <a class="burrao" href="cadastro.html"> Cadastre-se aqui</a>
+        
     </body>
 </html>
