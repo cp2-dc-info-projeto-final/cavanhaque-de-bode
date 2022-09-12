@@ -131,7 +131,7 @@ Usuário tenta fazer logout
 ### CDU 6
 
 #### Atores
- -Cliente
+- Cliente
  
 -O usuario tenta agendar no sistema.
 
