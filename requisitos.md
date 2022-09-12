@@ -102,11 +102,11 @@ A página de perfil do cliente possuirá uma função de cancelar agendamentos.
 
 A página de perfil do funcionário, possuirá um bloco com linhas de texto contendo todos os dados armazenados do funcionário (nome, senha, email e cod de funcionário).
 
-### RF 18
+### RF 26
 
 A página de perfil do administrador, possuirá um bloco com todos os funcionários cadastrados com seus códigos e respectivos nomes.
 
-### RF 19
+### RF 27
 
 A página de perfil do administrador possuirá um botão clicável que redirecionará para tela de cadastramento de funcionários.
 
