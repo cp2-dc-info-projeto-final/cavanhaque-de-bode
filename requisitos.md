@@ -134,7 +134,7 @@ Se o usuário já possuir um cadastro, ele podera entrar no site através do seu
 
 ### RNF 06
 
-O sistema deverá ser funcional nas plataformas windows, linux e mac
+O sistema deverá funcionar em sistema web
 
 ### RNF 07
 
