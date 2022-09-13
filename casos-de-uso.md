@@ -2,16 +2,16 @@
 
 ## Lista dos Casos de Uso
 
- - [CDU 01](#CDU-01): Usuário tenta acessar a página de Perfil.
- - [CDU 02](#CDU-02): Usuário tenta acessar a página de Agendamento.
- - [CDU 03](#CDU-03): Usuário tenta fazer login.
- - [CDU 04](#CDU-04): Usuário tenta fazer logout.
- - [CDU 05](#CDU-05): Usuário tenta agendar no sistema.
- - [CDU 06](#CDU-06): Usuário tenta excluir agendamento.
- - [CDU 07](#CDU-07): Usuário tenta visualizar os clientes agendados.
- - [CDU 08](#CDU-08): Usuário tenta Cadastrar funcionarios no sistema.
- - [CDU 09](#CDU-09): Usuário tenta modificar os agendamentos.
- - [CDU 010](#CDU-10): Usuário tenta se cadastrar.
+ - [CDU 01](#CDU-01): Acessar a página de Perfil.
+ - [CDU 02](#CDU-02): Fazer login.
+ - [CDU 03](#CDU-03): Fazer logout.
+ - [CDU 04](#CDU-04): Acessar a página de Agendamento.
+ - [CDU 05](#CDU-05): Agendar no sistema.
+ - [CDU 06](#CDU-06): Modificar os agendamentos.
+ - [CDU 07](#CDU-07): Excluir agendamento.
+ - [CDU 08](#CDU-08): Visualizar os clientes agendados.
+ - [CDU 09](#CDU-09): Cadastrar funcionarios no sistema.
+ - [CDU 010](#CDU-10): Cadastrar ususário.
 
 
 ## Lista dos Atores
@@ -33,7 +33,7 @@
  - Funcionário
  - Cliente 
 
-Usuário tenta acessar a página de Perfil.
+Acessar a página de Perfil.
 
 **Fluxo Principal**
 
@@ -45,33 +45,14 @@ Usuário tenta acessar a página de Perfil.
 1. Usuário seleciona o botão perfil.
 2. Usuário vai para área de login pois não esta logado no sistema.
 
-### CDU 02
-
-#### Atores
- - Administrador
- - Funcionário
- - Cliente 
-
-Usuário tenta acessar a página de Agendamento.
-
-**Fluxo Principal**
-
-1. Usuário seleciona o botão agendamento.
-2. Usuário é redirecionado para área agendamento.
-
-**Fluxo Alternativo A**
-
-1. Usuário seleciona o botão agendamento.
-2. Usuário é redirecionado para área de login pois não está logado no sistema.
-
-### CDU 3
+### CDU 2
 
 #### Atores
 - Administrador
 - Funcionário
 - Cliente 
 
-Usuário tenta fazer login.
+Fazer login.
 
 **Fluxo Principal**
 
@@ -95,14 +76,14 @@ Usuário tenta fazer login.
 2. O Usuário cancela a realização do login pressionando um botão "cancelar", exibido na tela.
 3. O usuário é redirecionado para a tela de menu.
 
-### CDU 4
+### CDU 3
 
 #### Atores
 - Administrador
 - Funcionário
 - Cliente
  
-Usuário tenta fazer logout
+Fazer logout.
 
 **Fluxo Principal**
 
@@ -118,12 +99,32 @@ Usuário tenta fazer logout
 3. O usuário aperta o botão "não".
 4. O usuário retorna para a grade de horários.
 
+### CDU 04
+
+#### Atores
+ - Administrador
+ - Funcionário
+ - Cliente 
+
+Acessar a página de Agendamento.
+
+**Fluxo Principal**
+
+1. Usuário seleciona o botão agendamento.
+2. Usuário é redirecionado para área agendamento.
+
+**Fluxo Alternativo A**
+
+1. Usuário seleciona o botão agendamento.
+2. Usuário é redirecionado para área de login pois não está logado no sistema.
+
+
 ### CDU 5
 
 #### Atores
 - Cliente
  
--Usuario tenta agendar no sistema.
+-Agendar no sistema.
 
 **Fluxo Principal**
 
@@ -144,10 +145,29 @@ Usuário tenta fazer logout
 ### CDU 6
 
 #### Atores
+ - Cliente
+
+ Modificar os agendamentos.
+
+**Fluxo Principal**
+
+1. O usuário seleciona a opção "Agendamento" no menu principal.
+2. O usuário seleciona a opção editar Agendamento. 
+3. Caso falte mais de 24h para o fim do agendamento, o usuário ganhara acesso para modificar seu agendamento  
+
+**Fluxo Alternativo A**
+
+1. O usuário seleciona a opção "Agendamento" no menu principal.
+2. O usuário seleciona a opção editar Agendamento. 
+3. Caso reste menos de 24h para o fim do agendamento, o sistema restringirá o acesso do usuário a edição do agendamento
+
+### CDU 7
+
+#### Atores
  - Administrador
  - Cliente
 
-Usuario tenta excluir agendamento.
+Excluir agendamento.
 
 **Fluxo Principal**
 
@@ -168,13 +188,13 @@ Usuario tenta excluir agendamento.
 6. O sistema apresenta na tela a mensagem "Código de agendamento não reconhecido".
 7. O sistema redireciona o usuário para o caso de uso 3 do fluxo principal.
 
-### CDU 7
+### CDU 8
 
 #### Atores
  - Administrador
  - Funcionário
 
-Usuário tenta visualizar os clientes agendados.
+Visualizar os clientes agendados.
 
 **Fluxo Principal**
 
@@ -188,12 +208,12 @@ Usuário tenta visualizar os clientes agendados.
 2. O usuário aperta a opção Cancelar.
 3. O sistema redireciona o usuário para a tela de menu.
 
-### CDU 8
+### CDU 9
 
 #### Atores
  - Administrador
  
-Usuario tenta Cadastrar funcionarios no sistema.
+Cadastrar funcionarios no sistema.
 
 **Fluxo Principal**
 
@@ -208,32 +228,13 @@ Usuario tenta Cadastrar funcionarios no sistema.
 2. O Usuário cancela a realização do cadastro pressionando um botão "cancelar", exibido na tela.
 3. O usuário é redirecionado para a tela de menu.
 
-### CDU 9
-
-#### Atores
- - Cliente
-
-Usuário tenta modificar os agendamentos.
-
-**Fluxo Principal**
-
-1. O usuário seleciona a opção "Agendamento" no menu principal.
-2. O usuário seleciona a opção editar Agendamento. 
-3. Caso falte mais de 24h para o fim do agendamento, o usuário ganhara acesso para modificar seu agendamento  
-
-**Fluxo Alternativo A**
-
-1. O usuário seleciona a opção "Agendamento" no menu principal.
-2. O usuário seleciona a opção editar Agendamento. 
-3. Caso reste menos de 24h para o fim do agendamento, o sistema restringirá o acesso do usuário a edição do agendamento
-
 ### CDU 10
 
 #### Atores
  - Administrador
  - Cliente
 
-Usuário tenta se cadastrar.
+Cadastrar ususário.
 
 **Fluxo Principal**
 
