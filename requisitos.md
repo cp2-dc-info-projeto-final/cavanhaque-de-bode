@@ -134,7 +134,7 @@ Se o usuário já possuir um cadastro, ele podera entrar no site através do seu
 
 ### RNF 06
 
-O sistema deverá ser funcional nas plataformas windows e linux,
+O sistema deverá ser funcional nas plataformas windows, linux e mac
 
 ### RNF 07
 
@@ -142,5 +142,12 @@ O sistema deverá possuir uma interface de fácil entendimento de usuário.
 
 ### RNF 08
 
+O sistema deverá mostrar as datas e horários disponíveis.
 
+### RNF 09
 
+O sistema devera ter uma aba rolável, que possuirá diversas informações e imagens da barbearia.
+
+### RNF 10
+
+No canto superior esquerdo terá a logo do site.
