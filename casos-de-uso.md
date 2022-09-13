@@ -147,7 +147,7 @@ Acessar a página de Agendamento.
 #### Atores
  - Cliente
 
- Modificar os agendamentos.
+ Modificar agendamentos.
 
 **Fluxo Principal**
 
@@ -167,16 +167,16 @@ Acessar a página de Agendamento.
  - Administrador
  - Cliente
 
-Excluir agendamento.
+Cancelar agendamento.
 
 **Fluxo Principal**
 
 1. O usuário seleciona a opção "Agendamento" no menu principal.
-2. O usuário seleciona a opção Excluir Agendamento. 
+2. O usuário seleciona a opção cancelar Agendamento. 
 3. O sistema solicita o código do agendamento a ser excluído.
 4. O usuário fornece o código e confirma a operação.
 5. O sistema verifica se o código de agendamento existe.
-6. O sistema exclui o agendamento e em seguida mostra a mensagem "agendamento excluído".
+6. O sistema exclui o agendamento e em seguida mostra a mensagem "agendamento cancelado".
 
 **Fluxo Alternativo A**
 
@@ -213,7 +213,7 @@ Visualizar os clientes agendados.
 #### Atores
  - Administrador
  
-Cadastrar funcionarios no sistema.
+Cadastrar funcionarios no sistem.
 
 **Fluxo Principal**
 
@@ -234,7 +234,7 @@ Cadastrar funcionarios no sistema.
  - Administrador
  - Cliente
 
-Cadastrar ususário.
+Cadastrar usuário.
 
 **Fluxo Principal**
 

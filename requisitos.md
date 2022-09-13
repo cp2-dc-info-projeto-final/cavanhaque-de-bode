@@ -134,11 +134,7 @@ Se o usuário já possuir um cadastro, ele podera entrar no site através do seu
 
 ### RNF 06
 
-<<<<<<< HEAD
 O software deverá ser funcional nas plataformas windows, linux e mac
-=======
-O sistema deverá funcionar em sistema web
->>>>>>> ffc0f3a2ca933ce7ae655f6e146c08b488a4e9b7
 
 ### RNF 07
 
