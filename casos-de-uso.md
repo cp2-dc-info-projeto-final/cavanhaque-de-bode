@@ -6,10 +6,12 @@
  - [CDU 02](#CDU-02): Usuário tenta acessar a página de Agendamento.
  - [CDU 03](#CDU-03): Usuário tenta fazer login.
  - [CDU 04](#CDU-04): Usuário tenta fazer logout.
- - [CDU 05](#CDU-05): 
- - [CDU 06](#CDU-06): Usuario tenta excluir agendamento
- - [CDU 07](#CDU-07):
-
+ - [CDU 05](#CDU-05): Usuário tenta agendar no sistema.
+ - [CDU 06](#CDU-06): Usuário tenta excluir agendamento.
+ - [CDU 07](#CDU-07): Usuário tenta visualizar os clientes agendados.
+ - [CDU 08](#CDU-08): Usuário tenta Cadastrar funcionarios no sistema.
+ - [CDU 09](#CDU-09): Usuário tenta modificar os agendamentos.
+ - [CDU 010](#CDU-10): Usuário tenta se cadastrar.
 
 
 ## Lista dos Atores
@@ -81,13 +83,15 @@ Usuário tenta fazer login.
 
 **Fluxo Alternativo A**
 
-1. O sistema solicita ao cliente ao usuário nome de identificação e senha de acesso.
+1. O sistema solicita ao usuário nome de usuário e senha de acesso.
 2. O Usuário digita nome ou senha inválidos.
-3. O sistema apresenta a frase "login ou senha inválidos, tente novamente".
+3. O usuário confirma clicando no botão "enviar".
+4. O sistema verifica as informações fornecidas pelo usuário.
+5. O sistema apresenta a frase "login ou senha inválidos, tente novamente".
 
 **Fluxo Alternativo B**
 
-1. O sistema solicita ao cliente ao usuário nome de identificação e senha de acesso.
+1. O sistema solicita ao usuário nome de identificação e senha de acesso.
 2. O Usuário cancela a realização do login pressionando um botão "cancelar", exibido na tela.
 3. O usuário é redirecionado para a tela de menu.
 
@@ -119,7 +123,7 @@ Usuário tenta fazer logout
 #### Atores
 - Cliente
  
--O usuario tenta agendar no sistema.
+-Usuario tenta agendar no sistema.
 
 **Fluxo Principal**
 
@@ -143,7 +147,7 @@ Usuário tenta fazer logout
  - Administrador
  - Cliente
 
-Usuario tenta excluir agendamento
+Usuario tenta excluir agendamento.
 
 **Fluxo Principal**
 
@@ -184,3 +188,62 @@ Usuário tenta visualizar os clientes agendados.
 2. O usuário aperta a opção Cancelar.
 3. O sistema redireciona o usuário para a tela de menu.
 
+### CDU 8
+
+#### Atores
+ - Administrador
+ 
+Usuario tenta Cadastrar funcionarios no sistema.
+
+**Fluxo Principal**
+
+1. O usuário seleciona a opção cadastrar Profissional no menu principal.
+2. O sistema solicita os dados necessários para o cadastro do Profissional. 
+3. O usuário fornece os dados e confirma a operação.
+4. O sistema verifica se todos foram fornecidos e em seguida mostra uma mensagem de confirmação.
+
+**Fluxo Alternativo A** 
+
+1. O usuário seleciona a opção cadastrar Profissional no menu principal.
+2. O Usuário cancela a realização do cadastro pressionando um botão "cancelar", exibido na tela.
+3. O usuário é redirecionado para a tela de menu.
+
+### CDU 9
+
+#### Atores
+ - Cliente
+
+Usuário tenta modificar os agendamentos.
+
+**Fluxo Principal**
+
+1. O usuário seleciona a opção "Agendamento" no menu principal.
+2. O usuário seleciona a opção editar Agendamento. 
+3. Caso falte mais de 24h para o fim do agendamento, o usuário ganhara acesso para modificar seu agendamento  
+
+**Fluxo Alternativo A**
+
+1. O usuário seleciona a opção "Agendamento" no menu principal.
+2. O usuário seleciona a opção editar Agendamento. 
+3. Caso reste menos de 24h para o fim do agendamento, o sistema restringirá o acesso do usuário a edição do agendamento
+
+### CDU 10
+
+#### Atores
+ - Administrador
+ - Cliente
+
+Usuário tenta se cadastrar.
+
+**Fluxo Principal**
+
+1. O usuário seleciona a opção cadastrar na tela de login.
+2. O sistema solicita os dados necessários para o cadastro. 
+3. O usuário fornece os dados e confirma a operação.
+4. O sistema verifica se todos foram fornecidos e em seguida mostra uma mensagem de confirmação.
+
+**Fluxo Alternativo A** 
+
+1. O usuário seleciona a opção cadastrar na tela de login.
+2. O Usuário cancela a realização do cadastro pressionando um botão "cancelar", exibido na tela.
+3. O usuário é redirecionado para a tela de agendamento.
