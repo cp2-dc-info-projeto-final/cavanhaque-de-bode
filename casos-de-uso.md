@@ -237,13 +237,13 @@ Usuário tenta se cadastrar.
 
 **Fluxo Principal**
 
-1. O usuário seleciona a opção cadastrar na tela de login.
+1. O usuário seleciona a opção cadastrar na tela de perfil.
 2. O sistema solicita os dados necessários para o cadastro. 
 3. O usuário fornece os dados e confirma a operação.
 4. O sistema verifica se todos foram fornecidos e em seguida mostra uma mensagem de confirmação.
 
 **Fluxo Alternativo A** 
 
-1. O usuário seleciona a opção cadastrar na tela de login.
+1. O usuário seleciona a opção cadastrar na tela de perfil.
 2. O Usuário cancela a realização do cadastro pressionando um botão "cancelar", exibido na tela.
-3. O usuário é redirecionado para a tela de agendamento.
+3. O usuário é redirecionado para a tela de perfil.
