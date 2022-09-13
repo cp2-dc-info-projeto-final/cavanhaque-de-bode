@@ -8,7 +8,7 @@ O software deverá possuir a todo momento uma bloco no topo da página que conte
 
 ### RF 02
 
-O página principal do software deverá possuir uma aba rolável que apresentará diversas informações sobre o sistema.
+O página principal do software deverá possuir uma aba rolável que apresentará diversas informações sobre o software.
 
 ### RF 03
 
@@ -28,7 +28,7 @@ A o botão clicável enviar deverá redirecionar o usuário para tela inicial ca
 
 ### RF 07
 
-O sistema deverá apresentará uma mensagem de erro caso as informações inseridas no RF 05 não constarem no banco de dados.
+O software deverá apresentará uma mensagem de erro caso as informações inseridas no RF 05 não constarem no banco de dados.
 
 ### RF 08
 
@@ -36,7 +36,7 @@ A página de login do software possuirá um botão clicável nomeado "Fazer Cada
 
 ### RF 09
 
-O sistema deverá possuir uma página para cadastramento de cliente, que poderá ser acessivel pela página login.
+O software deverá possuir uma página para cadastramento de cliente, que poderá ser acessivel pela página login.
 
 ### RF 10
 
@@ -44,7 +44,7 @@ A página de cadastro deverá possuir diveros campos completáveis que receberã
 
 ### RF 11
 
-O sistema deverá possuir uma página de cadastro de funcionários, que será acessivel pela página de perfil do administrador.
+O software deverá possuir uma página de cadastro de funcionários, que será acessivel pela página de perfil do administrador.
 
 ### RF 12
 
@@ -52,11 +52,11 @@ A página de cadastro de funcionário deverá possuir diversos campos que recebe
 
 ### RF 13
 
-O sistema deverá possuir uma página de agendamento exclusiva para o cliente, que será acessivel pela página principal.
+O software deverá possuir uma página de agendamento exclusiva para o cliente, que será acessivel pela página principal.
 
 ### RF 14
 
-A página de agendamento do cliente do sistema deverá possuir um campo de seleção, que mostrará os funcionários disponíveis na barbearia.
+A página de agendamento do cliente do software deverá possuir um campo de seleção, que mostrará os funcionários disponíveis na barbearia.
 
 ### RF 15
 
@@ -68,7 +68,7 @@ Na página de agendamento, apóS a seleção de funcionário, apresentará um ca
 
 ### RF 17
 
-O sistema deverá possuir uma página de agendamento exclusiva para o funcionário, que será acessivel pela página principal.
+O software deverá possuir uma página de agendamento exclusiva para o funcionário, que será acessivel pela página principal.
 
 ### RF 18
 
@@ -76,19 +76,19 @@ A página de agendamento do funionário deverá possuir um bloco listando todos 
 
 ### RF 19
 
-O sistema deverá possuir uma página de agendamento exclusiva para o administrador.
+O software deverá possuir uma página de agendamento exclusiva para o administrador.
 
 ### RF 20
 
-a página de agendamento do administrador possuirá um bloco com seleção de todos os funcionários cadastrados no sistema.
+a página de agendamento do administrador possuirá um bloco com seleção de todos os funcionários cadastrados no software.
 
 ### RF 21
 
-Na página de agendamento do administrador, ao selecionar um funcionário, aparecerá todos os horários agendados para o funcionário selecionado.
+Na página de agendamento do administrador, ao selecionar um funcionário, será exibido todos os horários agendados para o funcionário selecionado.
 
 ### RF 22
 
-O sistema possuirá uma página de perfil única para cada tipo de ator que logar no sistema, a página será acessivel pela página principal.
+O software possuirá uma página de perfil única para cada tipo de ator que logar no software, a página será acessivel pela página principal.
 
 ### RF 23
 
@@ -114,15 +114,15 @@ A página de perfil do administrador possuirá um botão clicável que redirecio
 
 ### RNF 01
 
-O sistema devera enviar um relatório de todos os horarios agendados em um dia.
+O software devera enviar um relatório de todos os horarios agendados em um dia.
 
 ### RNF 02
 
-O sistema devera se comunicar com o mysql.
+O software devera se comunicar com o mysql.
 
 ### RNF 03
 
-O sistema devera ler as linguagens .PHP, .JS, .CSS, .HTML.
+O software devera ler as linguagens .PHP, .JS, .CSS, .HTML.
 
 ### RNF 04
 
@@ -134,19 +134,19 @@ Se o usuário já possuir um cadastro, ele podera entrar no site através do seu
 
 ### RNF 06
 
-O sistema deverá ser funcional nas plataformas windows, linux e mac
+O software deverá ser funcional nas plataformas windows, linux e mac
 
 ### RNF 07
 
-O sistema deverá possuir uma interface de fácil entendimento de usuário.
+O software deverá possuir uma interface de fácil entendimento de usuário.
 
 ### RNF 08
 
-O sistema deverá mostrar as datas e horários disponíveis.
+O software deverá mostrar as datas e horários disponíveis.
 
 ### RNF 09
 
-O sistema devera ter uma aba rolável, que possuirá diversas informações e imagens da barbearia.
+O software devera ter uma aba rolável, que possuirá diversas informações e imagens da barbearia.
 
 ### RNF 10
 
