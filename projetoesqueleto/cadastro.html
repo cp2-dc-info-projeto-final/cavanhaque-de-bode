@@ -22,10 +22,11 @@
         <h1>Cadastro</h1>
 
         <form action="register.php" method="POST">
-            <p>Nome: <input type="text" name="nome"></p>
-            <p>E-mail: <input type="text" name="email"></p>
-            <p>Senha: <input type="password" name="senha"></p>
-            <p>Confirme a senha: <input type="password" name="confirmsenha"></p>
+            <input type="hidden" name="operacao" value="cadastro">
+            <p>Nome: <input type="text" name="nome" required></p>
+            <p>E-mail: <input type="text" name="email" required></p>
+            <p>Senha: <input type="password" name="senha" required ></p>
+            <p>Confirme a senha: <input type="password" name="confirmsenha" required></p>
             <p><input type="submit" value="Cadastrar"></p> 
         </form><br>
     
