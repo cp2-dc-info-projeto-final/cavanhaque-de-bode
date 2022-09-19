@@ -29,7 +29,7 @@
             <p><input type="submit" value="Entrar"></p> 
         </form><br>
         
-        <a class="burrao" href="cadastro.html"> Cadastre-se aqui</a>
+        <a class="burrao" href="../cadastro.html"> Cadastre-se aqui</a>
         
     </body>
 </html>
