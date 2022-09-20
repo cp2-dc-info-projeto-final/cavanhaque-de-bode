@@ -5,6 +5,13 @@
         header('Location: login.php');
         exit();
     }
+    
+    $menu_perfil = $_GET["menu_perfil"];
+    $usuarioid = $_SESSION['usuario'];
+    $sql = "SELECT nome, email, senha FROM usuario WHERE id = $usuarioid;"; 
+    $res = mysqli_query($mysqli, $sql);
+    $usuario = mysqli_fetch_array($res);
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,7 +26,6 @@
             <tr>
                 <td><a class="titulotabela" href="mainpage.php">CAVANHAQUE DE BODE</a></td>
                 <td align="right">
-                    <a href="login.php">PERFIL</a> |
                     <a href="../agendamento.html">AGENDAMENTO</a> |
                     <a href="../quemsoueu.html">QUEM SOU EU?</a> |
                 </td>
@@ -27,27 +33,42 @@
         </table>
         <table border="1" width="1315">
             <tr>
-                <td><a class="titulotabela2" href="">PERFIL</a></td>
+                <td><a class="titulotabela2" href="?menu_perfil=exibir">PERFIL</a></td>
                 <td align="right">
-                    <a href="">ALTERAR DADOS</a> |
-                    <a href=""> EXCLUIR CONTA</a> |
+                    <a href="?menu_perfil=alterar">ALTERAR DADOS</a> |
+                    <a href="?menu_perfil=excluir"> EXCLUIR CONTA</a> |
                 </td>
             </tr>
         </table>
-        <p>==================================</p> 
-        <h2> DADOS DE USUÁRIO </h2>
+<?php
+    if($menu_perfil == "exibir"){
+        
+        echo "<p>==================================</p>";
+        echo "<h2> DADOS DE USUÁRIO </h2>";
+        echo "<p>Nome: ".$usuario["nome"]."</p>";
+        echo "<p>Email: ".$usuario["email"]."</p>";
+        echo "<p>=================================="."</p><br>"; 
+
+        echo "<a class='burrao' href='mainpage.php'> Voltar &nbsp </a>";
+        echo "<a class='burrao' href='logout.php'> Logout</a>";
+    }
+    
+    if($menu_perfil == "alterar"){?>
+        <h2>ALTERAR DADOS</h2>
+        <form action="register.php" method="POST"> 
+            <input type="hidden" name="operacao" value="alterar">
+            <input type="hidden" name="usuarioid" value="<?php echo $usuarioid ?>">
+            <p>Nome: <input type="text" name="nome" value="<?php echo $usuario['nome']?>" required></p>
+            <p>E-mail: <input type="text" name="email" value="<?php echo $usuario['email']?>" required></p>
+            <p>Senha: <input type="text" name="email" value="<?php echo $usuario['senha']?>" required></p>           
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+<?php }
+    
+    if($menu_perfil == "excluir"){
+        
+    }
+
+?>
     </body>
 </html>
-<?php
-
-    $usuarioid = $_SESSION['usuario'];
-    $sql = "SELECT nome, email FROM usuario WHERE id = $usuarioid;"; 
-    $res = mysqli_query($mysqli, $sql);
-    $usuario = mysqli_fetch_array($res);
-    echo "<p>Nome: ".$usuario["nome"]."</p>";
-    echo "<p>Email: ".$usuario["email"]."</p>";
-    echo "<p>=================================="."</p><br>"; 
-
-    echo "<a class='burrao' href='mainpage.php'> Voltar &nbsp </a>";
-    echo "<a class='burrao' href='logout.php'> Logout</a>";
-?>

@@ -11,7 +11,7 @@
             <tr>
                 <td><a class="titulotabela" href="mainpage.php">CAVANHAQUE DE BODE</a></td>
                 <td align="right">
-                    <a href="login.php">PERFIL</a> |
+                    <a href="">PERFIL</a> |
                     <a href="../agendamento.html">AGENDAMENTO</a> |
                     <a href="../quemsoueu.html">QUEM SOU EU?</a> |
                 </td>

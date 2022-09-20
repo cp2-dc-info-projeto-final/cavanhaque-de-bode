@@ -54,13 +54,12 @@ include "conectamysqlcdb.php";
             if($linhas == 1) {
                 $usuario = mysqli_fetch_array($res);
                 $_SESSION['usuario'] = $usuario['id'];
-                header('Location: perfil.php');
+                header('Location: perfil.php?menu_perfil='.'exibir');
             } else {
                 $_SESSION['nao_autenticado'] = true;
                 header('Location: login.php');
             }
         }
-
     ?>
     </body>
 </html>
