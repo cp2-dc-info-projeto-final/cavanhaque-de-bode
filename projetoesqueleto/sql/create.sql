@@ -16,3 +16,6 @@ VALUES ('admin','admin@admicavanhaque.com.cdb', 'cdb0108');
 
 INSERT INTO usuario (nome, email, senha)
 VALUES ('LUIZ','luiz@g.com', '123');
+
+INSERT INTO usuario (nome, email, senha)
+VALUES ('teste','teste@g.com', 'teste');

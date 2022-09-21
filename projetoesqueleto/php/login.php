@@ -1,4 +1,10 @@
-<?php session_start()?>
+<?php 
+    session_start();
+    if(isset($_SESSION['usuario'])) {
+        header('Location: perfil.php?menu_perfil='.'exibir');
+        exit();
+    } 
+?>
 <html>
     <head>
         <title>Cavanhaque de Bode</title>
@@ -29,7 +35,7 @@
             <p><input type="submit" value="Entrar"></p> 
         </form><br>
         
-        <a class="burrao" href="../cadastro.html"> Cadastre-se aqui</a>
+        <a class="burrao" href="cadastro.php"> Cadastre-se aqui</a>
         
     </body>
 </html>

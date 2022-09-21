@@ -5,7 +5,6 @@
         header('Location: login.php');
         exit();
     }
-    
     $menu_perfil = $_GET["menu_perfil"];
     $usuarioid = $_SESSION['usuario'];
     $sql = "SELECT nome, email, senha FROM usuario WHERE id = $usuarioid;"; 
@@ -42,7 +41,6 @@
         </table>
 <?php
     if($menu_perfil == "exibir"){
-        
         echo "<p>==================================</p>";
         echo "<h2> DADOS DE USUÁRIO </h2>";
         echo "<p>Nome: ".$usuario["nome"]."</p>";
@@ -54,21 +52,29 @@
     }
     
     if($menu_perfil == "alterar"){?>
+
         <h2>ALTERAR DADOS</h2>
         <form action="register.php" method="POST"> 
             <input type="hidden" name="operacao" value="alterar">
             <input type="hidden" name="usuarioid" value="<?php echo $usuarioid ?>">
             <p>Nome: <input type="text" name="nome" value="<?php echo $usuario['nome']?>" required></p>
             <p>E-mail: <input type="text" name="email" value="<?php echo $usuario['email']?>" required></p>
-            <p>Senha: <input type="text" name="email" value="<?php echo $usuario['senha']?>" required></p>           
-            <p><input type="submit" value="Enviar"></p>
+            <p>Senha: <input type="text" name="senha" value="<?php echo $usuario['senha']?>" required></p>
+            <p>Confirme a senha: <input type="text" name="confirmsenha" value="<?php echo $usuario['senha']?>" required></p>          
+            <p><input type="submit" value="Alterar"></p>
+            <a class='burrao' href='perfil.php?menu_perfil=exibir'>Voltar</a>
         </form>
 <?php }
     
-    if($menu_perfil == "excluir"){
-        
-    }
-
-?>
+    if($menu_perfil == "excluir"){?>
+        <form action="register.php" method="POST"> 
+            <input type="hidden" name="operacao" value="excluir">
+            <input type="hidden" name="usuarioid" value="<?php echo $usuarioid ?>">
+            <p>Senha: <input type="text" name="senha" value="<?php echo $usuario['senha']?>" required></p>
+            <p>Confirme a senha: <input type="text" name="confirmsenha" value="<?php echo $usuario['senha']?>" required></p>
+            <p><input type="submit" value="Excluir"></p>
+        </form>
+        <a class='burrao' href='perfil.php?menu_perfil=exibir'>Voltar</a>
+<?php } ?>
     </body>
 </html>
