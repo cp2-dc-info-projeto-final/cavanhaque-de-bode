@@ -54,6 +54,8 @@
     if($menu_perfil == "alterar"){?>
 
         <h2>ALTERAR DADOS</h2>
+        <?php if(isset($_SESSION["nao_autenticado"])){echo"<p>Esse email já está sendo utilizado</p>";}
+        unset($_SESSION["nao_autenticado"]);?>
         <form action="register.php" method="POST"> 
             <input type="hidden" name="operacao" value="alterar">
             <input type="hidden" name="usuarioid" value="<?php echo $usuarioid ?>">

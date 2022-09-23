@@ -80,8 +80,19 @@
             $confirmsenha = $_POST["confirmsenha"];        
             
             $erro = 0;
+            
+            $sql = "SELECT email FROM usuario WHERE email = '$email';";
+            $res = mysqli_query($mysqli, $sql);
+            $linhas = mysqli_num_rows($res);
+            
+            $erro = 0;
+            
+            if($linhas == 1){
+                $_SESSION['nao_autenticado'] = true;
+                header('Location: perfil.php?menu_perfil=alterar');
+            }
 
-            if(strlen($email) < 10 or strstr($email, '@') == false){
+            else if(strlen($email) < 10 or strstr($email, '@') == false){
                 echo "<p>Por favor, preencha o e-mail corretamente.<br></p>";
                 echo "<a class='burrao' href='perfil.php?menu_perfil=exibir'>Voltar</a>";
                 $erro = 1;
