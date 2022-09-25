@@ -50,6 +50,7 @@
                 
             }
         }
+        
         if($operacao == "login"){
             
             if(empty($_POST["email"]) or empty($_POST["email"])){
@@ -72,6 +73,7 @@
                 header('Location: login.php');
             }
         }
+        
         if($operacao == "alterar"){
             $usuarioid = $_POST["usuarioid"];
             $nome = $_POST["nome"]; 
