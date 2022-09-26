@@ -1,6 +1,6 @@
 # Documento de Casos de Uso
 
-## Lista dos Casos de Uso
+## Lista dos Casos de Uso 2
 
  - [CDU 01](#CDU-01): Acessar a página de Perfil.
  - [CDU 02](#CDU-02): Fazer login.
