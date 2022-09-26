@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'logofont';
+    src: url(../fonts/Marones-EaZEW.ttf);
+}
+
+body {
+    font-size: 100%;
+  }
+
+.navop{
+    font-size: 1.5em;
+}
+
+.caceta{
+    font-family: 'logofont';
+    font-size: 2.75em;
+}
