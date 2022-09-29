@@ -11,6 +11,13 @@ body {
     color: white;
 }
 
+#TituloModal{
+    font-family: 'logofont';
+    font-size: 2.5em;
+    color: white;
+    
+}
+
 .linknav{
     font-size: 1.3em;
 }
