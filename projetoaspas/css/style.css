@@ -45,3 +45,8 @@ body {
 .botaoentrar{
     margin-left: 70px;
 }
+
+.botao{
+    border-radius: 70px;
+    padding: 2px 80px;
+}
