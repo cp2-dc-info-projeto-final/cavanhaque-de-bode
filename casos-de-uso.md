@@ -26,14 +26,12 @@
 
 ## Descrição dos Casos de Uso
 
-### CDU 01
+### CDU 01 - Acessar a página de Perfil.
 
 #### Atores
  - Administrador
  - Funcionário
  - Cliente 
-
-Acessar a página de Perfil.
 
 **Fluxo Principal**
 
@@ -45,14 +43,12 @@ Acessar a página de Perfil.
 1. Usuário seleciona o botão perfil.
 2. Usuário vai para área de login pois não esta logado no sistema.
 
-### CDU 2
+### CDU 2 - Fazer login.
 
 #### Atores
 - Administrador
 - Funcionário
 - Cliente 
-
-Fazer login.
 
 **Fluxo Principal**
 
@@ -76,15 +72,13 @@ Fazer login.
 2. O Usuário cancela a realização do login pressionando um botão "cancelar", exibido na tela.
 3. O usuário é redirecionado para a tela de menu.
 
-### CDU 3
+### CDU 3 - Fazer logout.
 
 #### Atores
 - Administrador
 - Funcionário
 - Cliente
  
-Fazer logout.
-
 **Fluxo Principal**
 
 1. O usuário aperta o botão "logout"
@@ -99,14 +93,12 @@ Fazer logout.
 3. O usuário aperta o botão "não".
 4. O usuário retorna para a grade de horários.
 
-### CDU 04
+### CDU 04 - Acessar a página de Agendamento.
 
 #### Atores
  - Administrador
  - Funcionário
  - Cliente 
-
-Acessar a página de Agendamento.
 
 **Fluxo Principal**
 
@@ -119,13 +111,11 @@ Acessar a página de Agendamento.
 2. Usuário é redirecionado para área de login pois não está logado no sistema.
 
 
-### CDU 5
+### CDU 5 - -Agendar no sistema.
 
 #### Atores
 - Cliente
  
--Agendar no sistema.
-
 **Fluxo Principal**
 
 1. O usuário seleciona a opção "Agendamento" no menu principal.
@@ -142,12 +132,10 @@ Acessar a página de Agendamento.
 4. O usuário não fornece todos os dados necessários.
 5. O sistema apresenta a mensagem "Favor preencher todos os dados corretamente.
 
-### CDU 6
+### CDU 6 -  Modificar agendamentos.
 
 #### Atores
  - Cliente
-
- Modificar agendamentos.
 
 **Fluxo Principal**
 
@@ -161,13 +149,11 @@ Acessar a página de Agendamento.
 2. O usuário seleciona a opção editar Agendamento. 
 3. Caso reste menos de 24h para o fim do agendamento, o sistema restringirá o acesso do usuário a edição do agendamento
 
-### CDU 7
+### CDU 7 - Cancelar agendamento.
 
 #### Atores
  - Administrador
  - Cliente
-
-Cancelar agendamento.
 
 **Fluxo Principal**
 
@@ -188,13 +174,11 @@ Cancelar agendamento.
 6. O sistema apresenta na tela a mensagem "Código de agendamento não reconhecido".
 7. O sistema redireciona o usuário para o caso de uso 3 do fluxo principal.
 
-### CDU 8
+### CDU 8 - Visualizar os clientes agendados.
 
 #### Atores
  - Administrador
  - Funcionário
-
-Visualizar os clientes agendados.
 
 **Fluxo Principal**
 
@@ -208,13 +192,11 @@ Visualizar os clientes agendados.
 2. O usuário aperta a opção Cancelar.
 3. O sistema redireciona o usuário para a tela de menu.
 
-### CDU 9
+### CDU 9 - Cadastrar funcionarios no sistema.
 
 #### Atores
  - Administrador
  
-Cadastrar funcionarios no sistem.
-
 **Fluxo Principal**
 
 1. O usuário seleciona a opção cadastrar Profissional no menu principal.
@@ -228,13 +210,11 @@ Cadastrar funcionarios no sistem.
 2. O Usuário cancela a realização do cadastro pressionando um botão "cancelar", exibido na tela.
 3. O usuário é redirecionado para a tela de menu.
 
-### CDU 10
+### CDU 10 - Cadastrar usuário.
 
 #### Atores
  - Administrador
  - Cliente
-
-Cadastrar usuário.
 
 **Fluxo Principal**
 
