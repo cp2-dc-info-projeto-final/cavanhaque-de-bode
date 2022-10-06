@@ -106,18 +106,17 @@
             }
             else if($erro == 0){
                 $sql = "UPDATE usuario SET nome = '$nome', email = '$email', senha = '$senha' WHERE id = $usuarioid;";
-                mysqli_query($mysqli,$sql); 
-                mysqli_close($mysqli);
-                echo "<h2>Dados alterados com sucesso!</h2>";
-                echo "<a class='burrao' href='perfil.php?menu_perfil=exibir'>Voltar</a>";
-            }
-        } 
-        
-        if($operacao == "excluir"){
-            $usuarioid = $_POST["usuarioid"];
-            $senha = $_POST["senha"];
-            $confirmsenha = $_POST["confirmsenha"];        
-            
+                mysqli_
+                
+
+
+
+
+
+
+
+
+                
             $erro = 0;
             if($senha != $confirmsenha){
                 echo "<p>Por favor, verifique se as senhas são iguais.<br></p>";
