@@ -7,11 +7,46 @@ body {
     font-size: 100%;
   }
 
-.navop{
-    font-size: 1.5em;
+#fonteclara{
+    color: white;
+}
+
+#TituloModal{
+    font-family: 'logofont';
+    font-size: 2.5em;
+    color: white;
+    
+}
+
+.linknav{
+    font-size: 1.3em;
 }
 
 .caceta{
     font-family: 'logofont';
     font-size: 2.75em;
+}
+
+.divisor{
+    width: 1px;
+    background: black;
+    margin: 12px 10px;
+}
+
+.divisorinvisivel{
+    width: 1px;
+    margin: 12px 6px;
+}
+
+.semborda{
+    border: 0;
+}
+
+.botaoentrar{
+    margin-left: 70px;
+}
+
+.botao{
+    border-radius: 70px;
+    padding: 2px 80px;
 }
