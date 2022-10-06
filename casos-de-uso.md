@@ -220,7 +220,7 @@ Cadastrar funcionarios no sistem.
 1. O usuário seleciona a opção cadastrar Profissional no menu principal.
 2. O sistema solicita os dados necessários para o cadastro do Profissional. 
 3. O usuário fornece os dados e confirma a operação.
-4. O sistema verifica se todos foram fornecidos e em seguida mostra uma mensagem de confirmação.
+4. O sistema verifica se todos os dados foram fornecidos e em seguida mostra uma mensagem de confirmação.
 
 **Fluxo Alternativo A** 
 
