@@ -36,12 +36,14 @@
 **Fluxo Principal**
 
 1. Usuário seleciona o botão perfil.
-2. Usuário é redirecionado para área de perfil.
+2. Sistema verifica se usuário está logado.
+3. Usuário é redirecionado para área de perfil.
 
 **Fluxo Alternativo A**
 
 1. Usuário seleciona o botão perfil.
-2. Usuário vai para área de login pois não esta logado no sistema.
+2. Sistema verifica se usuário está logado.
+3. Usuário é redirecionado para área login.
 
 ### CDU 2 - Fazer login.
 
@@ -84,14 +86,14 @@
 1. O usuário aperta o botão "logout"
 2. O programa apresenta um pop UP escrito "tem certeza que deseja fazer logout?" Com duas opções "sim" e "não".
 3. O usuário aperta o botão "sim".
-4. O usuário é redirecionado para a opção de fazer login.
+4. O usuário é redirecionado para a página inicial.
 
 **Fluxo Alternativo A**
 
 1. o usuário aperta o botão  "logout".
 2. O programa apresenta um pop UP escrito "tem certeza que deseja fazer logout?" Com duas opções "sim" e "não".
 3. O usuário aperta o botão "não".
-4. O usuário retorna para a grade de horários.
+4. O usuário continua na página Perfil.
 
 ### CDU 04 - Acessar a página de Agendamento.
 
@@ -103,15 +105,18 @@
 **Fluxo Principal**
 
 1. Usuário seleciona o botão agendamento.
-2. Usuário é redirecionado para área agendamento.
+2. Sistema verifica se usuário está logado.
+3. Sistema retorna positivo
+4. Usuário é redirecionado para área agendamento.
 
 **Fluxo Alternativo A**
 
 1. Usuário seleciona o botão agendamento.
-2. Usuário é redirecionado para área de login pois não está logado no sistema.
+2. Sistema verifica se usuário está logado.
+3. Sistema retorna negativo.
+4. Usuário é redirecionado para área de login.
 
-
-### CDU 5 - -Agendar no sistema.
+### CDU 5 - Agendar no sistema.
 
 #### Atores
 - Cliente
