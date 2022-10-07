@@ -196,31 +196,127 @@
 3. O usuário é redirecionado para a tela de perfil.
 
 
-### CDU 9 - Editar Cadastro de usuário.
+### CDU 9 - Cadastrar funcionarios no sistema.
 
 #### Atores
- - Administrador
- - Cliente
+- Administrador
+
+**Fluxo Principal**
+
+1. O usuário seleciona a opção cadastrar Profissional no menu principal.
+2. O sistema solicita os dados necessários para o cadastro do Profissional.
+3. O usuário fornece os dados e confirma a operação.
+4. O sistema verifica se todos os dados foram fornecidos e em seguida mostra uma mensagem de confirmação.
+
+**Fluxo Alternativo A**
+
+1. O usuário seleciona a opção cadastrar Profissional no menu principal.
+2. O Usuário cancela a realização do cadastro pressionando um botão "cancelar", exibido na tela.
+3. O usuário é redirecionado para a tela de menu.
+
+
+### CDU 10 - Cadastrar usuário.
+
+#### Atores
+-Administrador
+-Cliente
 
 **Fluxo Principal**
 
 1. O usuário seleciona a opção cadastrar na tela de perfil.
-2. O usuário seleciona a opção editar cadastro.
+2. O sistema solicita os dados necessários para o cadastro.
 3. O usuário fornece os dados e confirma a operação.
 4. O sistema verifica se todos foram fornecidos e em seguida mostra uma mensagem de confirmação.
 
+**Fluxo Alternativo A**
+
+1. O usuário seleciona a opção cadastrar na tela de perfil.
+2. O Usuário cancela a realização do cadastro pressionando um botão "cancelar", exibido na tela.
+3. O usuário é redirecionado para a tela de perfil.
 
 
+### CDU 11 - Editar Cadastro de usuário.
 
-1. O usuário seleciona a opção "Agendamento" no menu principal.
-2. O usuário seleciona a opção editar Agendamento. 
-3. Caso falte mais de 24h para o fim do agendamento, o usuário ganhara acesso para modificar seu agendamento  
+#### Atores
+-Administrador
+-Cliente
+
+**Fluxo Principal**
+
+1. O usuário seleciona a opção cadastrar na tela de perfil.
+2. O usuário seleciona a opção editar.
+3. O usuário ganha acesso para modificar seu cadastro.
 
 **Fluxo Alternativo A**
 
-1. O usuário seleciona a opção "Agendamento" no menu principal.
-2. O usuário seleciona a opção editar Agendamento. 
-3. Caso reste menos de 24h para o fim do agendamento, o sistema restringirá o acesso do usuário a edição do agendamento
+1. O usuário seleciona a opção cadastrar na tela de perfil.
+2. O usuário seleciona a opção editar.
+3. O usuário ganha acesso para modificar seu cadastro.
+4. O usuário seleciona a opção excluir cadastro
+5. O sistema retorna a mensagem "cadastro excluido" 
+
+### CDU 12 - Listar Cadastro de usuário.
+
+#### Atores
+-Administrador
+
+**Fluxo Principal**
+
+1. O usuário seleciona a opção cadastrar na tela de perfil.
+2. O usuário seleciona a opção listar usuarios.
+3. O sistema apresenta uma lista de usuarios cadastrados.
+
+
+### CDU 13 - Adicionar serviço.
+
+#### Atores
+-Administrador
+
+**Fluxo Principal**
+
+1. O usuário seleciona a opção serviços no menu principal.
+2. O usuário seleciona a opção adicionar.
+3. O sistema armazena os dados fornecidos pelo usuário
+4. O sistema retorna a mensagem "serviço adicionado" 
+
+**Fluxo Alternativo A**
+
+1. O usuário seleciona a opção serviços no menu principal.
+2. O usuário seleciona a opção adicionar.
+3. O usuário seleciona a opção cancelar.
+4. O usuário é redirecionado para a tela de menu.
+
+
+### CDU 14 - Editar serviço.
+
+#### Atores
+-Administrador
+
+**Fluxo Principal**
+
+1. O usuário seleciona a opção serviços no menu principal.
+2. O usuário seleciona a opção editar.
+3. O usuário ganha acesso para modificar o serviço.
+4. O sistema armazena os dados modificados pelo usuário
+5. O sistema retorna a mensagem "serviço editado" 
+
+**Fluxo Alternativo A**
+
+1. O usuário seleciona a opção serviços no menu principal.
+2. O usuário seleciona a opção editar.
+3. O usuário ganha acesso para modificar o serviço.
+4. O usuário seleciona a opção cancelar.
+5. O usuário é redirecionado para a tela de menu.
+
+**Fluxo Alternativo B**
+
+1. O usuário seleciona a opção serviços no menu principal.
+2. O usuário seleciona a opção editar.
+3. O usuário ganha acesso para modificar o serviço.
+4. O usuário seleciona a opção excluir.
+5. O sistema retorna a mensagem "serviço excluido" 
+
+
 
 
 
