@@ -2,13 +2,13 @@
 
 ## Lista dos Casos de Uso 2
 
- - [CDU 01](#CDU-01): Acessar a página de Perfil.
- - [CDU 02](#CDU-02): Fazer login.
- - [CDU 03](#CDU-03): Fazer logout.
- - [CDU 04](#CDU-04): Acessar a página de Agendamento.
- - [CDU 05](#CDU-05): Agendar no sistema.
- - [CDU 06](#CDU-06): Modificar os agendamentos.
- - [CDU 07](#CDU-07): Excluir agendamento.
+ - [CDU 01](# CDU 1 - Fazer login.): Fazer login.
+ - [CDU 02](# CDU 2 - Fazer logout.): Fazer logout.
+ - [CDU 03](# CDU 3 - Agendar no sistema.): Agendar no sistema.
+ - [CDU 04](# CDU 4 -  Modificar agendamentos.): Modificar agendamento.
+ - [CDU 05](# CDU 5 - Cancelar agendamento.): Cancelar agendamento.
+ - [CDU 06](# CDU 6 - Visualizar os clientes agendados.): Visualizar os clientes agendados.
+ - [CDU 07](# CDU 7 - Cadastrar funcionarios no sistema.): Cadastrar funcionarios no sistema.
  - [CDU 08](#CDU-08): Visualizar os clientes agendados.
  - [CDU 09](#CDU-09): Cadastrar funcionarios no sistema.
  - [CDU 010](#CDU-10): Cadastrar ususário.
