@@ -233,3 +233,33 @@
 1. O usuário seleciona a opção cadastrar na tela de perfil.
 2. O Usuário cancela a realização do cadastro pressionando um botão "cancelar", exibido na tela.
 3. O usuário é redirecionado para a tela de perfil.
+
+
+### CDU 11 - Editar Cadastro de usuário.
+
+#### Atores
+ - Administrador
+ - Cliente
+
+**Fluxo Principal**
+
+1. O usuário seleciona a opção cadastrar na tela de perfil.
+2. O usuário seleciona a opção editar cadastro.
+3. O usuário fornece os dados e confirma a operação.
+4. O sistema verifica se todos foram fornecidos e em seguida mostra uma mensagem de confirmação.
+
+
+
+
+1. O usuário seleciona a opção "Agendamento" no menu principal.
+2. O usuário seleciona a opção editar Agendamento. 
+3. Caso falte mais de 24h para o fim do agendamento, o usuário ganhara acesso para modificar seu agendamento  
+
+**Fluxo Alternativo A**
+
+1. O usuário seleciona a opção "Agendamento" no menu principal.
+2. O usuário seleciona a opção editar Agendamento. 
+3. Caso reste menos de 24h para o fim do agendamento, o sistema restringirá o acesso do usuário a edição do agendamento
+
+
+
