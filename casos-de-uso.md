@@ -12,6 +12,10 @@
  - [CDU 08](#CDU-08): Visualizar os clientes agendados.
  - [CDU 09](#CDU-09): Cadastrar funcionarios no sistema.
  - [CDU 010](#CDU-10): Cadastrar ususário.
+ - [CDU 011](#CDU-10): Cadastrar ususário.
+ - [CDU 012](#CDU-10): Cadastrar ususário.
+ - [CDU 013](#CDU-10): Cadastrar ususário.
+ - [CDU 014](#CDU-10): Cadastrar ususário.
 
 
 ## Lista dos Atores
@@ -218,8 +222,8 @@
 ### CDU 10 - Cadastrar usuário.
 
 #### Atores
--Administrador
--Cliente
+- Administrador
+- Cliente
 
 **Fluxo Principal**
 
@@ -238,8 +242,8 @@
 ### CDU 11 - Editar Cadastro de usuário.
 
 #### Atores
--Administrador
--Cliente
+- Administrador
+- Cliente
 
 **Fluxo Principal**
 
