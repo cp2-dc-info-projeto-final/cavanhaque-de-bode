@@ -3,19 +3,19 @@
 ## Lista dos Casos de Uso 2
 
  - [CDU 01](#CDU-1---Fazer-login): Fazer login.
- - [CDU 02](# CDU 2 - Fazer logout.): Fazer logout.
- - [CDU 03](# CDU 3 - Agendar no sistema.): Agendar no sistema.
- - [CDU 04](# CDU 4 -  Modificar agendamentos.): Modificar agendamento.
- - [CDU 05](# CDU 5 - Cancelar agendamento.): Cancelar agendamento.
- - [CDU 06](# CDU 6 - Visualizar os clientes agendados.): Visualizar os clientes agendados.
- - [CDU 07](# CDU 7 - Cadastrar funcionarios no sistema.): Cadastrar funcionarios no sistema.
- - [CDU 08](#CDU-08): Visualizar os clientes agendados.
- - [CDU 09](#CDU-09): Cadastrar funcionarios no sistema.
- - [CDU 010](#CDU-10): Cadastrar ususário.
- - [CDU 011](#CDU-10): Cadastrar ususário.
- - [CDU 012](#CDU-10): Cadastrar ususário.
- - [CDU 013](#CDU-10): Cadastrar ususário.
- - [CDU 014](#CDU-10): Cadastrar ususário.
+ - [CDU 02](#CDU-2---Fazer logout): Fazer logout.
+ - [CDU 03](#CDU-3---Agendar-no-sistema): Agendar no sistema.
+ - [CDU 04](#CDU-4---Modificar-agendamentos): Modificar agendamento.
+ - [CDU 05](#CDU-5---Cancelar-agendamento): Cancelar agendamento.
+ - [CDU 06](#CDU-6---Visualizar-os-clientes-agendados): Visualizar os clientes agendados.
+ - [CDU 07](#CDU 7---Cadastrar-funcionarios-no-sistema): Cadastrar funcionarios no sistema.
+ - [CDU 08](#CDU 8---Cadastrar-usuário): Cadastrar usuário.
+ - [CDU 09](#CDU 9---Cadastrar-funcionarios-no-sistema): Cadastrar funcionarios no sistema.
+ - [CDU 010](#CDU 10---Cadastrar-usuário): Cadastrar ususário.
+ - [CDU 011](#CDU 11---Editar-Cadastro-de-usuário): Editar Cadastro de usuário.
+ - [CDU 012](#CDU 12---Listar-Cadastro-de-usuário): Listar Cadastro de usuário.
+ - [CDU 013](#CDU 13---Adicionar-serviço): Adicionar serviço.
+ - [CDU 014](#CDU 14---Editar-serviço): Editar serviço.
 
 
 ## Lista dos Atores
@@ -59,7 +59,7 @@
 2. O Usuário cancela a realização do login pressionando um botão "cancelar", exibido na tela.
 3. O usuário é redirecionado para a tela de menu.
 
-### CDU 2 - Fazer logout.
+### CDU 2 - Fazer logout
 
 #### Atores
 - Administrador
@@ -81,7 +81,7 @@
 4. O usuário continua na página Perfil.
 
 
-### CDU 3 - Agendar no sistema.
+### CDU 3 - Agendar no sistema
 
 #### Atores
 - Cliente
@@ -102,7 +102,7 @@
 4. O usuário não fornece todos os dados necessários.
 5. O sistema apresenta a mensagem "Favor preencher todos os dados corretamente.
 
-### CDU 4 -  Modificar agendamentos.
+### CDU 4 -  Modificar agendamentos
 
 #### Atores
  - Cliente
@@ -119,7 +119,7 @@
 2. O usuário seleciona a opção editar Agendamento. 
 3. Caso reste menos de 24h para o fim do agendamento, o sistema restringirá o acesso do usuário a edição do agendamento
 
-### CDU 5 - Cancelar agendamento.
+### CDU 5 - Cancelar agendamento
 
 #### Atores
  - Administrador
@@ -144,7 +144,7 @@
 6. O sistema apresenta na tela a mensagem "Código de agendamento não reconhecido".
 7. O sistema redireciona o usuário para o caso de uso 3 do fluxo principal.
 
-### CDU 6 - Visualizar os clientes agendados.
+### CDU 6 - Visualizar os clientes agendados
 
 #### Atores
  - Administrador
@@ -162,7 +162,7 @@
 2. O usuário aperta a opção Cancelar.
 3. O sistema redireciona o usuário para a tela de menu.
 
-### CDU 7 - Cadastrar funcionarios no sistema.
+### CDU 7 - Cadastrar funcionarios no sistema
 
 #### Atores
  - Administrador
@@ -180,7 +180,7 @@
 2. O Usuário cancela a realização do cadastro pressionando um botão "cancelar", exibido na tela.
 3. O usuário é redirecionado para a tela de menu.
 
-### CDU 8 - Cadastrar usuário.
+### CDU 8 - Cadastrar usuário
 
 #### Atores
  - Administrador
@@ -200,7 +200,7 @@
 3. O usuário é redirecionado para a tela de perfil.
 
 
-### CDU 9 - Cadastrar funcionarios no sistema.
+### CDU 9 - Cadastrar funcionarios no sistema
 
 #### Atores
 - Administrador
@@ -219,7 +219,7 @@
 3. O usuário é redirecionado para a tela de menu.
 
 
-### CDU 10 - Cadastrar usuário.
+### CDU 10 - Cadastrar usuário
 
 #### Atores
 - Administrador
@@ -239,7 +239,7 @@
 3. O usuário é redirecionado para a tela de perfil.
 
 
-### CDU 11 - Editar Cadastro de usuário.
+### CDU 11 - Editar Cadastro de usuário
 
 #### Atores
 - Administrador
@@ -259,7 +259,7 @@
 4. O usuário seleciona a opção excluir cadastro
 5. O sistema retorna a mensagem "cadastro excluido" 
 
-### CDU 12 - Listar Cadastro de usuário.
+### CDU 12 - Listar Cadastro de usuário
 
 #### Atores
 -Administrador
@@ -271,7 +271,7 @@
 3. O sistema apresenta uma lista de usuarios cadastrados.
 
 
-### CDU 13 - Adicionar serviço.
+### CDU 13 - Adicionar serviço
 
 #### Atores
 -Administrador
@@ -291,7 +291,7 @@
 4. O usuário é redirecionado para a tela de menu.
 
 
-### CDU 14 - Editar serviço.
+### CDU 14 - Editar serviço
 
 #### Atores
 -Administrador
