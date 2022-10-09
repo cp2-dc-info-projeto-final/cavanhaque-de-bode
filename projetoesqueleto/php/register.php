@@ -18,7 +18,7 @@
             $senha = $_POST["senha"];
             $confirmsenha = $_POST["confirmsenha"];   
             
-            $sql = "SELECT email FROM usuario WHERE email = '$email';";
+            $sql = "SELECT * FROM cliente WHERE email = '$email';";
             $res = mysqli_query($mysqli, $sql);
             $linhas = mysqli_num_rows($res);
             

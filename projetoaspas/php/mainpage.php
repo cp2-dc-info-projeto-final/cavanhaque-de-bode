@@ -14,11 +14,11 @@
         <title>Cavanhaque de Bode</title>
     </head>
     <body>
-        <nav class="navbar sticky-top navbar-expand-md navbar-light border-bottom border-3" id="navbar-preta">
+        <nav class="navbar sticky-top navbar-expand-md navbar-dark border-bottom border-3" id="navbar-preta">
             <div class="container-fluid">
                 
                 <a href="" class="navbar-brand"> 
-                    <img src="../imgs/WhatsApp Image 2022-09-25 at 23.26.35.ico"  alt="Logo" height="70" class="d-inline-block">
+                    <img src="../imgs/logocdb.ico"  alt="Logo" height="70" class="d-inline-block">
                 </a>
 
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-target">
@@ -26,7 +26,7 @@
                 </button>
                 
                 <div class="d-none d-md-inline">
-                    <p class="caceta"><a href="" style="color: white; text-decoration:none;">CAVANHAQUE DE BODE</a></p>
+                    <p><a href="" class="brand">CAVANHAQUE DE BODE</a></p>
                 </div>
                 
                 <div class="collapse navbar-collapse" id="nav-target">
@@ -69,7 +69,7 @@
               <div class="modal-content">
                 <div class="modal-header border-0" style="background-color: black;">
                     <h5 class="modal-title ms-auto" id="TituloModal">LOGIN</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"  aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form action="registerlog.php" method="POST" class="needs-validation" novalidate>
@@ -93,16 +93,16 @@
                                 <i class="fas fa-eye-slash d-none" id="hide_eye"></i>
                                 </span> 
                                 <div class="invalid-feedback">
-                                    Por favor, preencha este campo.
+                                    Por favor, preencha sua senha corretamente.
                                 </div>
                             </div>
                         </div>
                         </div>
-                        <?php if(isset($_SESSION['nao-autenticado'])){
-                            echo "<div class='alert alert-danger mt-3' role='alert' class='mr-auto'>Login inválido.</div>";
+                        <?php if(isset($_SESSION['na-login'])){
+                            echo "<div class='alert alert-danger mt-3' id='alert' class='mr-auto'>Login inválido.</div>";
                         }?>
                         <div class="text-center mt-4">
-                            <button type="submit" class="botaoinput btn-dark" data-dismiss="alert" >Entrar</button>
+                            <button type="submit" class="botaoinput btn-dark">Entrar</button>
                         </div>
                     </form>
                 </div>
@@ -149,30 +149,46 @@
                           <div class="col-6">
                             <div class="input-group mt-4">
                                 <span class="input-group-text"><i class="fas fa-lock"></i></span>
-                                <input type="password" class="form-control" id="senhacadastro" name="senhacadastro" placeholder="Senha" required>
+                                <input type="password" class="form-control" id="senhacadastro" name="senhacadastro" placeholder="Senha" pattern=".{6,}" required>
                                 <span class="input-group-text" onclick="passwordregister_show_hide();">
                                 <i class="fas fa-eye" id="show_eye2"></i>
                                 <i class="fas fa-eye-slash d-none" id="hide_eye2"></i>
                                 </span> 
                                 <div class="invalid-feedback">
-                                    Por favor, preencha este campo.
+                                    Por favor, preencha este campo (A senha deve conter no minimo 6 caracteres).
                                 </div>
                             </div>
                           </div>
                           <div class="col-6">
                             <div class="input-group mt-4">
                                 <span class="input-group-text"><i class="fas fa-lock"></i></span>
-                                <input type="password" class="form-control" id="confirmasenha" name="confirmasenha" placeholder="Confirme a senha" required>
+                                <input type="password" class="form-control" id="confirmasenha" name="confirmasenha" placeholder="Confirme a senha" pattern=".{6,}" required>
                                 <span class="input-group-text" onclick="passwordregister2_show_hide();">
                                 <i class="fas fa-eye" id="show_eye3"></i>
                                 <i class="fas fa-eye-slash d-none" id="hide_eye3"></i>
                                 </span>
                                 <div class="invalid-feedback">
-                                    Por favor, preencha este campo.
+                                    Por favor, preencha este campo (A senha deve conter no minimo 6 caracteres).
                                 </div>
                             </div>
                           </div>
                         </div>
+                        <?php if(isset($_SESSION['na-cadastro'])){
+                            switch($_SESSION['na-cadastro']){
+                                case "cadastro":
+                                    echo "<div class='alert alert-danger mt-3' id='alert' class='justify-content-center'>Este endereço de email já esta sendo utiizado.</div>";
+                                    break;
+                                case "email";
+                                    echo "<div class='alert alert-danger mt-3' id='alert' class='mr-auto'>Digite seu email corretamente.</div>";
+                                    break;
+                                case "senhas";    
+                                    echo "<div class='alert alert-danger mt-3' id='alert' class='mr-auto'>Verifique se as senhas são iguais.</div>";
+                                    break;
+                                case "vazio";    
+                                    echo "<div class='alert alert-danger mt-3' id='alert' class='mr-auto'>Preencha todos os campos.</div>";
+                                    break;
+                                }
+                        }?>
                         <div class="text-center mt-4">
                             <button type="submit" class="botaoinput btn-dark" >Cadastrar</button>
                         </div>
@@ -186,11 +202,19 @@
             </div>
             </div>
         </div>
-        <?php if(isset($_SESSION['nao-autenticado'])){
+        
+        <?php if(isset($_SESSION['na-login'])){
             echo "<script> var modallogin = new bootstrap.Modal(document.getElementById('modallogin'));
                     modallogin.show();
             </script>";
-            unset($_SESSION['nao-autenticado']);
+            unset($_SESSION['na-login']);
+        }
+        ?>
+        <?php if(isset($_SESSION['na-cadastro'])){
+            echo "<script> var modalcadastro = new bootstrap.Modal(document.getElementById('modalcadastro'));
+                    modalcadastro.show();
+            </script>";
+            unset($_SESSION['na-cadastro']);
         }
         ?>
         <script src="../js/validacao.js"></script>
