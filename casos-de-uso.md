@@ -102,7 +102,7 @@
 4. O usuário não fornece todos os dados necessários.
 5. O sistema apresenta a mensagem "Favor preencher todos os dados corretamente.
 
-### CDU 4 -  Modificar agendamentos
+### CDU 4 - Modificar agendamentos
 
 #### Atores
  - Cliente
