@@ -160,7 +160,7 @@
 2. O usuário aperta a opção Cancelar.
 3. O sistema redireciona o usuário para a tela de menu.
 
-### CDU 7 - Cadastrar 
+### CDU 7 - Cadastrar funcionários
 
 #### Atores
  - Administrador
