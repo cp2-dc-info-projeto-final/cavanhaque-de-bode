@@ -8,14 +8,12 @@
  - [CDU 04](#CDU-4---Modificar-agendamentos): Modificar agendamento.
  - [CDU 05](#CDU-5---Cancelar-agendamento): Cancelar agendamento.
  - [CDU 06](#CDU-6---Visualizar-os-clientes-agendados): Visualizar os clientes agendados.
- - [CDU 07](#CDU-7---Cadastrar-funcionarios-no-sistema): Cadastrar funcionarios no sistema.
+ - [CDU 07](#CDU-7---Cadastrar-funcionários): Cadastrar funcionários.
  - [CDU 08](#CDU-8---Cadastrar-usuário): Cadastrar usuário.
- - [CDU 09](#CDU-9---Cadastrar-funcionarios-no-sistema): Cadastrar funcionarios no sistema.
- - [CDU 010](#CDU-10---Cadastrar-usuário): Cadastrar ususário.
- - [CDU 011](#CDU-11---Editar-Cadastro-de-usuário): Editar Cadastro de usuário.
- - [CDU 012](#CDU-12---Listar-Cadastro-de-usuário): Listar Cadastro de usuário.
- - [CDU 013](#CDU-13---Adicionar-serviço): Adicionar serviço.
- - [CDU 014](#CDU-14---Editar-serviço): Editar serviço.
+ - [CDU 09](#CDU-11---Editar-Cadastro-de-usuário): Editar Cadastro de usuário.
+ - [CDU 010](#CDU-12---Listar-Cadastro-de-usuário): Listar Cadastro de usuário.
+ - [CDU 011](#CDU-13---Adicionar-serviço): Adicionar serviço.
+ - [CDU 012](#CDU-14---Editar-serviço): Editar serviço.
 
 
 ## Lista dos Atores
@@ -162,7 +160,7 @@
 2. O usuário aperta a opção Cancelar.
 3. O sistema redireciona o usuário para a tela de menu.
 
-### CDU 7 - Cadastrar funcionarios no sistema
+### CDU 7 - Cadastrar 
 
 #### Atores
  - Administrador
@@ -199,47 +197,7 @@
 2. O Usuário cancela a realização do cadastro pressionando um botão "cancelar", exibido na tela.
 3. O usuário é redirecionado para a tela de perfil.
 
-
-### CDU 9 - Cadastrar funcionarios no sistema
-
-#### Atores
-- Administrador
-
-**Fluxo Principal**
-
-1. O usuário seleciona a opção cadastrar Profissional no menu principal.
-2. O sistema solicita os dados necessários para o cadastro do Profissional.
-3. O usuário fornece os dados e confirma a operação.
-4. O sistema verifica se todos os dados foram fornecidos e em seguida mostra uma mensagem de confirmação.
-
-**Fluxo Alternativo A**
-
-1. O usuário seleciona a opção cadastrar Profissional no menu principal.
-2. O Usuário cancela a realização do cadastro pressionando um botão "cancelar", exibido na tela.
-3. O usuário é redirecionado para a tela de menu.
-
-
-### CDU 10 - Cadastrar usuário
-
-#### Atores
-- Administrador
-- Cliente
-
-**Fluxo Principal**
-
-1. O usuário seleciona a opção cadastrar na tela de perfil.
-2. O sistema solicita os dados necessários para o cadastro.
-3. O usuário fornece os dados e confirma a operação.
-4. O sistema verifica se todos foram fornecidos e em seguida mostra uma mensagem de confirmação.
-
-**Fluxo Alternativo A**
-
-1. O usuário seleciona a opção cadastrar na tela de perfil.
-2. O Usuário cancela a realização do cadastro pressionando um botão "cancelar", exibido na tela.
-3. O usuário é redirecionado para a tela de perfil.
-
-
-### CDU 11 - Editar Cadastro de usuário
+### CDU 9 - Editar Cadastro de usuário
 
 #### Atores
 - Administrador
@@ -259,7 +217,7 @@
 4. O usuário seleciona a opção excluir cadastro
 5. O sistema retorna a mensagem "cadastro excluido" 
 
-### CDU 12 - Listar Cadastro de usuário
+### CDU 10 - Listar Cadastro de usuário
 
 #### Atores
 -Administrador
@@ -271,7 +229,7 @@
 3. O sistema apresenta uma lista de usuarios cadastrados.
 
 
-### CDU 13 - Adicionar serviço
+### CDU 11 - Adicionar serviço
 
 #### Atores
 -Administrador
@@ -291,7 +249,7 @@
 4. O usuário é redirecionado para a tela de menu.
 
 
-### CDU 14 - Editar serviço
+### CDU 12 - Editar serviço
 
 #### Atores
 -Administrador
