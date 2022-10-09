@@ -37,25 +37,25 @@
 
 **Fluxo Principal**
 
-1. O usuário aperta o botão login.
-2. O sistema solicita ao usuário nome de usuário e senha de acesso.
-3. O Usuário digita o nome e senha em seus respectivos espaços.
-4. O usuário confirma clicando no botão "enviar".
+1. O usuário seleciona a opção "Login".
+2. O sistema solicita ao usuário os dados necessários para login.
+3. O usuário fornece os dados e confirma a operação.
 5. O sistema verifica as informações fornecidas pelo usuário.
-6. Se as informações fornecidas pelo usuário corresponderem a um login existente, o sistema permite a entrada do usuário.
+6. O sistema faz o login do usuário.
+7. O usuário é redirecionado para a tela de perfil.
 
 **Fluxo Alternativo A**
-1. O usuário aperta o botão login.
-2. O sistema solicita ao usuário nome de usuário e senha de acesso.
-3. O Usuário digita um nome ou senha inválidos.
-4. O usuário confirma clicando no botão "enviar".
-5. O sistema verifica as informações fornecidas pelo usuário.
-6. O sistema apresenta a frase "login ou senha inválidos, tente novamente".
+
+1. O usuário seleciona a opção "Login"
+2. O sistema solicita ao usuário os dados necessários para login.
+3. O usuário fornece os dados e confirma a operação.
+4. O sistema verifica as informações fornecidas pelo usuário e apresenta a mensagem "login ou senha inválidos, tente novamente".
 
 **Fluxo Alternativo B**
-1. O usuário aperta o botão login.
-2. O sistema solicita ao usuário nome de identificação e senha de acesso.
-3. O Usuário cancela a realização do login pressionando um botão "cancelar", exibido na tela.
+
+1. O usuário seleciona a opção "Login"
+2. O sistema solicita ao usuário os dados necessários para login.
+3. O Usuário cancela o login pressionando o botão "cancelar".
 4. O usuário é redirecionado para a tela de principal.
 
 ### CDU 2 - Fazer logout
@@ -67,17 +67,17 @@
  
 **Fluxo Principal**
 
-1. O usuário aperta o botão "logout"
-2. O programa apresenta um pop UP escrito "tem certeza que deseja fazer logout?" Com duas opções "sim" e "não".
+1. O usuário seleciona a opção "Logout"
+2. O programa apresenta um pop UP com "tem certeza que deseja fazer logout?" e "sim" e "não".
 3. O usuário aperta o botão "sim".
-4. O usuário o pop-up fecha e o usuário é redirecionado para a página principal.
+4. O sistema desloga o usuário.
+5. O pop-up fecha e o usuário é redirecionado para a página principal.
 
 **Fluxo Alternativo A**
 
-1. o usuário aperta o botão  "logout".
-2. O programa apresenta um pop UP escrito "tem certeza que deseja fazer logout?" Com duas opções "sim" e "não".
+1. O usuário seleciona a opção "Logout"
+2. O programa apresenta um pop UP com "tem certeza que deseja fazer logout?" e "sim" e "não".
 3. O usuário aperta o botão "não".
-4. O usuário continua na mesma tela.
 
 
 ### CDU 3 - Realizar Agendamento
@@ -90,13 +90,13 @@
 1. O usuário seleciona opção "Realizar Agendamento". 
 2. O sistema solicita os dados necessários para o realizar um agendamento.
 3. O usuário fornece os dados e confirma a operação.
-4. O sistema verifica se todos os dados foram fornecidos corretamente e em seguida mostra uma mensagem de confirmação.
+4. O sistema verifica os dados e mostra uma mensagem de confirmação.
 
 **Fluxo Alternativo A**
 
 1. O usuário seleciona opção "Realizar Agendamento".
 2. O sistema solicita os dados necessários para o realizar agendamento um cliente.
-3. O usuário não fornece todos os dados necessários.
+3. O usuário não fornece todos os dados necessários e confirma a operação
 4. O sistema apresenta a mensagem "Favor preencher todos os dados corretamente.
 
 ### CDU 4 - Editar agendamentos
