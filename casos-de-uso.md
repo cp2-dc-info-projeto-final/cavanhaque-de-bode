@@ -45,7 +45,7 @@
 6. O sistema faz o login do usuário.
 7. O usuário é redirecionado para a tela de perfil.
 
-![Diagrama de Casos de Uso](Diagramas/Diagramas%20de%20Sequ%C3%AAncia/CDU%201%20-%20Fazer%20Login(Fluxo%20Principal).png)
+![Diagrama de Casos de Uso](Diagramas/Diagramas%20de%20Sequ%C3%AAncia/CDU%201%20-%20Fazer%20Login(Fluxo%20Principal).pngc)
 
 
 **Fluxo Alternativo A**
