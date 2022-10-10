@@ -4,6 +4,12 @@
     if(!isset($_SESSION['cliente'])){
         header('Location: mainpage.php');
     }
+    
+    $id = $_SESSION['cliente'];
+    $sql1 = "SELECT nome, email, senha FROM cliente WHERE id_cliente ='$id'";
+    $rescliente = mysqli_query($mysqli, $sql1);
+    $cliente = mysqli_fetch_array($rescliente);
+    
 ?>
 <html>
     <head>
@@ -25,7 +31,7 @@
                 <div class="d-flex flex-column text-white min-vh-100">
                     <a href="" class="align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                         <i class="fas fa-user fa-xl ms-3 me-3 d-none d-md-inline-block"></i>
-                        <span class="fs-4 fontecdb d-none d-md-inline-block">Olá, Luiz</span>
+                        <span class="fs-4 fontecdb d-none d-md-inline-block">Meu Perfil</span>
                     </a>
                     <hr class="d-none d-md-inline-block">
                     <ul class="nav nav-pills flex-column mb-auto">
@@ -72,11 +78,6 @@
                 <div class="container border border-dark" id="dados">
                     <p class="fs-2">Meus Dados</p>
                     <?php
-                        $id = $_SESSION['cliente'];
-                        $sql1 = "SELECT nome, email, senha FROM cliente WHERE id_cliente ='$id'";
-                        $rescliente = mysqli_query($mysqli, $sql1);
-                        $cliente = mysqli_fetch_array($rescliente);
-                        
                         echo "<p>Nome: ".$cliente["nome"]."</p>";
                         echo "<p>Email: ".$cliente["email"]."</p>";
                     ?>
