@@ -238,19 +238,18 @@
 3. O usuário edita os dados desejados e seleciona "Confirmar".
 4. O sistema confere os dados inseridos e apresenta a mensagem "Serviço Editado com Sucesso". 
 
-**Fluxo Alternativo A**
-
-1. O usuário seleciona a opção "Editar Serviço"
-2. O sistema abrirá uma página com dados editáveis do serviço
-4. O usuário seleciona a opção "Cancelar"
-
 **Fluxo Alternativo B**
 
 2. O usuário seleciona a opção "Editar Serviço"
 4. O sistema abrirá uma página com dados editáveis do serviço.
 5. O usuário seleciona a opção "Excluir"
 6. O sistema exclui o serviço e retorna uma mensagem de confirmação.
+7. 
+**Fluxo Alternativo B**
 
+1. O usuário seleciona a opção "Editar Serviço"
+2. O sistema abrirá uma página com dados editáveis do serviço
+4. O usuário seleciona a opção "Cancelar"
 
 ### CDU 13 - Listar serviços
 
