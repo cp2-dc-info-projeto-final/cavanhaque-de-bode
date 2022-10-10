@@ -10,12 +10,13 @@
  - [CDU 06](#CDU-6---Visualizar-os-clientes-agendados): Visualizar os clientes agendados.
  - [CDU 07](#CDU-7---Cadastrar-funcionários): Cadastrar funcionários.
  - [CDU 08](#CDU-8---Cadastrar-usuário): Cadastrar usuário.
- - [CDU 09](#CDU-11---Editar-Cadastro-de-usuário): Editar Cadastro de usuário.
- - [CDU 010](#CDU-12---Listar-Cadastro-de-usuário): Listar Cadastro de usuário.
- - [CDU 011](#CDU-13---Adicionar-serviço): Adicionar serviço.
- - [CDU 012](#CDU-14---Editar-serviço): Editar serviço.
+ - [CDU 09](#CDU-9---Editar-Cadastro-de-usuário): Editar Cadastro de usuário.
+ - [CDU 010](#CDU-10---Listar-Cadastro-de-usuário): Listar Cadastro de usuário.
+ - [CDU 011](#CDU-11---Adicionar-serviço): Adicionar serviço.
+ - [CDU 012](#CDU-12---Editar-serviço): Editar serviço.
+ - [CDU 013](#CDU-13---Listar-serviços): Listar serviços.
 
-
+# CDU 13 - Listar serviços
 ## Lista dos Atores
 
  - Administrador
@@ -251,7 +252,14 @@
 6. O sistema exclui o serviço e retorna uma mensagem de confirmação.
 
 
+### CDU 13 - Listar serviços
 
+#### Atores
+-Administrador
 
+*Fluxo Principal*
+
+1. O usuário seleciona a opção listar serviços
+2. O sistema apresenta uma lista de serviços
 
 
