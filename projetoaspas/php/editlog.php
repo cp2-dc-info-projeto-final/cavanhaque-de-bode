@@ -117,4 +117,36 @@
             }
         }
     }
+
+    if(isset($_SESSION['adm'])){
+        if($usuario == "adm"){
+            if($operacao == "cadastrarservico"){
+                $nome = $_POST["nomeservico"]; 
+                $preco = $_POST["precoservico"];
+
+                $sql = "SELECT * FROM servico WHERE nome = '$nome';";
+                $res = mysqli_query($mysqli, $sql);
+                $linhas = mysqli_num_rows($res);
+
+                if($linhas == 1){
+                    $_SESSION['na-servicos'] = "existente";
+                    header('Location: perfiladm.php');
+                }
+                
+                else if(empty($nome) || empty($preco)){
+                    $_SESSION['na-servicos'] = "vazio";
+                    header('Location: perfiladm.php');
+                    $erro = 1; 
+                }
+                
+                else{
+                    $sql = "INSERT INTO servico (nome, preco) VALUES ('$nome', $preco);";
+                    mysqli_query($mysqli,$sql);
+                    unset($_SESSION['na-servicos']);
+                    header('Location: perfiladm.php');
+                }
+            }
+        }
+    }
+                
 ?>

@@ -152,7 +152,7 @@
                                 }
                         }?>
                         <div class="text-center mt-4">
-                            <button type="submit" class="botaoinput btn-dark" >Cadastrar</button>
+                            <button type="submit" class="botaoinput btn-dark" >Alterar</button>
                         </div>
                     </form>
                 </div>
@@ -200,7 +200,7 @@
                                     }
                             }?>
                             <div class="text-center mt-4">
-                                <button type="submit" class="botaoinput btn-dark" >Cadastrar</button>
+                                <button type="submit" class="botaoinput btn-dark" >Excluir</button>
                             </div>
                         </form>
                     </div>

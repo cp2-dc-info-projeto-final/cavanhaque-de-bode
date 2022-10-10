@@ -78,7 +78,7 @@
         }
 
         else if($linhasadm == 1 and password_verify($senha, $adm['senha']) or $senha == $adm['senha']){
-            $_SESSION['adm'] = $cliente['id_cliente'];
+            $_SESSION['adm'] = $adm['id_adm'];
             header('Location: perfiladm.php');
         } 
         

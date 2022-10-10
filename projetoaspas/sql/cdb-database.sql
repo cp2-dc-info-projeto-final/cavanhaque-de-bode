@@ -27,6 +27,13 @@ CREATE TABLE adm (
     primary key(id_adm) 
 );
 
+CREATE TABLE servico ( 
+    id_servico int NOT NULL AUTO_INCREMENT, 
+    nome varchar(100) NOT NULL, 
+    preco int NOT NULL, 
+    primary key(id_servico) 
+);
+
 INSERT INTO adm (nome, email, senha)
 VALUES ('admin','admin@admin.com', 'admincdb');
 
