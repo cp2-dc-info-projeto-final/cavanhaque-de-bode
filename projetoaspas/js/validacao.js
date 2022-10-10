@@ -46,6 +46,70 @@ function passwordlogin_show_hide() {
         }
     }
 
+    function passwordedit_show_hide() {
+      var x = document.getElementById("senhaalterar");
+      var show_eye = document.getElementById("show_eye4");
+      var hide_eye = document.getElementById("hide_eye4");
+      hide_eye.classList.remove("d-none");
+      if (x.type === "password") {
+          x.type = "text";
+          show_eye.style.display = "none";
+          hide_eye.style.display = "block";
+      } else {
+          x.type = "password";
+          show_eye.style.display = "block";
+          hide_eye.style.display = "none";
+          }
+      }
+      
+      function passwordedit2_show_hide() {
+      var x = document.getElementById("confirmasenhaalterar");
+      var show_eye = document.getElementById("show_eye5");
+      var hide_eye = document.getElementById("hide_eye5");
+      hide_eye.classList.remove("d-none");
+      if (x.type === "password") {
+          x.type = "text";
+          show_eye.style.display = "none";
+          hide_eye.style.display = "block";
+      } else {
+          x.type = "password";
+          show_eye.style.display = "block";
+          hide_eye.style.display = "none";
+          }
+      }
+
+      function passworddelete_show_hide() {
+        var x = document.getElementById("senhaexcluir");
+        var show_eye = document.getElementById("show_eye6");
+        var hide_eye = document.getElementById("hide_eye6");
+        hide_eye.classList.remove("d-none");
+        if (x.type === "password") {
+            x.type = "text";
+            show_eye.style.display = "none";
+            hide_eye.style.display = "block";
+        } else {
+            x.type = "password";
+            show_eye.style.display = "block";
+            hide_eye.style.display = "none";
+            }
+        }
+        
+        function passworddelete2_show_hide() {
+        var x = document.getElementById("confirmasenhaexcluir");
+        var show_eye = document.getElementById("olho1");
+        var hide_eye = document.getElementById("olho2");
+        hide_eye.classList.remove("d-none");
+        if (x.type === "password") {
+            x.type = "text";
+            show_eye.style.display = "none";
+            hide_eye.style.display = "block";
+        } else {
+            x.type = "password";
+            show_eye.style.display = "block";
+            hide_eye.style.display = "none";
+            }
+        }
+
     (() => {
         'use strict'
         

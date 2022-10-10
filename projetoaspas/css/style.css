@@ -67,3 +67,14 @@ body {
 .brand:hover{
     color: white;
 }
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+.borda{
+    border: 4px;
+    border-radius: 12px;
+}

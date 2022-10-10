@@ -32,16 +32,22 @@
                 <div class="collapse navbar-collapse" id="nav-target">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">
-                                <i class="mt-3 fa-regular fa-user fa-xl"></i>
-                            </a>
-                            <div class="dropdown-menu">
-                                <button type="button" class="botaoentrar btn-dark" data-bs-toggle="modal" data-bs-target="#modallogin">
-                                    Entrar
-                                </button>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalcadastro">Cliente novo? Cadastre-se</a>
-                            </div>
+                            <?php if(isset($_SESSION['cliente']) || isset($_SESSION['funcionario']) || isset($_SESSION['adm'])){
+                                echo "<a class='nav-link' href='perfilcliente.php'>
+                                <i class='mt-3 fas fa-user fa-xl'></i>
+                                </a>";
+                            } else{
+                                echo "<a class='nav-link dropdown-toggle' href=' role='button' data-bs-toggle='dropdown'>
+                                    <i class='mt-3 fa-regular fa-user fa-xl'></i>
+                                </a>
+                                <div class='dropdown-menu'>
+                                    <button type='button' class='botaoentrar btn-dark' data-bs-toggle='modal' data-bs-target='#modallogin'>
+                                        Entrar
+                                    </button>
+                                    <div class='dropdown-divider'></div>
+                                    <a class='dropdown-item' data-bs-toggle='modal' data-bs-target='#modalcadastro'>Cliente novo? Cadastre-se</a>
+                                </div>";
+                            }?>
                         </li>    
                         <li class="nav-item divisorinvisivel d-none d-md-inline"></li>
                         <li class="nav-item">

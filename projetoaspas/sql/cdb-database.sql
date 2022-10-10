@@ -27,11 +27,11 @@ CREATE TABLE adm (
     primary key(id_adm) 
 );
 
-INSERT INTO cliente (nome, email, senha)
-VALUES ('admin','admin@admicavanhaque.com.cdb', 'cdb0108');
+INSERT INTO adm (nome, email, senha)
+VALUES ('admin','admin@admin.com', 'admincdb');
 
 INSERT INTO cliente (nome, email, senha)
 VALUES ('LUIZ','luiz@g.com', '123');
 
-INSERT INTO cliente (nome, email, senha)
-VALUES ('teste','teste@g.com', 'teste');
+INSERT INTO funcionario (nome, email, senha)
+VALUES ('funcionario','fun@g.com', '123');
