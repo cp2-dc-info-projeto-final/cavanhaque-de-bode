@@ -33,7 +33,7 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">
                             <?php if(isset($_SESSION['cliente']) || isset($_SESSION['funcionario']) || isset($_SESSION['adm'])){
-                                echo "<a class='nav-link' href='perfilcliente.php'>
+                                echo "<a class='nav-link' href='perfilredirect.php'>
                                 <i class='mt-3 fas fa-user fa-xl'></i>
                                 </a>";
                             } else{

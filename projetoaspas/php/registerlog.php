@@ -73,7 +73,7 @@
         }
 
         else if($linhasfuncionario == 1 and password_verify($senha, $funcionario['senha']) or $senha == $funcionario['senha']){
-            $_SESSION['funcionario'] = $cliente['id_cliente'];
+            $_SESSION['funcionario'] = $funcionario['id_funcionario'];
             header('Location: perfilfuncionario.php');
         }
 
