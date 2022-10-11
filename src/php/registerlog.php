@@ -43,7 +43,7 @@
             $res = mysqli_query($mysqli,$busca_cliente);
             $cliente = mysqli_fetch_array($res);
             $_SESSION['cliente'] = $cliente['id_cliente'];
-            header('Location: perfil.php');
+            header('Location: perfilcliente.php');
         }
     }
     
