@@ -59,6 +59,26 @@
                     header('Location: perfilcliente.php');
                 }
             }
+            if($operacao == "excluir"){
+                $id = $_SESSION['cliente'];
+                $senha = $_POST["senhaexcluir"];
+                $confirmasenha = $_POST["confirmasenhaexcluir"];
+
+                if($senha != $confirmasenha){
+                    $_SESSION['na-excluir'] = "senhas";
+                    header('Location: perfilcliente.php');
+                }
+                else if(empty($senha) || empty($confirmasenha)){
+                    $_SESSION['na-excluir'] = "vazio";
+                    header('Location: perfilcliente.php');
+                }
+                else{
+                    $sql = "DELETE FROM cliente WHERE id_cliente = $id;";
+                    mysqli_query($mysqli,$sql); 
+                    mysqli_close($mysqli);
+                    header('Location: logout.php');
+                }
+            }
         }
     }
     
