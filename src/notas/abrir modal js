@@ -1,8 +1,0 @@
-Abrir modal com js
-
-<?php if(isset($_SESSION['nao-autenticado'])){
-            echo "<script> var modallogin = new bootstrap.Modal(document.getElementById('modallogin'));
-                    modallogin.show();
-            </script>";
-        }
-        ?>

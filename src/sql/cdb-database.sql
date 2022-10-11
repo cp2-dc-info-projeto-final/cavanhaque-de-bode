@@ -35,13 +35,13 @@ CREATE TABLE servico (
 );
 
 INSERT INTO adm (nome, email, senha)
-VALUES ('admin','admin@admin.com', 'admincdb');
+VALUES ('admin','admin@admin.com', '$2y$10$sN6voC0C.AJvO.yCg.xmU.5knJ3gO6yQmSoizxpt6d.9hXADsXgrW');
 
 INSERT INTO cliente (nome, email, senha)
-VALUES ('LUIZ','luiz@g.com', '123');
+VALUES ('LUIZ','luiz@g.com', '$2y$10$U1CXan5iXUmIVcIXA2.lsO3eqrBek6cDfgs0minJaBsjpw.80AsfG');
 
 INSERT INTO funcionario (nome, email, senha)
-VALUES ('funcionario','fun@g.com', '123');
+VALUES ('funcionario','fun@g.com', '$2y$10$U1CXan5iXUmIVcIXA2.lsO3eqrBek6cDfgs0minJaBsjpw.80AsfG');
 
 INSERT INTO servico (nome, preco)
 VALUES ('servico', 12);

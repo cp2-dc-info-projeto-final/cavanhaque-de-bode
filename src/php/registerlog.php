@@ -50,7 +50,7 @@
     if($operacao == "login"){
 
         $email = mysqli_real_escape_string($mysqli, $_POST["emaillogin"]);
-        $senha = mysqli_real_escape_string($mysqli, $_POST["senhalogin"]);
+        $senha = $_POST["senhalogin"];
 
         $sql1 = "SELECT id_cliente, senha FROM cliente WHERE email = '$email'";
         $rescliente = mysqli_query($mysqli, $sql1);
@@ -67,25 +67,23 @@
         $adm = mysqli_fetch_array($resadm);
         $linhasadm = mysqli_num_rows($resadm);
 
-        if($linhascliente == 1 and password_verify($senha, $cliente['senha']) or $senha == $cliente['senha']){
+        if(password_verify($senha, $cliente['senha']) and $linhasciente == 1){
             $_SESSION['cliente'] = $cliente['id_cliente'];
             header('Location: perfilcliente.php');
         }
 
-        else if($linhasfuncionario == 1 and password_verify($senha, $funcionario['senha']) or $senha == $funcionario['senha']){
+        else if(password_verify($senha, $funcionario['senha']) and $linhasfuncionario == 1){
             $_SESSION['funcionario'] = $funcionario['id_funcionario'];
             header('Location: perfilfuncionario.php');
         }
 
-        else if($linhasadm == 1 and password_verify($senha, $adm['senha']) or $senha == $adm['senha']){
+        else if(password_verify($senha, $adm['senha']) and $linhasadm == 1){
             $_SESSION['adm'] = $adm['id_adm'];
             header('Location: perfiladm.php');
         } 
-        
         else {
             $_SESSION['na-login'] = true;
             header('Location: mainpage.php');
         }
-        
     }
 ?>

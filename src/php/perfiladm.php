@@ -139,7 +139,7 @@
                           <div class="col-6">
                             <div class="input-group mt-4">
                                 <span class="input-group-text"><i class="fas fa-lock"></i></span>
-                                <input type="password" class="form-control" id="senhacadastrocliente" name="senhacadastrocliente" placeholder="Senha" pattern=".{6,}" required>
+                                <input type="password" class="form-control" id="senhacadastrocliente" name="senhacadastrocliente" placeholder="Senha do cliente" pattern=".{6,}" required>
                                 </span> 
                                 <div class="invalid-feedback">
                                     Por favor, preencha este campo (A senha deve conter no minimo 6 caracteres).
@@ -149,7 +149,7 @@
                           <div class="col-6">
                             <div class="input-group mt-4">
                                 <span class="input-group-text"><i class="fas fa-lock"></i></span>
-                                <input type="password" class="form-control" id="confirmasenha" name="confirmasenha" placeholder="Confirme a senha" pattern=".{6,}" required>
+                                <input type="password" class="form-control" id="confirmasenha" name="confirmasenha" placeholder="Confirme a senha do cliente" pattern=".{6,}" required>
                                 </span>
                                 <div class="invalid-feedback">
                                     Por favor, preencha este campo (A senha deve conter no minimo 6 caracteres).
@@ -225,7 +225,7 @@
                           <div class="col-6">
                             <div class="input-group mt-4">
                                 <span class="input-group-text"><i class="fas fa-lock"></i></span>
-                                <input type="password" class="form-control" id="senhacadastrofuncionario" name="senhacadastrofuncionario" placeholder="Senha" pattern=".{6,}" required>
+                                <input type="password" class="form-control" id="senhacadastrofuncionario" name="senhacadastrofuncionario" placeholder="Senha do funcionario" pattern=".{6,}" required>
                                 </span> 
                                 <div class="invalid-feedback">
                                     Por favor, preencha este campo (A senha deve conter no minimo 6 caracteres).
@@ -235,7 +235,7 @@
                           <div class="col-6">
                             <div class="input-group mt-4">
                                 <span class="input-group-text"><i class="fas fa-lock"></i></span>
-                                <input type="password" class="form-control" id="confirmasenha" name="confirmasenha" placeholder="Confirme a senha" pattern=".{6,}" required>
+                                <input type="password" class="form-control" id="confirmasenha" name="confirmasenha" placeholder="Confirme a senha do funcionario" pattern=".{6,}" required>
                                 </span>
                                 <div class="invalid-feedback">
                                     Por favor, preencha este campo (A senha deve conter no minimo 6 caracteres).
