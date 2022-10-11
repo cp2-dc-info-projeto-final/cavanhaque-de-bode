@@ -42,3 +42,6 @@ VALUES ('LUIZ','luiz@g.com', '123');
 
 INSERT INTO funcionario (nome, email, senha)
 VALUES ('funcionario','fun@g.com', '123');
+
+INSERT INTO servico (nome, preco)
+VALUES ('servico', 12);

@@ -147,6 +147,100 @@
                 }
             }
         }
+        if($operacao == "cadastrocliente"){
+            $nome = $_POST["nome"]; 
+            $email = $_POST["emailcadastrocliente"];
+            $senha = $_POST["senhacadastrocliente"];
+            $confirmasenha = $_POST["confirmasenha"];   
+                
+            $sql = "SELECT * FROM cliente WHERE email = '$email';";
+            $res = mysqli_query($mysqli, $sql);
+            $linhas = mysqli_num_rows($res);
+                
+            $erro = 0;
+                
+            if($linhas == 1){
+                $_SESSION['na-cadastrocliente'] = "cadastrocliente";
+                header('Location: perfiladm.php');
+            }
+            else if(strstr($email, '@') == false){
+                $_SESSION['na-cadastrocliente'] = "email";
+                header('Location: perfiladm.php');
+                $erro = 1;
+            }
+            else if(empty($nome) || empty($senha) || empty($confirmasenha) || empty($email)){
+                $_SESSION['na-cadastrocliente'] = "vazio";
+                header('Location: perfiladm.php');
+                $erro = 1; 
+            }
+            else if($senha != $confirmasenha){
+                $_SESSION['na-cadastrocliente'] = "senhas";
+                header('Location: perfiladm.php');
+                $erro = 1; 
+            }
+            else{
+                $senhacripto = password_hash($senha, PASSWORD_DEFAULT);
+                $sql = "INSERT INTO cliente (nome, email, senha) VALUES ('$nome','$email','$senhacripto');";
+                mysqli_query($mysqli,$sql);
+                $busca_cliente = $sql = "SELECT id_cliente FROM cliente WHERE senha = '$senhacripto';";
+                $res = mysqli_query($mysqli,$busca_cliente);
+                $cliente = mysqli_fetch_array($res);
+                $_SESSION['cliente'] = $cliente['id_cliente'];
+                header('Location: perfiladm.php');
+            }
+        }
+        
+        if($operacao == "cadastrofuncionario"){
+            $nome = $_POST["nome"]; 
+            $email = $_POST["emailcadastrofuncionario"];
+            $senha = $_POST["senhacadastrofuncionario"];
+            $confirmasenha = $_POST["confirmasenha"];   
+                
+            $sql = "SELECT * FROM funcionario WHERE email = '$email';";
+            $res = mysqli_query($mysqli, $sql);
+            $linhas = mysqli_num_rows($res);
+                
+            $erro = 0;
+                
+            if($linhas == 1){
+                $_SESSION['na-cadastrofuncionario'] = "cadastrofuncionario";
+                header('Location: perfiladm.php');
+            }
+            else if(strstr($email, '@') == false){
+                $_SESSION['na-cadastrofuncionario'] = "email";
+                header('Location: perfiladm.php');
+                $erro = 1;
+            }
+            else if(empty($nome) || empty($senha) || empty($confirmasenha) || empty($email)){
+                $_SESSION['na-cadastrofuncionario'] = "vazio";
+                header('Location: perfiladm.php');
+                $erro = 1; 
+            }
+            else if($senha != $confirmasenha){
+                $_SESSION['na-cadastrofuncionario'] = "senhas";
+                header('Location: perfiladm.php');
+                $erro = 1; 
+            }
+            else{
+                $senhacripto = password_hash($senha, PASSWORD_DEFAULT);
+                $sql = "INSERT INTO funcionario (nome, email, senha) VALUES ('$nome','$email','$senhacripto');";
+                mysqli_query($mysqli,$sql);
+                $busca_funcionario = $sql = "SELECT id_funcionario FROM funcionario WHERE senha = '$senhacripto';";
+                $res = mysqli_query($mysqli,$busca_funcionario);
+                $funcionario = mysqli_fetch_array($res);
+                $_SESSION['funcionario'] = $funcionario['id_funcionario'];
+                header('Location: perfiladm.php');
+            }
+        }
+        if($operacao == "editservico"){
+            $id = $_POST['id'];
+            $nome = $_POST['nome'];
+            $preco = $_POST['preco'];
+
+            $sql = "UPDATE servico SET nome = '$nome', preco = '$preco' WHERE id_servico = $id;";
+            $res = mysqli_query($mysqli, $sql);
+            header('Location: perfiladm.php');
+        }
     }
                 
 ?>
