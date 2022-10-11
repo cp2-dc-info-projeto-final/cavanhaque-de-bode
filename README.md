@@ -25,4 +25,4 @@ O projeto se trata de um software de agendamentos criado para uma barbearia fict
 
 **Modelagem do Banco de Dados**
 
-![Diagrama de Banco de Dados](diagrama-bd.png)
+![Diagrama de Banco de Dados](Diagramas/Diagrama%20de%20Banco%20de%20Dados/diagrama%20bd%20png.png)
