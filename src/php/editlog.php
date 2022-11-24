@@ -15,10 +15,13 @@
                 $confirmasenha = $_POST["confirmasenhaalterar"];  
                 $id_cliente = $_SESSION['cliente'];
                     
+                $sql = "SELECT * FROM cliente WHERE id_cliente = '$id_cliente';";
+                $busca = mysqli_query($mysqli, $sql);
+                $cliente = mysqli_fetch_array($busca);
+
                 $sql = "SELECT * FROM cliente WHERE email = '$email';";
                 $res = mysqli_query($mysqli, $sql);
                 $linhas1 = mysqli_num_rows($res);
-                $cliente = mysqli_fetch_array($res);
 
                 $sql2 = "SELECT * FROM funcionario WHERE email = '$email';";
                 $res2 = mysqli_query($mysqli, $sql2);
@@ -28,11 +31,11 @@
                 $res3 = mysqli_query($mysqli, $sql3);
                 $linhas3 = mysqli_num_rows($res3);
                 
-                $linhas = $linhas2 + $linhas3;
+                $linhas = $linhas2 + $linhas3 + $linhas1;
 
                 $erro = 0;
                 
-                if($email != $cliente['email'] and $linhas1 ==1){
+                if($email != $cliente['email'] and $linhas >= 1){
                     $_SESSION['na-alterar'] = "alterar";
                     header('Location: perfilcliente.php');
                 }
@@ -47,7 +50,7 @@
                     header('Location: perfilcliente.php');
                     $erro = 1; 
                 }
-                else if($senha != $confirmasenha){
+                else if($senha != $confirmasenha || password_verify($senha, $cliente['senha']) == false){
                     $_SESSION['na-alterar'] = "senhas";
                     header('Location: perfilcliente.php');
                     $erro = 1; 
@@ -90,13 +93,16 @@
                 $senha = $_POST["senhaalterar"];
                 $confirmasenha = $_POST["confirmasenhaalterar"];  
                 $id_funcionario = $_SESSION['funcionario'];
-                    
+                
+                $sql = "SELECT * FROM funcionario WHERE id_funcionario = '$id_funcionario';";
+                $busca = mysqli_query($mysqli, $sql);
+                $funcionario = mysqli_fetch_array($busca);
+
                 $sql = "SELECT * FROM funcionario WHERE email = '$email';";
                 $res = mysqli_query($mysqli, $sql);
                 $linhas1 = mysqli_num_rows($res);
-                $funcionario = mysqli_fetch_array($res);
 
-                $sql2 = "SELECT * FROM funcionario WHERE email = '$email';";
+                $sql2 = "SELECT * FROM cliente WHERE email = '$email';";
                 $res2 = mysqli_query($mysqli, $sql2);
                 $linhas2 = mysqli_num_rows($res2);
 
@@ -104,11 +110,11 @@
                 $res3 = mysqli_query($mysqli, $sql3);
                 $linhas3 = mysqli_num_rows($res3);
                 
-                $linhas = $linhas2 + $linhas3;
+                $linhas = $linhas2 + $linhas3 + $linhas1;
 
                 $erro = 0;
                 
-                if($email != $funcionario['email'] and $linhas1 ==1){
+                if($email != $funcionario['email'] and $linhas >= 1){
                     $_SESSION['na-alterar'] = "alterar";
                     header('Location: perfilfuncionario.php');
                 }
@@ -123,7 +129,7 @@
                     header('Location: perfilfuncionario.php');
                     $erro = 1; 
                 }
-                else if($senha != $confirmasenha){
+                else if($senha != $confirmasenha || password_verify($senha, $funcionario['senha']) == false){
                     $_SESSION['na-alterar'] = "senhas";
                     header('Location: perfilfuncionario.php');
                     $erro = 1; 

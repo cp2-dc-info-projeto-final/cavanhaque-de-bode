@@ -33,11 +33,18 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">
                             <?php if(isset($_SESSION['cliente']) || isset($_SESSION['funcionario']) || isset($_SESSION['adm'])){
-                                echo "<a class='nav-link' href='perfilredirect.php'>
-                                <i class='mt-3 fas fa-user fa-xl'></i>
-                                </a>";
-                            } else{
                                 echo "<a class='nav-link dropdown-toggle' href=' role='button' data-bs-toggle='dropdown'>
+                                    <i class='mt-3 fas fa-user fa-xl'></i>
+                                </a>
+                                <div class='dropdown-menu'>
+                                    <a role='button' class='botaoentrar btn-dark' href='perfilredirect.php'>
+                                        Meu Perfil
+                                    </a>
+                                    <div class='dropdown-divider'></div>
+                                    <a class='dropdown-item' href='logout.php'>Sair</a>
+                                </div>";
+                            } else{
+                                echo "<a class='nav-link dropdown-toggle role='button' data-bs-toggle='dropdown'>
                                     <i class='mt-3 fa-regular fa-user fa-xl'></i>
                                 </a>
                                 <div class='dropdown-menu'>

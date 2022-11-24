@@ -277,8 +277,8 @@
                             echo "<p class='fs-4'>servico ".$servico['id_servico']."</p>";
                             echo "Nome: ".$servico["nome"]."<br>";
                             echo "Preço: R$".$servico["preco"]."<br>";
-                            echo "<a href='alterar-excluir.php?id=".$servico['id_servico']."'>Editar </a>";
-                            echo "<a href='alterar-excluir.php?excluir-servico-id=".$servico['id_servico']."'>&nbsp Excluir</a><br><input type='hidden' name='operacao' value='excluir'>";
+                            echo "<a href='alterar-excluir-adm.php?id=".$servico['id_servico']."'>Editar </a>";
+                            echo "<a href='alterar-excluir-adm.php?excluir-servico-id=".$servico['id_servico']."'>&nbsp Excluir</a><br><input type='hidden' name='operacao' value='excluir'>";
                             echo "------------------------------------------------------<br>";
                            }                    
                     ?>

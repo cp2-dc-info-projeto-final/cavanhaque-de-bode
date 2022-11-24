@@ -28,7 +28,7 @@
     <div class="container-fluid">
         <div class="row flex-nowrap">
             <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
-                <div class="d-flex flex-column text-white min-vh-100">
+                <div class="d-flex flex-column text-white min-vh-100 sticky-top">
                     <a href="" class="align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                         <i class="fas fa-user fa-xl ms-3 me-3 d-none d-md-inline-block"></i>
                         <span class="fs-4 fontecdb d-none d-md-inline-block">Meu Perfil</span>
@@ -91,7 +91,7 @@
                             <div class="form-group col">
                                 <div class="input-group mt-2">
                                     <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
-                                    <input type="text" class="form-control" id="nome" name="nome" value=<?php echo$cliente['nome'];?> required>
+                                    <input type="text" class="form-control" id="nome" name="nome" value="<?php echo$cliente['nome'];?>" required>
                                     <div class="invalid-feedback">
                                         Por favor, preencha este campo.
                                     </div>
@@ -100,7 +100,7 @@
                             <div class="form-group col">
                                 <div class="input-group mt-4">
                                     <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                                    <input type="email" class="form-control" id="emailalterar" name="emailalterar" value=<?php echo$cliente['email'];?> required>
+                                    <input type="email" class="form-control" id="emailalterar" name="emailalterar" value="<?php echo$cliente['email'];?>" required>
                                     <div class="invalid-feedback">
                                         Por favor, preencha seu email.
                                     </div>
@@ -144,7 +144,7 @@
                                     echo "<div class='alert alert-danger mt-3' id='alert' class='mr-auto'>Digite seu email corretamente.</div>";
                                     break;
                                 case "senhas";    
-                                    echo "<div class='alert alert-danger mt-3' id='alert' class='mr-auto'>Verifique se as senhas são iguais.</div>";
+                                    echo "<div class='alert alert-danger mt-3' id='alert' class='mr-auto'>Senha incorreta.</div>";
                                     break;
                                 case "vazio";    
                                     echo "<div class='alert alert-danger mt-3' id='alert' class='mr-auto'>Preencha todos os campos.</div>";
