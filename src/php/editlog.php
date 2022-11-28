@@ -35,12 +35,7 @@
 
                 $erro = 0;
                 
-                if($email != $cliente['email'] and $linhas >= 1){
-                    $_SESSION['na-alterar'] = "alterar";
-                    header('Location: perfilcliente.php');
-                }
-                
-                else if(strstr($email, '@') == false){
+                if(strstr($email, '@') == false){
                     $_SESSION['na-alterar'] = "email";
                     header('Location: perfilcliente.php');
                     $erro = 1;
@@ -55,6 +50,11 @@
                     header('Location: perfilcliente.php');
                     $erro = 1; 
                 }
+                else if($email != $cliente['email'] and $linhas >= 1){
+                    $_SESSION['na-alterar'] = "alterar";
+                    header('Location: perfilcliente.php');
+                }
+                
                 else{
                     $sql = "UPDATE cliente SET nome = '$nome', email = '$email' WHERE id_cliente = $id_cliente;";
                     mysqli_query($mysqli,$sql);
@@ -114,12 +114,7 @@
 
                 $erro = 0;
                 
-                if($email != $funcionario['email'] and $linhas >= 1){
-                    $_SESSION['na-alterar'] = "alterar";
-                    header('Location: perfilfuncionario.php');
-                }
-
-                else if(strstr($email, '@') == false){
+                if(strstr($email, '@') == false){
                     $_SESSION['na-alterar'] = "email";
                     header('Location: perfilfuncionario.php');
                     $erro = 1;
@@ -134,6 +129,11 @@
                     header('Location: perfilfuncionario.php');
                     $erro = 1; 
                 }
+                else if($email != $funcionario['email'] and $linhas >= 1){
+                    $_SESSION['na-alterar'] = "alterar";
+                    header('Location: perfilfuncionario.php');
+                }
+
                 else{
                     $sql = "UPDATE funcionario SET nome = '$nome', email = '$email' WHERE id_funcionario = $id_funcionario;";
                     mysqli_query($mysqli,$sql);

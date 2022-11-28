@@ -138,7 +138,7 @@
                         <?php if(isset($_SESSION['na-alterar'])){
                             switch($_SESSION['na-alterar']){
                                 case "alterar":
-                                    echo "<div class='alert alert-danger mt-3' id='alert' class='justify-content-center'>Este endereço de email já esta sendo utiizado.</div>";
+                                    echo "<div class='alert alert-danger mt-3' id='alert' class='justify-content-center'>Este endereço de email já esta sendo utilizado.</div>";
                                     break;
                                 case "email";
                                     echo "<div class='alert alert-danger mt-3' id='alert' class='mr-auto'>Digite seu email corretamente.</div>";

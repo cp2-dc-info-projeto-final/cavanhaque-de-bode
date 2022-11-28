@@ -111,6 +111,7 @@
                             </div>
                         </div>
                         </div>
+                        <a href="recuperar-senha.php" class="blue-text">Esqueceu sua senha?</a>
                         <?php if(isset($_SESSION['na-login'])){
                             echo "<div class='alert alert-danger mt-3' id='alert' class='mr-auto'>Login inválido.</div>";
                         }?>
