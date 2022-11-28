@@ -241,7 +241,7 @@
 3. O usuário edita os dados desejados e seleciona "Confirmar".
 4. O sistema confere os dados inseridos e apresenta a mensagem "Serviço Editado com Sucesso". 
 
-**Fluxo Alternativo B**
+**Fluxo Alternativo A**
 
 2. O usuário seleciona a opção "Editar Serviço"
 4. O sistema abrirá uma página com dados editáveis do serviço.
@@ -263,5 +263,54 @@
 
 1. O usuário seleciona a opção listar serviços
 2. O sistema apresenta uma lista de serviços
+
+### CDU 14 - Disponibilizar horário
+
+#### Atores
+-Administrador
+
+**Fluxo Principal**
+
+1.Usuário seleciona a opção "Grande Horaria".
+2.Usuário seleciona um funcionário.
+3.Sistema exibe calendário do funcionário.
+4.O usuário preenche os dados com os dados necessários.
+5.O Horário é armazenado e o sistema exibe uma mensagem de confirmação
+
+
+### CDU 14 - Disponibilizar horário
+
+#### Atores
+- Administrador
+
+**Fluxo Principal**
+
+1.Usuário seleciona a opção "Grande Horaria".
+2.Usuário seleciona um funcionário.
+3.Sistema exibe calendário do funcionário.
+4.O usuário preenche os dados com os dados necessários.
+5.O Horário é armazenado e o sistema exibe uma mensagem de confirmação
+
+**Fluxo Alternativo B**
+
+1.Usuário seleciona a opção "Grande Horaria".
+2.Usuário seleciona um funcionário.
+3.Sistema exibe calendário do funcionário.
+4.O usuário preenche os dados com horários indisponíveis.
+5.o sistema exibe a mensagem "horário indisponível" e retorna para tela inicial 
+
+### CDU 15 - Visualizar agendamento 
+
+#### Atores
+- Administrador
+- Funcionário
+- Cliente
+
+**Fluxo Principal**
+
+1. O usuário seleciona a opção "Perfil"
+2. O usuário seleciona a opção "agendamento"
+3. O sistema apresenta todos os horários agendados por este perfil  
+
 
 
