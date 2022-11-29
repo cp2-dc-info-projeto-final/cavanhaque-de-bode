@@ -308,9 +308,8 @@
 
 **Fluxo Principal**
 
-1. O usuário seleciona a opção "recuperar senha"
-2. O sistema abrirá uma página com dados editáveis de nome e senha.
-3. O usuário edita os dados desejados e seleciona "Confirmar".
-4. O sistema confere os dados inseridos e apresenta a mensagem "senha modificada com Sucesso". 
-
+1. O usuário seleciona a opção "Esqueceu sua senha "
+2. O sistema abrirá um Pop-up com a frase digite o e-mail de recuperação.
+3. O usuário digita os dados desejados e seleciona "Confirmar".
+4. O sistema armazena os dados e envia o código de confirmação para o e-mail do usuário". 
 
