@@ -1,5 +1,8 @@
 <?php 
     session_start();
+    if((!isset($_SESSION['usuario']))){
+        header('Location: mainpage.php');
+    }
 ?>
 <html lang="pt-br">
     <head>
@@ -21,26 +24,25 @@
         </div>
         <div class="card-body">
             <div>
-                Digite seu email:
+                Digite o código que foi enviado para seu email:
             </div>
             <form action="envia-codrec.php" method="POST" class="needs-validation"  novalidate>
                 <div class="input-group mt-2">
-                    <input type="hidden" name="operacao" value="enviar-email">
-                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                    <input type="email" class="form-control" id="emailrec" name="emailrec" placeholder="Email" required>
+                    <span class="input-group-text"><i class="fas fa-qrcode"></i></span>
+                    <input type="hidden" name="operacao" value="enviar-codigo">
+                    <input type="text" class="form-control" id="codigo" name="codigo" placeholder="Código" required  pattern="[0-9]{6}">
                     <div class="invalid-feedback">
-                        Por favor, preencha seu email.
+                        Preencha o código de 6 digitos
                     </div>
                 </div>
-                <?php if(isset($_SESSION["erro-rec"])){echo "<div class=alert alert-danger mt-3' id='alert' class='mr-auto'>Email não cadastrado.</div>";}
-                unset($_SESSION["erro-rec"])?> 
+                <?php if(isset($_SESSION["erro-rec"])){echo "<div class='alert alert-danger mt-3' id='alert' class='mr-auto'>Código incorreto.</div>"; unset($_SESSION["erro-rec"]);}?> 
                 <div>
-                    <button type="submit" class="btn-dark mt-5">Enviar código para recuperação</button>
+                    <button type="submit" class="btn-dark mt-5">Prosseguir</button>
                 </div>
             </form>
         </div>
         <div class="card-footer">
-            <a href="mainpage.php">Voltar</a>
+            <a href="recuperar-senha.php">Voltar</a>
         </div>
     </div>
     <script src="../js/validacao.js"></script>

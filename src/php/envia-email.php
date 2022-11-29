@@ -22,7 +22,8 @@ function envia_email($para, $assunto, $mensagem){
         $mail->Username   = 'supcavanhaque@gmail.com';                     //SMTP username
         $mail->Password   = 'tdnxkllyjdhpkmqd';                               //SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-        $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+        $mail->Port       = 465;  
+        $mail->CharSet    = 'UTF-8';                              //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
         //Recipients
         $mail->setFrom('supcavanhaque@gmail.com', 'Suporte Barbearia CDB');

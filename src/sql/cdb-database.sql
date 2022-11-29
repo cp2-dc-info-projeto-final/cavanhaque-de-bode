@@ -31,7 +31,15 @@ CREATE TABLE servico (
     id_servico int NOT NULL AUTO_INCREMENT, 
     nome varchar(100) NOT NULL, 
     preco int NOT NULL, 
-    primary key(id_servico) 
+    primary key(id_servico)
+);
+
+CREATE TABLE codigos (
+    codigo_id int NOT NULL  AUTO_INCREMENT,
+    codigo_rec int NOT NULL,
+    id_usuario int NOT NULL,
+    role_usuario varchar(15),
+    PRIMARY KEY(codigo_id)
 );
 
 INSERT INTO adm (nome, email, senha)

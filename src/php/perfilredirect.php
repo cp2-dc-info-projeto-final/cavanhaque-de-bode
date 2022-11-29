@@ -1,9 +1,6 @@
 <?php
     session_start();
     
-    if(!isset($_SESSION['adm'])){
-        header('Location: mainpage.php');
-    }
     if(isset($_SESSION['cliente'])){
         header('Location: perfilcliente.php');
     }
