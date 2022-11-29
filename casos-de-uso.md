@@ -267,20 +267,6 @@
 ### CDU 14 - Disponibilizar horário
 
 #### Atores
--Administrador
-
-**Fluxo Principal**
-
-1.Usuário seleciona a opção "Grande Horaria".
-2.Usuário seleciona um funcionário.
-3.Sistema exibe calendário do funcionário.
-4.O usuário preenche os dados com os dados necessários.
-5.O Horário é armazenado e o sistema exibe uma mensagem de confirmação
-
-
-### CDU 14 - Disponibilizar horário
-
-#### Atores
 - Administrador
 
 **Fluxo Principal**
@@ -291,7 +277,7 @@
 4.O usuário preenche os dados com os dados necessários.
 5.O Horário é armazenado e o sistema exibe uma mensagem de confirmação
 
-**Fluxo Alternativo B**
+**Fluxo Alternativo A**
 
 1.Usuário seleciona a opção "Grande Horaria".
 2.Usuário seleciona um funcionário.
