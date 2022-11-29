@@ -268,5 +268,35 @@
             header('Location: perfiladm.php');
         }
     }
+    if($operacao == "recuperar-senha"){
+        $senha = $_POST["senhaalterar"];
+        $confirmasenha = $_POST["confirmasenha"]; 
+        $email = $_SESSION['usuario'];
+        $id_usuario = $_SESSION['id_usuario'];
+        $role = $_SESSION['role-usuario'];
+
+        $id = "id_"."$role";
+
+        if($senha != $confirmasenha){
+            $_SESSION['erro-redefinir'] = true;
+            header('Location: redefinir-senha.php');
+        }
+        else{
+            $senhacripto = password_hash($senha, PASSWORD_DEFAULT);
+            $sql = "UPDATE $role SET senha = '$senhacripto' WHERE $id = $id_usuario AND email = '$email';";
+            $res = mysqli_query($mysqli, $sql);
+            if($role == "cliente"){
+                $_SESSION["cliente"] = true;
+            }
+            else if($role == "funcionario"){
+                $_SESSION["funcionario"] = true;
+            }
+            else if($role == "adm"){
+                $_SESSION["adm"] = true;
+            }
+            header('Location: perfilredirect.php');
+        }
+    }
+
                 
 ?>

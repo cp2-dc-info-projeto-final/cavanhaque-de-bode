@@ -308,11 +308,14 @@
 
 **Fluxo Principal**
 
-1. O usuário seleciona a opção "Esqueceu sua senha "
+1. O usuário seleciona a opção "Esqueceu sua senha".
 2. O sistema abrirá um Pop-up com a frase digite o e-mail de recuperação.
-3. O usuário digita os dados desejados e seleciona "enviar código para confirmação".
-4. O sistema armazena os dados e envia o código de confirmação para o e-mail do usuário".
+3. O usuário digita o email de recuperação e seleciona "Enviar código para confirmação".
+4. O sistema envia o código de confirmação e o usuário o recebe em seu email.
 5. O sistema abrirá um Pop-up com a frase digite "Digite o código que foi enviado para seu e-mail"
-6. O usuário digita os dados desejados e seleciona "Prosseguir".
+6. O usuário digita o código de confirmação e seleciona "Prosseguir".
+7. O sistema abrirá um Pop-up solicitando uma nova senha e uma confirmação da mesma.
+8. O usuário digitará a senha desejada.
+9. O sistema confere os dados inseridos e apresenta a mensagem "Senha Editada com Sucesso". 
 
 
