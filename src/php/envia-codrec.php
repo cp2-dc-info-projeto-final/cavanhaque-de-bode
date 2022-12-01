@@ -33,7 +33,7 @@
         }
         else{
             $_SESSION["erro-rec"] = true;
-            header("Location: recupera-senha.php");
+            header("Location: recuperar-senha.php");
         }
         
         $id = "id_"."$role";
