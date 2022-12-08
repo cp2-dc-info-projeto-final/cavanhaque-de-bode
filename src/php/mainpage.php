@@ -37,8 +37,8 @@
                                     <i class='mt-3 fas fa-user fa-xl'></i>
                                 </a>
                                 <div class='dropdown-menu'>
-                                    <a role='button' class='botaoentrar btn-dark' href='perfilredirect.php'>
-                                        Meu Perfil
+                                    <a role='button' class='botaoentrar btn-dark me-4' href='perfilredirect.php'>
+                                        Perfil
                                     </a>
                                     <div class='dropdown-divider'></div>
                                     <a class='dropdown-item' href='logout.php'>Sair</a>

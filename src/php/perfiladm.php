@@ -94,7 +94,7 @@
                     ?>
                 </div>
                 <div class="col py-3">
-                <div class="container border border-dark" id="dados">
+                <div class="container border border-dark" id="clientes">
                     <p class="fs-2">Clientes cadastrados</p>
                     <p>------------------------------------------------------</p>
                     <?php
@@ -111,7 +111,7 @@
                     ?>
                 </div>
                 <div class="col py-3">
-                    <div class="container border border-dark" id="dados">
+                    <div class="container border border-dark">
                     <p class="fs-2">Cadastrar cliente</p>
                     <form action="editlog.php" method="POST" class="needs-validation" novalidate>
                         <input type="hidden" name="operacao" value="cadastrocliente">
