@@ -70,13 +70,12 @@
                         </li>
                         <li class="nav-item divisor d-none d-md-inline"></li>
                         <li class="nav-item">
-                            <a href="" class="linknav nav-link"> AGENDAMENTO </a>
+                            <a href="agendamento.php" class="linknav nav-link"> AGENDAMENTO </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-
         <div class="modal fade" id="modallogin" tabindex="-1" aria-labelledby="modalloginlabel" aria-hidden="true">
             <div class="modal-dialog modal-sm">
               <div class="modal-content">

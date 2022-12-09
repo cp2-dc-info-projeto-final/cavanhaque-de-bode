@@ -42,6 +42,21 @@ CREATE TABLE codigos (
     PRIMARY KEY(codigo_id)
 );
 
+CREATE TABLE agendamento (
+    id_agendamento int NOT NULL AUTO_INCREMENT,
+    id_cliente int NOT NULL,
+    id_funcionario int NOT NULL,
+    id_servico int NOT NULL,
+    horario TIME NOT NULL,
+    data_agendamento DATE NOT NULL,
+    PRIMARY KEY (id_agendamento),
+    FOREIGN KEY (id_funcionario) REFERENCES funcionario(id_funcionario),
+    FOREIGN KEY (id_servico) REFERENCES servico(id_servico),
+    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente)
+);
+
+
+
 INSERT INTO adm (nome, email, senha)
 VALUES ('admin','admin@admin.com', '$2y$10$sN6voC0C.AJvO.yCg.xmU.5knJ3gO6yQmSoizxpt6d.9hXADsXgrW');
 
