@@ -39,7 +39,7 @@
 
 **Fluxo Principal**
 
-1. O usuário seleciona a opção "Login".
+1. O usuário seleciona a opção "Entrar".
 2. O sistema solicita ao usuário os dados necessários para login.
 3. O usuário fornece os dados e confirma a operação.
 5. O sistema verifica as informações fornecidas pelo usuário.
@@ -51,16 +51,16 @@
 
 **Fluxo Alternativo A**
 
-1. O usuário seleciona a opção "Login"
+1. O usuário seleciona a opção "Entrar"
 2. O sistema solicita ao usuário os dados necessários para login.
 3. O usuário fornece os dados e confirma a operação.
-4. O sistema verifica as informações fornecidas pelo usuário e apresenta a mensagem "login ou senha inválidos, tente novamente".
+4. O sistema verifica as informações fornecidas pelo usuário e apresenta a mensagem "login inválido".
 
 **Fluxo Alternativo B**
 
-1. O usuário seleciona a opção "Login"
+1. O usuário seleciona a opção "Entrar"
 2. O sistema solicita ao usuário os dados necessários para login.
-3. O Usuário cancela o login pressionando o botão "cancelar".
+3. O Usuário cancela o login pressionando o botão "X".
 4. O usuário é redirecionado para a tela de principal.
 
 ### CDU 2 - Fazer logout
@@ -73,17 +73,8 @@
 **Fluxo Principal**
 
 1. O usuário seleciona a opção "Logout"
-2. O programa apresenta um pop UP com "tem certeza que deseja fazer logout?" e "sim" e "não".
-3. O usuário aperta o botão "sim".
-4. O sistema desloga o usuário.
-5. O pop-up fecha e o usuário é redirecionado para a página principal.
-
-**Fluxo Alternativo A**
-
-1. O usuário seleciona a opção "Logout"
-2. O programa apresenta um pop UP com "tem certeza que deseja fazer logout?" e "sim" e "não".
-3. O usuário aperta o botão "não".
-
+2. O sistema desloga o usuário.
+3. O usuário é redirecionado para a página principal.
 
 ### CDU 3 - Realizar Agendamento
 
@@ -92,17 +83,17 @@
  
 **Fluxo Principal**
 
-1. O usuário seleciona opção "Realizar Agendamento". 
-2. O sistema solicita os dados necessários para o realizar um agendamento.
+1. O usuário seleciona opção "Agendamento". 
+2. O sistema solicita os dados necessários para realizar um agendamento.
 3. O usuário fornece os dados e confirma a operação.
 4. O sistema verifica os dados e mostra uma mensagem de confirmação.
 
 **Fluxo Alternativo A**
 
-1. O usuário seleciona opção "Realizar Agendamento".
-2. O sistema solicita os dados necessários para o realizar agendamento um cliente.
+1. O usuário seleciona opção "Agendamento".
+2. O sistema solicita os dados necessários para realizar agendamento .
 3. O usuário não fornece todos os dados necessários e confirma a operação
-4. O sistema apresenta a mensagem "Favor preencher todos os dados corretamente.
+4. O sistema apresenta a mensagem "Selecione uma das opções".
 
 ### CDU 4 - Editar agendamentos
 
@@ -132,7 +123,7 @@
 3. Caso Negativo, o sistema bloqueará o acesso do usuário a edição de agendamento.
 
 
-### CDU 6 - Listar Agendamentos
+### CDU 5 - Listar Agendamentos
 
 #### Atores
  - Administrador
@@ -143,44 +134,45 @@
 1. O usuário seleciona a opção "Listar agendamentos"
 2. O sistema apresentará uma lista com todos os agendamentos realizados.
 
-### CDU 7 - Cadastrar funcionário
+### CDU 6 - Cadastrar funcionário
 
 #### Atores
  - Administrador
  
 **Fluxo Principal**
 
-1. O usuário seleciona a opção "Cadastrar Funcionário"
+1. O usuário seleciona a opção "Funcionários"
 2. O sistema solicita os dados necessários para o cadastro de um funcionário. 
 3. O usuário fornece os dados e confirma a operação.
-4. O sistema verifica se todos os dados foram fornecidos corretamente e em seguida mostra uma mensagem de confirmação.
+4. O sistema verifica se todos os dados foram fornecidos corretamente e cadastra o funcionario no sistema.
 
-**Fluxo Alternativo A** 
-
-1. O usuário seleciona a opção "Cadastrar Funcionário".
-2. O usuário seleciona o botão "Cancelar".
-3. O usuário é redirecionado para a tela de perfil.
-
-
-### CDU 8 - Cadastrar cliente
+### CDU 7 - Cadastrar cliente
 
 #### Atores
+ - Administrador
  - Cliente
-
 **Fluxo Principal**
 
-1. O usuário seleciona a opção "Fazer Cadastro".
+1. O usuário seleciona a opção "cadastre-se".
 2. O sistema solicita os dados necessários para o cadastro. 
 3. O usuário fornece os dados e confirma a operação.
-4. O sistema verifica se todos foram fornecidos e em seguida mostra uma mensagem de confirmação.
+4. O sistema verifica se todos os dados foram fornecidos e cadastra o usuario .
+5. O usuário é redirecionado para a tela de perfil.
 
 **Fluxo Alternativo A** 
 
-1. O usuário seleciona a opção fazer cadastro.
-2. O Usuário cancela a realização do cadastro pressionando um botão "cancelar", exibido na tela.
-3. O usuário é redirecionado para a tela de perfil.
+1. O usuário seleciona a opção "cadastre-se"
+2. O Usuário cancela a realização do cadastro pressionando um botão "X", exibido na tela.
+3. O usuário é redirecionado para a tela principal.
 
-### CDU 9 - Editar Cadastro de usuário
+**Fluxo Alternativo B**
+
+1. O usuário seleciona a opção "cadastre-se".
+2. O sistema solicita os dados necessários para o cadastro. 
+3. O usuário fornece os dados incorretamente e confirma a operação.
+4. O sistema verifica se todos os dados foram fornecidos e apresenta uma mensagem de erro .
+
+### CDU 8 - Editar Cadastro de usuário
 
 #### Atores
 - Administrador
@@ -188,30 +180,31 @@
 
 **Fluxo Principal**
 
-1. O usuário seleciona a opção "Editar Cadastro".
-2. O sistema abrirá uma página com dados editáveis de seu cadastro.
-3. O usuário edita os dados desejados e seleciona "Confirmar".
-4. O sistema confere os dados inseridos e apresenta a mensagem "Cadastro Editado com Sucesso".
+1. O usuário seleciona a opção "Editar dados".
+2. O sistema apresentara um bloco com os dados editáveis de seu cadastro.
+3. O usuário edita os dados desejados e seleciona "Alterar".
+4. O sistema confere os dados inseridos e altera o cadastro.
+
 
 **Fluxo Alternativo A**
 
-1. O usuário seleciona a opção "Editar cadastro".
-2. O sistema abrirá uma página com dados editáveis de seu cadastro.
+1. O usuário seleciona a opção "Excluir conta".
+2. O sistema apresentara um bloco exigindo a senha e sua confirmaçao.
 3. O usuário seleciona o botão "Excluir".
-4. O sistema exclui o cadastro e retorna uma mensagem de confirmação.
+4. O sistema exclui o cadastro e redireciona o usuario para a tela principal.
 
 
-### CDU 10 - Listar Cadastro de usuário
+### CDU 9 - Listar Cadastro de usuário
 
 #### Atores
 -Administrador
 
 **Fluxo Principal**
 
-1. O usuário seleciona a opção listar usuarios.
+1. O usuário seleciona a opção clientes.
 2. O sistema apresenta uma lista de usuarios cadastrados.
 
-### CDU 11 - Adicionar serviço
+### CDU 10 - Adicionar serviço
 
 #### Atores
 -Administrador
@@ -219,53 +212,48 @@
 **Fluxo Principal**
 
 
-1. O usuário seleciona a opção "Adicionar Serviço".
-2. O sistema requisita os dados necessários para adicionar um serviço.
+1. O usuário seleciona a opção "Serviços".
+2. O sistema solicita os dados necessários para adicionar um serviço.
 3. O usuário preenche os dados com os dados necessários.
-4. O serviço é armazenado e o sistema exibe uma mensagem de confirmaçao.
+4. O serviço é armazenado no sistema.
 
 **Fluxo Alternativo A**
 
 1. O usuário seleciona a opção "Adicionar Serviço".
-2. O sistema requisita os dados necessários para adicionar um serviço.
-3. O usuário seleciona a opção "Cancelar"
+2. O sistema solicita os dados necessários para adicionar um serviço.
+3. O usuário fornece os dados incorretamente e confirma a operação.
+4. O sistema verifica se todos os dados foram fornecidos e apresenta uma mensagem de erro.
 
-### CDU 12 - Editar serviço
+
+### CDU 11 - Editar serviço
 
 #### Atores
 -Administrador
 
 **Fluxo Principal**
-
-1. O usuário seleciona a opção "Editar Serviço"
-2. O sistema abrirá uma página com dados editáveis do serviço.
-3. O usuário edita os dados desejados e seleciona "Confirmar".
-4. O sistema confere os dados inseridos e apresenta a mensagem "Serviço Editado com Sucesso". 
+1. O usuário seleciona a opção "Serviços".
+2. O usuário seleciona a opção "Editar"
+3. O sistema abrirá uma página com dados editáveis do serviço.
+4. O usuário edita os dados desejados e seleciona "Editar".
+5. O sistema confere os dados inseridos e edita o serviço
+6. O usuario é redirecionado para tela de perfil. 
 
 **Fluxo Alternativo A**
+1. O usuário seleciona a opção "Serviços".
+2. O usuário seleciona a opção "Excluir".
+3. O sistema exclui o serviço.
 
-1. O usuário seleciona a opção "Editar Serviço"
-2. O sistema abrirá uma página com dados editáveis do serviço.
-3. O usuário seleciona a opção "Excluir"
-4. O sistema exclui o serviço e retorna uma mensagem de confirmação.
-
-**Fluxo Alternativo B**
-
-1. O usuário seleciona a opção "Editar Serviço"
-2. O sistema abrirá uma página com dados editáveis do serviço
-3. O usuário seleciona a opção "Cancelar"
-
-### CDU 13 - Listar serviços
+### CDU 12 - Listar serviços
 
 #### Atores
 -Administrador
 
 **Fluxo Principal**
 
-1. O usuário seleciona a opção listar serviços
+1. O usuário seleciona a opção "Serviços".
 2. O sistema apresenta uma lista de serviços
 
-### CDU 14 - Disponibilizar horário
+### CDU 13 - Disponibilizar horário
 
 #### Atores
 - Administrador
@@ -286,7 +274,7 @@
 4. O usuário preenche os dados com horários indisponíveis.
 5. o sistema exibe a mensagem "horário indisponível" e retorna para tela inicial 
 
-### CDU 15 - Visualizar agendamento 
+### CDU 14 - Visualizar agendamento 
 
 #### Atores
 - Administrador
@@ -299,7 +287,7 @@
 2. O usuário seleciona a opção "agendamento"
 3. O sistema apresenta todos os horários agendados por este perfil  
 
-### CDU 16 - Recuperar Senha
+### CDU 15 - Recuperar Senha
 
 #### Atores
 - Administrador
@@ -309,13 +297,11 @@
 **Fluxo Principal**
 
 1. O usuário seleciona a opção "Esqueceu sua senha".
-2. O sistema abrirá um Pop-up com a frase digite o e-mail de recuperação.
-3. O usuário digita o email de recuperação e seleciona "Enviar código para confirmação".
+2. O sistema abrirá uma pagina solicitando e-mail de recuperação.
+3. O usuário digita o email de recuperação e seleciona "Enviar código para recuperaçao".
 4. O sistema envia o código de confirmação e o usuário o recebe em seu email.
-5. O sistema abrirá um Pop-up com a frase digite "Digite o código que foi enviado para seu e-mail"
+5. O sistema abrirá uma pagina solicitando código de recuperaçao.
 6. O usuário digita o código de confirmação e seleciona "Prosseguir".
 7. O sistema abrirá um Pop-up solicitando uma nova senha e uma confirmação da mesma.
 8. O usuário digitará a senha desejada.
 9. O sistema confere os dados inseridos e apresenta a mensagem "Senha Editada com Sucesso". 
-
-
