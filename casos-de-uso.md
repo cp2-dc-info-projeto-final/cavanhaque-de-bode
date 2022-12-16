@@ -4,7 +4,7 @@
 
  - [CDU 01](#CDU-1---Fazer-login): Fazer login.
  - [CDU 02](#CDU-2---Fazer-logout): Fazer logout.  
- - [CDU 03](#CDU-3---Realizar-agendamento): Realizar gendamento.
+ - [CDU 03](#CDU-3---Realizar-agendamento): Realizar Agendamento.
  - [CDU 04](#CDU-4---Listar-Agendamentos): Listar Agendamentos.
  - [CDU 05](#CDU-5---Cadastrar-funcionário): Cadastrar funcionário.
  - [CDU 06](#CDU-6---Cadastrar-cliente): Cadastrar cliente.
@@ -115,7 +115,7 @@
 1. O usuário seleciona a opção "Funcionários"
 2. O sistema solicita os dados necessários para o cadastro de um funcionário. 
 3. O usuário fornece os dados e confirma a operação.
-4. O sistema verifica se todos os dados foram fornecidos corretamente e cadastra o funcionario no sistema.
+4. O sistema verifica se todos os dados foram fornecidos corretamente e cadastra o funcionário no sistema.
 
 ### CDU 6 - Cadastrar cliente
 
@@ -127,7 +127,7 @@
 1. O usuário seleciona a opção "cadastre-se".
 2. O sistema solicita os dados necessários para o cadastro. 
 3. O usuário fornece os dados e confirma a operação.
-4. O sistema verifica se todos os dados foram fornecidos e cadastra o usuario .
+4. O sistema verifica se todos os dados foram fornecidos e cadastra o usuário .
 5. O usuário é redirecionado para a tela de perfil.
 
 **Fluxo Alternativo A** 
@@ -160,9 +160,9 @@
 **Fluxo Alternativo A**
 
 1. O usuário seleciona a opção "Excluir conta".
-2. O sistema apresentara um bloco exigindo a senha e sua confirmaçao.
+2. O sistema apresentara um bloco exigindo a senha e sua confirmação.
 3. O usuário seleciona o botão "Excluir".
-4. O sistema exclui o cadastro e redireciona o usuario para a tela principal.
+4. O sistema exclui o cadastro e redireciona o usuário para a tela principal.
 
 
 ### CDU 8 - Listar Cadastro de usuário 
@@ -207,7 +207,7 @@
 3. O sistema abrirá uma página com dados editáveis do serviço.
 4. O usuário edita os dados desejados e seleciona "Editar".
 5. O sistema confere os dados inseridos e edita o serviço
-6. O usuario é redirecionado para tela de perfil. 
+6. O usuário é redirecionado para tela de perfil. 
 
 **Fluxo Alternativo A**
 1. O usuário seleciona a opção "Serviços".
@@ -268,10 +268,10 @@
 **Fluxo Principal**
 
 1. O usuário seleciona a opção "Esqueceu sua senha".
-2. O sistema abrirá uma pagina solicitando e-mail de recuperação.
-3. O usuário digita o email de recuperação e seleciona "Enviar código para recuperaçao".
-4. O sistema envia o código de confirmação e o usuário o recebe em seu email.
-5. O sistema abrirá uma pagina solicitando código de recuperaçao.
+2. O sistema abrirá uma página solicitando e-mail de recuperação.
+3. O usuário digita o e-mail de recuperação e seleciona "Enviar código para recuperação".
+4. O sistema envia o código de confirmação e o usuário o recebe em seu e-mail.
+5. O sistema abrirá uma página solicitando código de recuperação.
 6. O usuário digita o código de confirmação e seleciona "Prosseguir".
 7. O sistema abrirá um Pop-up solicitando uma nova senha e uma confirmação da mesma.
 8. O usuário digitará a senha desejada.
