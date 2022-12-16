@@ -5,19 +5,18 @@
  - [CDU 01](#CDU-1---Fazer-login): Fazer login.
  - [CDU 02](#CDU-2---Fazer-logout): Fazer logout.  
  - [CDU 03](#CDU-3---Realizar-agendamento): Realizar gendamento.
- - [CDU 04](#CDU-4---Editar-agendamento): Editar agendamento.
- - [CDU 05](#CDU-5---Cancelar-agendamento): Cancelar agendamento.
- - [CDU 06](#CDU-6---Visualizar-os-clientes-agendados): Visualizar os clientes agendados.
- - [CDU 07](#CDU-7---Cadastrar-funcionários): Cadastrar funcionários.
- - [CDU 08](#CDU-8---Cadastrar-usuário): Cadastrar usuário.
- - [CDU 09](#CDU-9---Editar-Cadastro-de-usuário): Editar Cadastro de usuário.
- - [CDU 010](#CDU-10---Listar-Cadastro-de-usuário): Listar Cadastro de usuário.
- - [CDU 011](#CDU-11---Adicionar-serviço): Adicionar serviço.
- - [CDU 012](#CDU-12---Editar-serviço): Editar serviço.
- - [CDU 013](#CDU-13---Listar-serviços): Listar serviços.
- - [CDU 014](#CDU-14---Disponibilizar-horário): Disponibilizar horário.
- - [CDU 015](#CDU-15---Visualizar-agendamento): Visualizar agendamento.
- - [CDU 016](#CDU-16---Recuperar-Senha): Recuperar Senha.
+ - [CDU 04](#CDU-4---Listar-Agendamentos): Listar Agendamentos.
+ - [CDU 05](#CDU-5---Cadastrar-funcionário): Cadastrar funcionário.
+ - [CDU 06](#CDU-6---Cadastrar-cliente): Cadastrar cliente.
+ - [CDU 07](#CDU-7---Editar-Cadastro-de-usuário): Editar Cadastro de usuário.
+ - [CDU 08](#CDU-8---Listar-Cadastro-de-usuário): Listar Cadastro de usuário.
+ - [CDU 09](#CDU-9---Adicionar-serviço): Adicionar serviço.
+ - [CDU 010](#CDU-10---Editar-serviço): Editar serviço.
+ - [CDU 011](#CDU-11---Listar-serviços): Listar serviços.
+ - [CDU 012](#CDU-12---Disponibilizar-horário): Disponibilizar horário. 
+ - [CDU 013](#CDU-13---Visualizar-agendamento):  Visualizar agendamento.
+ - [CDU 014](#CDU-14---Recuperar-Senha): Recuperar Senha.
+
 ## Lista dos Atores
 
  - Administrador
@@ -95,35 +94,7 @@
 3. O usuário não fornece todos os dados necessários e confirma a operação
 4. O sistema apresenta a mensagem "Selecione uma das opções".
 
-### CDU 4 - Editar agendamentos
-
-#### Atores
- - Cliente
-
-**Fluxo Principal**
-
-1. O usuário seleciona a opção "Editar Agendamento". 
-2. O sistema verificará se falta mais de 24h para a horário agendado. 
-3. Caso positivo, o sistema abrirá uma página com dados editáveis de seu agendamento.
-4. O usuário insere os dados desejados para modificação e seleciona o botão "Confirmar".
-5. O sistema confere os dados inseridos e apresenta a mensagem "Agendamento Editado com Sucesso".
-
-**Fluxo Alternativo A**
-
-1. O usuário seleciona a opção "Editar Agendamento". 
-2. O sistema verificará se falta mais de 24h para a horário agendado. 
-3. Caso positivo, o sistema abrirá uma tela com dados editáveis de seu agendamento.
-4. O usuário seleciona o botão "Excluir Agendamento".
-5. O sistema exclui o agendamento e retorna uma mensagem de confirmação.
-
-**Fluxo Alternativo B**
-
-1. O usuário seleciona a opção "Editar Agendamento". 
-2. O sistema verificará se falta mais de 24h para a horário agendado.
-3. Caso Negativo, o sistema bloqueará o acesso do usuário a edição de agendamento.
-
-
-### CDU 5 - Listar Agendamentos
+### CDU 4 - Listar Agendamentos
 
 #### Atores
  - Administrador
@@ -134,7 +105,7 @@
 1. O usuário seleciona a opção "Listar agendamentos"
 2. O sistema apresentará uma lista com todos os agendamentos realizados.
 
-### CDU 6 - Cadastrar funcionário
+### CDU 5 - Cadastrar funcionário
 
 #### Atores
  - Administrador
@@ -146,7 +117,7 @@
 3. O usuário fornece os dados e confirma a operação.
 4. O sistema verifica se todos os dados foram fornecidos corretamente e cadastra o funcionario no sistema.
 
-### CDU 7 - Cadastrar cliente
+### CDU 6 - Cadastrar cliente
 
 #### Atores
  - Administrador
@@ -172,7 +143,7 @@
 3. O usuário fornece os dados incorretamente e confirma a operação.
 4. O sistema verifica se todos os dados foram fornecidos e apresenta uma mensagem de erro .
 
-### CDU 8 - Editar Cadastro de usuário
+### CDU 7 - Editar Cadastro de usuário
 
 #### Atores
 - Administrador
@@ -194,7 +165,7 @@
 4. O sistema exclui o cadastro e redireciona o usuario para a tela principal.
 
 
-### CDU 9 - Listar Cadastro de usuário
+### CDU 8 - Listar Cadastro de usuário 
 
 #### Atores
 -Administrador
@@ -204,7 +175,7 @@
 1. O usuário seleciona a opção clientes.
 2. O sistema apresenta uma lista de usuarios cadastrados.
 
-### CDU 10 - Adicionar serviço
+### CDU 9 - Adicionar serviço 
 
 #### Atores
 -Administrador
@@ -225,7 +196,7 @@
 4. O sistema verifica se todos os dados foram fornecidos e apresenta uma mensagem de erro.
 
 
-### CDU 11 - Editar serviço
+### CDU 10 - Editar serviço
 
 #### Atores
 -Administrador
@@ -243,7 +214,7 @@
 2. O usuário seleciona a opção "Excluir".
 3. O sistema exclui o serviço.
 
-### CDU 12 - Listar serviços
+### CDU 11 - Listar serviços
 
 #### Atores
 -Administrador
@@ -253,7 +224,7 @@
 1. O usuário seleciona a opção "Serviços".
 2. O sistema apresenta uma lista de serviços
 
-### CDU 13 - Disponibilizar horário
+### CDU 12 - Disponibilizar horário
 
 #### Atores
 - Administrador
@@ -274,7 +245,7 @@
 4. O usuário preenche os dados com horários indisponíveis.
 5. o sistema exibe a mensagem "horário indisponível" e retorna para tela inicial 
 
-### CDU 14 - Visualizar agendamento 
+### CDU 13 - Visualizar agendamento 
 
 #### Atores
 - Administrador
@@ -287,7 +258,7 @@
 2. O usuário seleciona a opção "agendamento"
 3. O sistema apresenta todos os horários agendados por este perfil  
 
-### CDU 15 - Recuperar Senha
+### CDU 14 - Recuperar Senha
 
 #### Atores
 - Administrador
