@@ -42,7 +42,7 @@
         </div>
         <?php 
             $hoje = date('d-m-Y');
-            $duassemanas = date('d-m-Y', strtotime('24 days'));
+            $duassemanas = date('d-m-Y', strtotime('20 days'));
 
             $start = new DateTime($hoje);
             $end = new DateTime($duassemanas);

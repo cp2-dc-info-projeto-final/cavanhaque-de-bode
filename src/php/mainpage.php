@@ -14,7 +14,7 @@
         <title>Cavanhaque de Bode</title>
     </head>
     <body>
-        <nav class="navbar sticky-top navbar-expand-md navbar-dark border-bottom border-3" id="navbar-preta">
+        <nav class="navbar sticky-top navbar-expand-md navbar-dark border-3" id="navbar-preta">
             <div class="container-fluid">
                 
                 <a href="" class="navbar-brand"> 
@@ -76,6 +76,7 @@
                 </div>
             </div>
         </nav>
+        <img src="../imgs/action.png" style="width: 100%">
         <div class="modal fade" id="modallogin" tabindex="-1" aria-labelledby="modalloginlabel" aria-hidden="true">
             <div class="modal-dialog modal-sm">
               <div class="modal-content">
