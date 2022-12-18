@@ -43,7 +43,13 @@
             $res = mysqli_query($mysqli,$busca_cliente);
             $cliente = mysqli_fetch_array($res);
             $_SESSION['cliente'] = $cliente['id_cliente'];
-            header('Location: perfilcliente.php');
+            $_SESSION['email-cliente'] = $cliente['email'];
+            if(isset($_SESSION['login-agendamento'])){
+                header('Location: agendamento3.php');
+            }
+            else{
+                header('Location: perfilcliente.php');
+            }
         }
     }
     
@@ -69,7 +75,13 @@
 
         if(password_verify($senha, $cliente['senha']) and $linhasciente == 1){
             $_SESSION['cliente'] = $cliente['id_cliente'];
-            header('Location: perfilcliente.php');
+            $_SESSION['email-cliente'] = $cliente['email'];
+            if(isset($_SESSION['login-agendamento'])){
+                header('Location: agendamento3.php');
+            }
+            else{
+                header('Location: perfilcliente.php');
+            }
         }
 
         else if(password_verify($senha, $funcionario['senha']) and $linhasfuncionario == 1){

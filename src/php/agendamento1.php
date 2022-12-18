@@ -1,6 +1,8 @@
 <?php 
     include "../sql/conectamysqlcdb.php";
-    
+    if(isset($_SESSION['etapa3-agendamento'])){
+        unset($_SESSION['etapa3-agendamento']);
+    }
 ?>
 <html lang="pt-br">
     <head>
@@ -97,7 +99,7 @@
                     $idservico  = $servico['id_servico'];
                     echo "
                         <input type='radio' class='btn-check' name='opcaoservico' value='$idservico' id='$nomeservico' autocomplete='off' required>
-                        <label class='btn btn-outline-dark me-2 mt-1' for='$nomeservico'>$nomeservico | Preço: R$ $precoservico</label>";
+                        <label class='btn btn-outline-dark me-2 mt-1' for='$nomeservico'>$nomeservico | R$ $precoservico</label>";
                 }
             ?>
         </div>

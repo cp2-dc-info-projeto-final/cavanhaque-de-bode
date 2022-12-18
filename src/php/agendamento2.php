@@ -3,11 +3,14 @@
     include "../sql/conectamysqlcdb.php";
     $data = $_SESSION['data-agendamento'];
 
-    /*if(!isset($_SESSION['etapa1-agendamento'])){
+    if(!isset($_SESSION['etapa1-agendamento'])){
         header('Location: agendamento1.php');
     }
     
-    unset($_SESSION['etapa1-agendamento']);*/
+    unset($_SESSION['etapa1-agendamento']);
+    if(isset($_SESSION['etapa3-agendamento'])){
+        unset($_SESSION['etapa3-agendamento']);
+    }
 ?>
 <html lang="pt-br">
     <head>

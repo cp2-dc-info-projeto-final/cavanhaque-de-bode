@@ -64,9 +64,6 @@ INSERT INTO cliente (nome, email, senha)
 VALUES ('LUIZ','luiz@g.com', '$2y$10$U1CXan5iXUmIVcIXA2.lsO3eqrBek6cDfgs0minJaBsjpw.80AsfG');
 
 INSERT INTO funcionario (nome, email, senha)
-VALUES ('funcionario','fun@g.com', '$2y$10$U1CXan5iXUmIVcIXA2.lsO3eqrBek6cDfgs0minJaBsjpw.80AsfG');
-
-INSERT INTO funcionario (nome, email, senha)
 VALUES ('arnaldo','arnaldo@g.com', '$2y$10$U1CXan5iXUmIVcIXA2.lsO3eqrBek6cDfgs0minJaBsjpw.80AsfG');
 
 INSERT INTO funcionario (nome, email, senha)
@@ -86,6 +83,3 @@ VALUES (1, 2, 1, '17:00', '2022-12-20');
 
 INSERT INTO agendamento (id_cliente, id_funcionario, id_servico, horario, data_agendamento)
 VALUES (1, 3, 1, '17:00', '2022-12-20');
-
-INSERT INTO agendamento (id_cliente, id_funcionario, id_servico, horario, data_agendamento)
-VALUES (1, 4, 1, '17:00', '2022-12-20');

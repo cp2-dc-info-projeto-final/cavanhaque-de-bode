@@ -113,7 +113,11 @@
                         <a href="recuperar-senha.php" class="blue-text">Esqueceu sua senha?</a>
                         <?php if(isset($_SESSION['na-login'])){
                             echo "<div class='alert alert-danger mt-3' id='alert' class='mr-auto'>Login inválido.</div>";
-                        }?>
+                        }
+                        if(isset($_SESSION['login-agendamento'])){
+                            echo "<div class='alert alert-danger mt-3' id='alert' class='mr-auto'>Faça Login para concluir o agendamento.</div>";
+                        }
+                        ?>
                         <div class="text-center mt-4">
                             <button type="submit" class="botaoinput btn-dark">Entrar</button>
                         </div>
@@ -228,6 +232,12 @@
                     modalcadastro.show();
             </script>";
             unset($_SESSION['na-cadastro']);
+        }
+        ?>
+        <?php if(isset($_SESSION['login-agendamento'])){
+            echo "<script> var modallogin = new bootstrap.Modal(document.getElementById('modallogin'));
+                    modallogin.show();
+            </script>";
         }
         ?>
         <script src="../js/validacao.js"></script>

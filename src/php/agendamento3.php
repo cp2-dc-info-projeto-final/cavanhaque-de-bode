@@ -8,11 +8,12 @@
     $data = str_replace('/', '-', $data); 
     $data = date('Y-m-d', strtotime($data));
 
-    /*if(!isset($_SESSION['etapa2-agendamento'])){
+    if(!isset($_SESSION['etapa2-agendamento']) and !isset($_SESSION['etapa3-agendamento'])){
         header('Location: agendamento1.php');
     }
     
-    unset($_SESSION['etapa2-agendamento']);*/
+    unset($_SESSION['etapa2-agendamento']);
+    unset($_SESSION['login-agendamento']);
 ?>
 <html lang="pt-br">
     <head>
@@ -61,15 +62,15 @@
                 $res = mysqli_query($mysqli, $sql);
                 $linhas = mysqli_num_rows($res);
 
-                if($linhas == $linhasfuncionario){
+                if($linhas == $linhasfuncionario or $linhas == $linhasfuncionario - 1){
                     echo"
-                    <input type='radio' class='btn-check' name='opcaofuncionario' value='sempreferencia' id='sempreferencia' autocomplete='off' disabled>
-                    <label class='btn btn-danger' for='sempreferencia'> Sem Preferência</label>"; 
+                    <input type='radio' class='btn-check' name='opcaofuncionario' value='Sem Preferência' id='Sem Preferência' autocomplete='off' disabled>
+                    <label class='btn btn-danger' for='Sem Preferência'> Sem Preferência</label>"; 
                 }
                 else{
                     echo"
-                    <input type='radio' class='btn-check' name='opcaofuncionario' value='sempreferencia' id='sempreferencia' autocomplete='off' required>
-                    <label class='btn btn-outline-dark' for='sempreferencia'> Sem Preferência</label>"; 
+                    <input type='radio' class='btn-check' name='opcaofuncionario' value='Sem Preferência' id='Sem Preferência' autocomplete='off' required>
+                    <label class='btn btn-outline-dark' for='Sem Preferência'> Sem Preferência</label>"; 
                 }
 
                 for($i=0; $i < $linhasfuncionario; $i++){
@@ -100,26 +101,40 @@
             <button type="submit" class="btn-dark mt-5" style="padding: 10px 150px; margin-left: 10px; border-radius: 12px;">CONTINUAR</button>
             </form>
         </div>
+        
         <div class="modal fade" id="modalconfirma" tabindex="-1" aria-labelledby="modalconfirmalabel" aria-hidden="true">
             <div class="modal-dialog modal-md">
                 <div class="modal-content">
                     <div class="modal-header border-0" style="background-color: black;">
-                        <h5 class="modal-title ms-auto" id="TituloModal">CONFIRMA AGENDAMENTO</h5>
+                        <h5 class="modal-title ms-auto" id="TituloModal">CONFIRMAR AGENDAMENTO</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"  aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
+                        <div>
+                            <?php
+                                echo "<h4> Seu Agendamento </h5>";
+                                echo "<p style='font-size: 20px;'> Data: ". $_SESSION['data-agendamento'];
+                                echo "<br> Hora: ". $_SESSION['hora-agendamento'];
+                                echo "<br> Funcionário: ". $_SESSION['nome-funcionario-agendamento'];
+                                echo "<br> Serviço: ". $_SESSION['nome-servico-agendamento']."</p>";
+                            ?>
+                        </div>
                     </div>
-                    <div class="modal-footer border-3">
+                    <div class="modal-footer border-3 justify-content-center">
+                        <form action="agendamentoback.php" method="POST">
+                            <input type="hidden" value="enviar" name="form-agendamento">
+                            <button type="submit" class="btn btn-success" style="padding: 7px 40px;border-radius: 12px;">Agendar</button>
+                        </form>
+                        <a href="agendamento1.php"><button type="button" class="btn btn-primary" style="padding: 7px 40px;border-radius: 12px;">Refazer</button></a>
+                        <a href="mainpage.php"><button type="button" class="btn btn-danger" style="padding: 7px 40px;border-radius: 12px;">Cancelar</button></a>
                     </div>
                 </div>
             </div>
         </div>
-
     <?php if(isset($_SESSION['etapa3-agendamento'])){
         echo "<script> var modalconfirma = new bootstrap.Modal(document.getElementById('modalconfirma'));
                 modalconfirma.show();
         </script>";
-        unset($_SESSION['etapa3-agendamento']);
     }
     ?>
     <script src="../js/validacao.js"></script>
