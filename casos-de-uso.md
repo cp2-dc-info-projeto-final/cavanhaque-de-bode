@@ -212,8 +212,9 @@
 
 **Fluxo Alternativo A**
 1. O usuário seleciona a opção "Serviços".
-2. O usuário seleciona a opção "Excluir".
-3. O sistema exclui o serviço.
+2. O sistema apresenta um bloco com todos os serviços disponíveis.
+3. O usuário seleciona a opção "Excluir".
+4. O sistema exclui o serviço.
 
 ### CDU 11 - Listar serviços
 
