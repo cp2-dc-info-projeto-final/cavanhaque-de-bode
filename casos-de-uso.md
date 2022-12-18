@@ -203,11 +203,12 @@
 
 **Fluxo Principal**
 1. O usuário seleciona a opção "Serviços".
-2. O usuário seleciona a opção "Editar"
-3. O sistema abrirá uma página com dados editáveis do serviço.
-4. O usuário edita os dados desejados e seleciona "Editar".
-5. O sistema confere os dados inseridos e edita o serviço
-6. O usuário é redirecionado para tela de perfil. 
+2. O sistema apresenta um bloco com todos os serviços disponíveis.
+3. O usuário seleciona a opção "Editar"
+4. O sistema abrirá uma página com dados editáveis do serviço.
+5. O usuário edita os dados desejados e seleciona "Editar".
+6. O sistema confere os dados inseridos e edita o serviço
+7. O usuário é redirecionado para tela de perfil. 
 
 **Fluxo Alternativo A**
 1. O usuário seleciona a opção "Serviços".
