@@ -1,4 +1,7 @@
-<?php include "../sql/conectamysqlcdb.php";?>
+<?php 
+    include "../sql/conectamysqlcdb.php";
+    
+?>
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
@@ -15,14 +18,14 @@
     <body>
         <nav class="navbar navbar-expand-md" style="border-style: solid; border-top: none; border-right: none; border-left: none; border-width: 1px;">
             <div class="container-fluid">
-                <a href="" class="navbar-brand"> 
+                <a class="navbar-brand"> 
                     <img src="../imgs/logocdb.ico" alt="Logo" height="70" class="d-inline-block">
                 </a>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-target">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="d-none d-md-inline">
-                    <p><a href="" class="brand" style="color: black;">AGENDAMENTO</a></p>
+                    <p><a class="brand" style="color: black;">AGENDAMENTO</a></p>
                 </div>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
@@ -37,7 +40,7 @@
         </div>
         <?php 
             $hoje = date('d-m-Y');
-            $duassemanas = date('d-m-Y', strtotime('2 weeks'));
+            $duassemanas = date('d-m-Y', strtotime('24 days'));
 
             $start = new DateTime($hoje);
             $end = new DateTime($duassemanas);
@@ -48,16 +51,33 @@
 
             
 
-            echo "<form action='agendaconfirma.php' method='POST'>";
+            echo "<form action='agendamentoback.php' method='POST'>";
             echo "<div class='container-fluid'>";
             foreach ($period as $p) {
                 $day_num = $p->format("N");
                 
+                $datasql = $p->format('Y-m-d');
+
+                $sql = "SELECT * FROM agendamento WHERE data_agendamento LIKE '$datasql';";
+                $res = mysqli_query($mysqli, $sql);
+                $linhas = mysqli_num_rows($res);
+
+                $sql = "SELECT * FROM funcionario;";
+                $resfun = mysqli_query($mysqli, $sql);
+                $linhasfun = mysqli_num_rows($resfun);
+                
                 if($day_num < 7) {
-                    $data = $p->format('d/m/y');
-                    echo "
+                    $data = $p->format('d/m/Y');
+                    if($linhas == (19 * $linhasfun)){
+                        echo "
+                        <input type='radio' class='btn-check' name='opcaodata' value='$data' id='$data' autocomplete='off' disabled>
+                        <label class='btn btn-danger me-2 mt-1' for='$data'>$data</label>";
+                    }
+                    else{
+                        echo "
                         <input type='radio' class='btn-check' name='opcaodata' value='$data' id='$data' autocomplete='off' required>
-                        <label class='btn btn-outline-dark' for='$data'>$data</label>";
+                        <label class='btn btn-outline-dark me-2 mt-1' for='$data'>$data</label>";
+                    }    
                 }
             }
             echo "</div>";
@@ -77,12 +97,14 @@
                     $idservico  = $servico['id_servico'];
                     echo "
                         <input type='radio' class='btn-check' name='opcaoservico' value='$idservico' id='$nomeservico' autocomplete='off' required>
-                        <label class='btn btn-outline-dark' for='$nomeservico'>$nomeservico | Preço: R$ $precoservico</label>";
+                        <label class='btn btn-outline-dark me-2 mt-1' for='$nomeservico'>$nomeservico | Preço: R$ $precoservico</label>";
                 }
             ?>
         </div>
         <div class="">
+            <input type="hidden" value="1" name="form-agendamento">
             <button type="submit" class="btn-dark mt-5" style="padding: 10px 150px; margin-left: 10px; border-radius: 12px;">CONTINUAR</button>
+            </form>
         </div>
     <script src="../js/validacao.js"></script>
     </body>

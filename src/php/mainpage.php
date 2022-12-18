@@ -70,7 +70,7 @@
                         </li>
                         <li class="nav-item divisor d-none d-md-inline"></li>
                         <li class="nav-item">
-                            <a href="agendamento.php" class="linknav nav-link"> AGENDAMENTO </a>
+                            <a href="agendamento1.php" class="linknav nav-link"> AGENDAMENTO </a>
                         </li>
                     </ul>
                 </div>

@@ -79,13 +79,13 @@ INSERT INTO servico (nome, preco)
 VALUES ('servico', 12);
 
 INSERT INTO agendamento (id_cliente, id_funcionario, id_servico, horario, data_agendamento)
+VALUES (1, 1, 1, '17:00', '2022-12-20');
+
+INSERT INTO agendamento (id_cliente, id_funcionario, id_servico, horario, data_agendamento)
 VALUES (1, 2, 1, '17:00', '2022-12-20');
 
 INSERT INTO agendamento (id_cliente, id_funcionario, id_servico, horario, data_agendamento)
+VALUES (1, 3, 1, '17:00', '2022-12-20');
+
+INSERT INTO agendamento (id_cliente, id_funcionario, id_servico, horario, data_agendamento)
 VALUES (1, 4, 1, '17:00', '2022-12-20');
-
-INSERT INTO agendamento (id_cliente, id_funcionario, id_servico, horario, data_agendamento)
-VALUES (1, 6, 1, '17:00', '2022-12-20');
-
-INSERT INTO agendamento (id_cliente, id_funcionario, id_servico, horario, data_agendamento)
-VALUES (1, 8, 1, '17:00', '2022-12-20');
