@@ -167,7 +167,7 @@
 ### CDU 8 - Listar Cadastro de usuário 
 
 #### Atores
--Administrador
+- Administrador
 
 **Fluxo Principal**
 
@@ -177,7 +177,7 @@
 ### CDU 9 - Adicionar serviço 
 
 #### Atores
--Administrador
+- Administrador
 
 **Fluxo Principal**
 
@@ -198,7 +198,7 @@
 ### CDU 10 - Editar serviço
 
 #### Atores
--Administrador
+- Administrador
 
 **Fluxo Principal**
 1. O usuário seleciona a opção "Serviços".
@@ -218,7 +218,7 @@
 ### CDU 11 - Listar serviços
 
 #### Atores
--Administrador
+- Administrador
 
 **Fluxo Principal**
 
