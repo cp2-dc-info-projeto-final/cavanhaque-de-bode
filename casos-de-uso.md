@@ -13,9 +13,8 @@
  - [CDU 09](#CDU-9---Adicionar-serviço): Adicionar serviço.
  - [CDU 010](#CDU-10---Editar-serviço): Editar serviço.
  - [CDU 011](#CDU-11---Listar-serviços): Listar serviços.
- - [CDU 012](#CDU-12---Disponibilizar-horário): Disponibilizar horário. 
- - [CDU 013](#CDU-13---Visualizar-agendamento):  Visualizar agendamento.
- - [CDU 014](#CDU-14---Recuperar-Senha): Recuperar Senha.
+ - [CDU 012](#CDU-12---Visualizar-agendamento): Visualizar agendamento. 
+ - [CDU 013](#CDU-13---Recuperar-Senha): Recuperar Senha.
 
 ## Lista dos Atores
 
@@ -168,7 +167,7 @@
 ### CDU 8 - Listar Cadastro de usuário 
 
 #### Atores
--Administrador
+- Administrador
 
 **Fluxo Principal**
 
@@ -178,7 +177,7 @@
 ### CDU 9 - Adicionar serviço 
 
 #### Atores
--Administrador
+- Administrador
 
 **Fluxo Principal**
 
@@ -199,7 +198,7 @@
 ### CDU 10 - Editar serviço
 
 #### Atores
--Administrador
+- Administrador
 
 **Fluxo Principal**
 1. O usuário seleciona a opção "Serviços".
@@ -219,35 +218,14 @@
 ### CDU 11 - Listar serviços
 
 #### Atores
--Administrador
+- Administrador
 
 **Fluxo Principal**
 
 1. O usuário seleciona a opção "Serviços".
 2. O sistema apresenta uma lista de serviços
 
-### CDU 12 - Disponibilizar horário
-
-#### Atores
-- Administrador
-
-**Fluxo Principal**
-
-1. Usuário seleciona a opção "Grade Horaria".
-2. Usuário seleciona um funcionário.
-3. Sistema exibe calendário do funcionário.
-4. O usuário preenche os dados com os dados necessários.
-5. O Horário é armazenado e o sistema exibe uma mensagem de confirmação
-
-**Fluxo Alternativo A**
-
-1. Usuário seleciona a opção "Grade Horaria".
-2. Usuário seleciona um funcionário.
-3. Sistema exibe calendário do funcionário.
-4. O usuário preenche os dados com horários indisponíveis.
-5. o sistema exibe a mensagem "horário indisponível" e retorna para tela inicial 
-
-### CDU 13 - Visualizar agendamento 
+### CDU 12 - Visualizar agendamento 
 
 #### Atores
 - Administrador
@@ -260,7 +238,7 @@
 2. O usuário seleciona a opção "agendamento"
 3. O sistema apresenta todos os horários agendados por este perfil  
 
-### CDU 14 - Recuperar Senha
+### CDU 13 - Recuperar Senha
 
 #### Atores
 - Administrador
@@ -268,13 +246,13 @@
 - Cliente
 
 **Fluxo Principal**
-
 1. O usuário seleciona a opção "Esqueceu sua senha".
 2. O sistema abrirá uma página solicitando e-mail de recuperação.
 3. O usuário digita o e-mail de recuperação e seleciona "Enviar código para recuperação".
 4. O sistema envia o código de confirmação e o usuário o recebe em seu e-mail.
 5. O sistema abrirá uma página solicitando código de recuperação.
-6. O usuário digita o código de confirmação e seleciona "Prosseguir".
-7. O sistema abrirá um Pop-up solicitando uma nova senha e uma confirmação da mesma.
+6. O usuário digita o código de recuperação e seleciona "Prosseguir".
+7. O sistema abrirá uma página solicitando uma nova senha e uma confirmação da mesma.
 8. O usuário digitará a senha desejada.
-9. O sistema confere os dados inseridos e apresenta a mensagem "Senha Editada com Sucesso". 
+9. O sistema confere os dados inseridos e os armazena. 
+10. O Usuário é redirecionado para página de perfil.
