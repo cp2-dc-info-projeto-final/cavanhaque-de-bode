@@ -54,7 +54,7 @@
                         </div>
                     </div>
                     <?php if(isset($_SESSION['erro-redefinir'])){
-                        echo "<div class='alert alert-danger mt-3' id='alert' class='mr-auto'>Login inválido.</div>";
+                        echo "<div class='alert alert-danger mt-3' id='alert' class='mr-auto'>Erro ao redefinir senha.</div>";
                         unset($_SESSION['erro-redefinir']);
                     }?>
                 </div>
