@@ -86,7 +86,7 @@
 3. O usuário escolhe os dados e confirma a operação.
 4. O sistema apresenta um pop-up com a opção de confirmação
 5. O usuário confirma o agendamento.
-6. O sistema salva o agendamento
+6. O sistema salva o agendamento.
 7. O usuário é redirecionado para a tela perfil.
 
 **Fluxo Alternativo A**
@@ -228,20 +228,18 @@
 **Fluxo Principal**
 
 1. O usuário seleciona a opção "Serviços".
-2. O sistema apresenta uma lista de serviços
+2. O sistema apresenta uma lista de serviços.
 
 ### CDU 12 - Visualizar agendamento 
 
 #### Atores
-- Administrador
-- Funcionário
 - Cliente
 
 **Fluxo Principal**
 
-1. O usuário seleciona a opção "Perfil"
-2. O usuário seleciona a opção "agendamento"
-3. O sistema apresenta todos os horários agendados por este perfil  
+1. O usuário seleciona a opção "Perfil".
+2. O usuário seleciona a opção "agendamento".
+3. O sistema apresenta todos os agendamentos realizados por este usuário.
 
 ### CDU 13 - Recuperar Senha
 
