@@ -8,23 +8,22 @@ O software deverá possuir a todo momento uma bloco no topo da página que conte
 
 ### RF 02
 
-O página principal do software deverá possuir uma aba rolável que apresentará diversas informações sobre o software.
+A página principal do software deverá possuir uma aba rolável que apresentará diversas informações sobre o software.
 
 ### RF 03
 
-A página de login do software deverá conter um campo digitável que receberá o nome de usuário do ator.
+O pop-up de login do software deverá conter um campo digitável que receberá o email do ator.
 
 ### RF 04
-
-A página de login do software deverá conter um campo digitável que receberá a senha do ator.
+O pop-up de login do software deverá conter um campo digitável que receberá a senha do ator.
 
 ### RF 05
 
-A página de login deverá conter um botão clicável "enviar" que confirmará a autenticidade das informações colocadas nos campos "nome de usuário" e "senha".
+O pop-up de login deverá conter um botão clicável "entrar" que confirmará a autenticidade das informações colocadas nos campos "email" e "senha".
 
 ### RF 06
 
-A o botão clicável enviar deverá redirecionar o usuário para tela inicial caso as infomações coletadas anteriormente forem plausíveis
+O botão clicável "entrar" deverá redirecionar o usuário para tela perfil caso as infomações coletadas anteriormente forem plausíveis
 
 ### RF 07
 
@@ -32,11 +31,11 @@ O software deverá apresentará uma mensagem de erro caso as informações inser
 
 ### RF 08
 
-A página de login do software possuirá um botão clicável nomeado "Fazer Cadastro" que redirecionará o ator para a página de cadastro de cliente.
+A pop-up de login do software possuirá um botão clicável nomeado "Fazer Cadastro" que redirecionará o ator para a página de cadastro de cliente.
 
 ### RF 09
 
-O software deverá possuir uma página para cadastramento de cliente, que poderá ser acessivel pela página login.
+O software deverá possuir uma página para cadastramento de cliente, que poderá ser acessivel pelo pop-up de login.
 
 ### RF 10
 
@@ -48,67 +47,60 @@ O software deverá possuir uma página de cadastro de funcionários, que será a
 
 ### RF 12
 
-A página de cadastro de funcionário deverá possuir diversos campos que receberão dados como email, nome, senha e código de funcionário, que serão armazenados no banco de dados.
+A página de cadastro de funcionário deverá possuir diversos campos que receberão dados como email, nome e senha, que serão armazenados no banco de dados.
 
 ### RF 13
 
-O software deverá possuir uma página de agendamento exclusiva para o cliente, que será acessivel pela página principal.
+O software deverá possuir uma página de realizar agendamento, que será acessivel pela página principal.
 
 ### RF 14
 
-A página de agendamento do cliente do software deverá possuir um campo de seleção, que mostrará os funcionários disponíveis na barbearia.
+A página de realizar agendamento, primeiramente, deverá possuir vários campos de seleção, que mostrarão as datas e serviços disponíveis na barbearia.
 
 ### RF 15
 
-Na página de agendamento, apóS a seleção de funcionário, apresentará um calendário clicável com os dias dispóniveis de acordo com a disponibilidade dos funcionários.
+Após a RF 14 a página de realizar agendamento deverá possuir vários campos de seleção, que mostrarão os horários disponíveis para aquele dia na barbearia.
 
 ### RF 16
 
- Na página de agendamento. após a seleção do dia, aparecerão os horaríos disponíveis para o cliente realizar seu corte.
+O software deverá possuir uma página de listar agendamento exclusiva para o funcionário, que será acessivel pela página de perfil do funcionário.
 
 ### RF 17
 
-O software deverá possuir uma página de agendamento exclusiva para o funcionário, que será acessivel pela página principal.
+A página de lsitar agendamento do funcionário deverá possuir um bloco listando todos os horários agendados no perfil do funcionáio que acessou a página.
 
 ### RF 18
 
-A página de agendamento do funionário deverá possuir um bloco listando todos os horários agendados no perfil do funcionáio que acessou a página.
+O software deverá possuir uma página de listar agendamento exclusiva para o administrador.
 
 ### RF 19
 
-O software deverá possuir uma página de agendamento exclusiva para o administrador.
+A página de listar agendamento do administrador possuirá um bloco com seleção de todos os funcionários cadastrados no software.
 
 ### RF 20
 
-a página de agendamento do administrador possuirá um bloco com seleção de todos os funcionários cadastrados no software.
+Na página de listar agendamento do administrador, ao selecionar um funcionário, será exibido todos os horários agendados para o funcionário selecionado.
 
 ### RF 21
 
-Na página de agendamento do administrador, ao selecionar um funcionário, será exibido todos os horários agendados para o funcionário selecionado.
+O software possuirá uma página de perfil única para cada tipo de ator que logar no software, a página será acessivel pela página principal.
 
 ### RF 22
 
-O software possuirá uma página de perfil única para cada tipo de ator que logar no software, a página será acessivel pela página principal.
+A página de perfil do cliente possuirá um bloco com linhas de texto contendo todos os dados armazenados do cliente (email, nome, senha).
 
 ### RF 23
 
-A página de perfil do cliente possuirá um bloco com linhas de texto contendo todos os dados armazenados do cliente (email, nome, senha).
+A página de perfil do funcionário, possuirá um bloco com linhas de texto contendo todos os dados armazenados do funcionário (nome, senha, email e cod de funcionário).
 
 ### RF 24
 
-A página de perfil do cliente possuirá uma função de cancelar agendamentos.
-
-### RF 25
-
-A página de perfil do funcionário, possuirá um bloco com linhas de texto contendo todos os dados armazenados do funcionário (nome, senha, email e cod de funcionário).
+A página de perfil do administrador, possuirá um bloco com todos os funcionários cadastrados com seus emails e respectivos nomes.
 
 ### RF 26
 
-A página de perfil do administrador, possuirá um bloco com todos os funcionários cadastrados com seus códigos e respectivos nomes.
+A página de perfil do administrador possuirá um botão clicável que redirecionará para o bloco de cadastro de funcionários.
 
-### RF 27
-
-A página de perfil do administrador possuirá um botão clicável que redirecionará para tela de cadastramento de funcionários.
 
 ## Requisitos Não-Funcionais
 
