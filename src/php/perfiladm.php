@@ -68,7 +68,7 @@
                     <hr class="d-sm-block d-md-none">
                     <hr class="d-none d-md-block">
                     <li>
-                        <a href="#" class="nav-link text-white">
+                        <a href="#agendamentos" class="nav-link text-white">
                             <i class="fa-solid fa-calendar-days fa-lg me-2" ></i>
                             <span class="fs-6 d-none d-md-inline-block"> Agendamentos</span>
                         </a>
@@ -327,13 +327,52 @@
                         </form>
                     </div>
                     </div>
+                    <div class="container border border-dark mt-1" id="agendamentos">
+                    <p class="fs-2">Agendamentos</p>
+                    <?php
+                        $sql = "SELECT * FROM agendamento";
+                        $res = mysqli_query($mysqli, $sql);
+                        $linhas = mysqli_num_rows($res);
+
+                        for($i=0; $i < $linhas; $i++){
+                            $agendamento = mysqli_fetch_array($res);
+                            $idcliente = $agendamento['id_cliente'];
+                            $idser = $agendamento['id_servico'];
+                            $idfun = $agendamento['id_funcionario'];
+                            
+                            $hora = date('H:i', strtotime($agendamento['horario']));
+                            $data = str_replace('-', '/', $agendamento['data_agendamento']); 
+                            $data = date('d/m/Y', strtotime($agendamento['data_agendamento']));
+                            
+                            
+                            $sql2 = "SELECT * FROM cliente WHERE id_cliente LIKE $idcliente;";
+                            $res2 = mysqli_query($mysqli, $sql2);
+                            $array = mysqli_fetch_array($res2);
+                            $cliente = $array['nome'];
+
+                            $sql4 = "SELECT * FROM funcionario WHERE id_funcionario LIKE $idfun;";
+                            $res4 = mysqli_query($mysqli, $sql4);
+                            $array3 = mysqli_fetch_array($res4);
+                            $funcionario = $array3['nome'];
+
+                            $sql3 = "SELECT * FROM servico WHERE id_servico LIKE $idser";
+                            $res3 = mysqli_query($mysqli, $sql3);
+                            $array2 = mysqli_fetch_array($res3);
+                            $servico = $array2['nome'];
+
+                            echo "Data: ". $data ."<br>";
+                            echo "Horario: ". $hora."<br>";
+                            echo "Servico: ".$servico."<br>";
+                            echo "Cliente: ".$cliente."<br>";
+                            echo "Funcionário: ".$funcionario."<br>";
+                            echo "------------------------------------------------------<br>";
+                        } 
+
+                    ?>
+                </div>
                 </div>
             </div>
         </div>
-        <div class="collapse" id="editarcliente">
-            <div class="card card-body">
-                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-            </div>
         </div>
     </body>
     <?php 

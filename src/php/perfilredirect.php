@@ -6,10 +6,10 @@
     }
     
     if(isset($_SESSION['funcionario'])){
-        header('Location: perfilfuncionario.php');
+        header('Location: perfilfuncionario.php#agendamentos');
     }
     
     if(isset($_SESSION['adm'])){
-        header('Location: perfiladm.php');
+        header('Location: perfiladm.php#agendamentos');
     }
 ?>

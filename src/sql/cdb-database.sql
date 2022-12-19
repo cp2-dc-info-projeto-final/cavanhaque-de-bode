@@ -73,7 +73,7 @@ INSERT INTO funcionario (nome, email, senha)
 VALUES ('marcos','marcos@g.com', '$2y$10$U1CXan5iXUmIVcIXA2.lsO3eqrBek6cDfgs0minJaBsjpw.80AsfG');
 
 INSERT INTO servico (nome, preco)
-VALUES ('servico', 12);
+VALUES ('barba', 12);
 
 INSERT INTO agendamento (id_cliente, id_funcionario, id_servico, horario, data_agendamento)
 VALUES (1, 1, 1, '17:00', '2022-12-20');

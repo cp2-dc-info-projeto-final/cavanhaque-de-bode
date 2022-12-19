@@ -84,11 +84,26 @@
             $chaves = array_rand($fundisponiveis);
             $sql = "INSERT INTO agendamento (id_cliente, id_funcionario, id_servico, horario, data_agendamento) VALUES ($cliente,".$fundisponiveis[$chaves].", $servico, '$hora', '$data')";
             mysqli_query($mysqli,$sql);
+            header('Location: perfilcliente.php#agendamentos');
+            unsset($_SESSION['hora-agendamento']);
+            unsset($_SESSION['data-agendamento']);
+            unsset($_SESSION['servico-agendamento']);
+            unsset($_SESSION['nome-servico-agendamento']);
+            unsset($_SESSION['funcionario-agendamento']);
+            unsset($_SESSION['nome-funcionario-agendamento']);
+            
             
         }
         else{
             $sql = "INSERT INTO agendamento (id_cliente, id_funcionario, id_servico, horario, data_agendamento) VALUES ($cliente, $funcionario, $servico, '$hora', '$data')";
             mysqli_query($mysqli,$sql);
+            header('Location: perfilcliente.php#agendamentos');
+            unsset($_SESSION['hora-agendamento']);
+            unsset($_SESSION['data-agendamento']);
+            unsset($_SESSION['servico-agendamento']);
+            unsset($_SESSION['nome-servico-agendamento']);
+            unsset($_SESSION['funcionario-agendamento']);
+            unsset($_SESSION['nome-funcionario-agendamento']);
         }
     }
 ?>

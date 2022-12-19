@@ -50,7 +50,7 @@
                     </li>
                     <hr class="d-sm-block d-md-none">
                     <li>
-                        <a href="#" class="nav-link text-white">
+                        <a href="#agendamentos" class="nav-link text-white">
                             <i class="fa-solid fa-calendar-days fa-lg me-2" ></i>
                             <span class="fs-6 d-none d-md-inline-block"> Agendamentos</span>
                         </a>
@@ -148,6 +148,42 @@
                             <button type="submit" class="botaoinput btn-dark" >Alterar</button>
                         </div>
                     </form>
+                </div>
+                <div class="container border border-dark mt-5" id="agendamentos">
+                    <p class="fs-2">Meus Agendamentos</p>
+                    <?php
+                        $sql = "SELECT * FROM agendamento WHERE id_funcionario LIKE $id;";
+                        $res = mysqli_query($mysqli, $sql);
+                        $linhas = mysqli_num_rows($res);
+
+                        for($i=0; $i < $linhas; $i++){
+                            $agendamento = mysqli_fetch_array($res);
+                            $idcliente = $agendamento['id_cliente'];
+                            $idser = $agendamento['id_servico'];
+                            
+                            $hora = date('H:i', strtotime($agendamento['horario']));
+                            $data = str_replace('-', '/', $agendamento['data_agendamento']); 
+                            $data = date('d/m/Y', strtotime($agendamento['data_agendamento']));
+                            
+                            
+                            $sql2 = "SELECT * FROM cliente WHERE id_cliente LIKE $idcliente;";
+                            $res2 = mysqli_query($mysqli, $sql2);
+                            $array = mysqli_fetch_array($res2);
+                            $cliente = $array['nome'];
+
+                            $sql3 = "SELECT * FROM servico WHERE id_servico LIKE $idser";
+                            $res3 = mysqli_query($mysqli, $sql3);
+                            $array2 = mysqli_fetch_array($res3);
+                            $servico = $array2['nome'];
+
+                            echo "Data: ". $data ."<br>";
+                            echo "Horario: ". $hora."<br>";
+                            echo "Servico: ".$servico."<br>";
+                            echo "Cliente: ".$cliente."<br>";
+                            echo "------------------------------------------------------<br>";
+                        } 
+
+                    ?>
                 </div>
             </div>
         </div>

@@ -70,13 +70,22 @@
                         </li>
                         <li class="nav-item divisor d-none d-md-inline"></li>
                         <li class="nav-item">
-                            <a href="agendamento1.php" class="linknav nav-link"> AGENDAMENTO </a>
+                            <?php
+                                if(isset($_SESSION['adm']) || isset($_SESSION['funcionario'])){
+                                    echo "<a href='perfilredirect.php' class='linknav nav-link'> AGENDAMENTO </a>";
+                                }
+                                else{
+                                    echo "<a href='agendamento1.php' class='linknav nav-link'> AGENDAMENTO </a>";
+                                }
+                            ?>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <img src="../imgs/action.png" style="width: 100%">
+        <div>
+            <img src="../imgs/action.png" style="width: 100%">
+        </div>
         <div class="modal fade" id="modallogin" tabindex="-1" aria-labelledby="modalloginlabel" aria-hidden="true">
             <div class="modal-dialog modal-sm">
               <div class="modal-content">
@@ -241,6 +250,16 @@
             </script>";
         }
         ?>
+        <div>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 border-top bg-dark">
+            <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></svg>
+            </a>
+            <span class="text-muted">© 2022 Cavanhaque de bode</span>
+            </div>
+            <span class="text-muted me-3">Contato: (21)97963-9626 | Instagram: @lfbissoli</span>
+        </footer>
         <script src="../js/validacao.js"></script>
     </body>
 </html>
