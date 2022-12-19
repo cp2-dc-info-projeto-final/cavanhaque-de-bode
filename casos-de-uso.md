@@ -82,16 +82,21 @@
 **Fluxo Principal**
 
 1. O usuário seleciona opção "Agendamento". 
-2. O sistema solicita os dados necessários para realizar um agendamento.
-3. O usuário fornece os dados e confirma a operação.
-4. O sistema verifica os dados e mostra uma mensagem de confirmação.
+2. O sistema abre uma página solicitando os dados necessários para realizar um agendamento.
+3. O usuário escolhe os dados e confirma a operação.
+4. O sistema apresenta um pop-up com a opção de confirmação
+5. O usuário confirma o agendamento.
+6. O sistema salva o agendamento
+7. O usuário é redirecionado para a tela perfil.
 
 **Fluxo Alternativo A**
 
-1. O usuário seleciona opção "Agendamento".
-2. O sistema solicita os dados necessários para realizar agendamento .
-3. O usuário não fornece todos os dados necessários e confirma a operação
-4. O sistema apresenta a mensagem "Selecione uma das opções".
+1. O usuário seleciona opção "Agendamento". 
+2. O sistema abre uma página solicitando os dados necessários para realizar um agendamento.
+3. O usuário escolhe os dados e confirma a operação.
+4. O sistema apresenta um pop-up com a opção de confirmação
+5. O usuário cancela o agendamento.
+6. O usuário é redirecionado para a tela principal.
 
 ### CDU 4 - Listar Agendamentos
 
@@ -101,7 +106,7 @@
 
 **Fluxo Principal**
 
-1. O usuário seleciona a opção "Listar agendamentos"
+1. O usuário seleciona a opção "Agendamentos"
 2. O sistema apresentará uma lista com todos os agendamentos realizados.
 
 ### CDU 5 - Cadastrar funcionário
