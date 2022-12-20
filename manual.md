@@ -32,7 +32,7 @@ Apos isso o usuário deve clicar na mensagem “Sair”(destacado acima).
 Para o usuário realizar o cadastro ele deve clicar no botão de perfil (destacado acima). 
 ![cadastro2](IMGS/cadastrar.jpg)
 Após a abertura do pop-up, o usuário deve clicar em “Cliente novo? Cadastre-se” (destacado acima). 
-![cadastro3](IMGS/cadastrar2.jpg)
+![cadastro3](IMGS/cadastrar_2.jpg)
 Após isso, o usuário deverá fornecer as informações necessárias(Nome, e-mail, senha e confirmação de senha) para o cadastro e confirmá-las, clicando no botão “Cadastrar”.
 ![cadastro4](IMGS/pagina_de_perfil.jpeg)
 Se os dados preenchidos forem corretos, o usuário será redirecionado para página de perfil.
