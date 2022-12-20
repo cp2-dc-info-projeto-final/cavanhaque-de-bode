@@ -1,7 +1,5 @@
 # Manual do Usuário
 
-Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nisl sed magna gravida, non elementum urna condimentum. Quisque porta tincidunt nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis at varius mauris. Quisque molestie ante imperdiet elit blandit, ac volutpat sem efficitur. Donec nec sem tempus, ullamcorper nisl non, blandit tortor. Etiam suscipit rutrum laoreet. Donec facilisis eros ultrices, venenatis quam nec, feugiat ante. Donec ante eros, consequat nec nibh vitae, porta vehicula orci. Duis nec eros et lorem malesuada sodales. Praesent auctor accumsan ipsum, et volutpat ex porttitor eu. Vestibulum facilisis elementum elit, hendrerit mollis velit pretium in. Curabitur tristique vel augue a sodales. Sed malesuada lacinia porttitor.
-
 **Lista das Funcionalidades:**
 
  - [Fazer Login](#Fazer-Login)
@@ -14,29 +12,35 @@ Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nis
  - [Recuperação de senha](#Recuperação-de-senha)
 
 ## Fazer login
-![perfil](IMGS/mainpage.png)
+![login1](IMGS/perfil.png)
 Para o usuário fazer login no site, o usuário deve clicar no botão (destacado acima). 
-![perfil](IMGS/mainpage.png)
+![login2](IMGS/entrar.jpg)
 Apos isso o usuário deve clicar na mensagem “Entrar”(destacado acima).
-![perfil](IMGS/mainpage.png)
+![login3](IMGS/entrar_senha.jpg
 Apos isso usuário deve preencher as caixas de texto (destacadas acima) com e-mail e senha respectivamente e apertar o botão entrar 
-![perfil](IMGS/mainpage.png)
+![login4](IMGS/pagina de perfil.jpeg)
 Se os dados forem corretos, o usuário dever ser redirecionado para a página de perfil 
 
 ## Fazer logout
-![perfil](IMGS/mainpage.png)
+![perfil](IMGS/pergil.png)
 Para o usuário efetuar o logout, ele deve clicar no botão de perfil (destacado acima).
-![perfil](IMGS/mainpage.png)
+![perfil](IMGS/sair.jpg)
 Apos isso o usuário deve clicar na mensagem “Sair”(destacado acima).
 
 ## Fazer Cadastro
-![perfil](IMGS/mainpage.png)
+![perfil](IMGS/perfil.png)
+
 Para o usuário realizar o cadastro ele deve clicar no botão de perfil (destacado acima). 
-![perfil](IMGS/mainpage.png)
+
+![perfil](IMGS/cadastrar.jpg)
+
 Após a abertura do pop-up, o usuário deve clicar em “Cliente novo? Cadastre-se” (destacado acima). 
-![perfil](IMGS/mainpage.png)
+
+![perfil](IMGS/cadastrar-2.jpg)
+
 Após isso, o usuário deverá fornecer as informações necessárias(Nome, e-mail, senha e confirmação de senha) para o cadastro e confirmá-las, clicando no botão “Cadastrar”.
-![perfil](IMGS/mainpage.png)
+
+![perfil](IMGS/pagina-de-perfil.jpeg)
 Se os dados preenchidos forem corretos, o usuário será redirecionado para página de perfil.
 
 ## Fazer Agendamento
