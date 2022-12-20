@@ -16,10 +16,11 @@
 Para o usuário fazer login no site, o usuário deve clicar no botão (destacado acima). 
 ![login2](IMGS/entrar.jpg)
 Apos isso o usuário deve clicar na mensagem “Entrar”(destacado acima).
-![login3](IMGS/entrar_senha.jpg)
+![login5](IMGS/log.jpg)
 Apos isso usuário deve preencher as caixas de texto (destacadas acima) com e-mail e senha respectivamente e apertar o botão entrar 
-![login4](IMGS/pagina_de_perfil.jpeg)
+![login3](IMGS/entrar_senha.jpg)
 Se os dados forem corretos, o usuário dever ser redirecionado para a página de perfil 
+![login4](IMGS/pagina_de_perfil.jpeg)
 
 ## Fazer logout
 ![logout1](IMGS/perfil.png)
@@ -52,14 +53,15 @@ Após selecionar o funcionário, o sistema exibirá um pop-up exibindo os dados 
 Após confirmar seu agendamento, o usuário será redirecionado para sua tela de perfil, que exibirá todos os agendamentos realizados pelo usuário.
 
 ## Abrir Perfil
-
+![perfil](IMGS/mainpage.png)
 Para o usuário abrir o seu perfil, primeiro ele deve se certificar de estar logado, assim que efetuar o login (ensinado no tópico 1) 
 ![perfil](IMGS/mainpage.png)
 O usuário deverá clicar no botão perfil(destacado acima).
 ![perfil](IMGS/mainpage.png)
 Após clicar, o usuário será redirecionado para uma página que exibirá todos os dados armazenados em seu perfil, como seus agendamentos, seus dados de usuário e as opções de editar dados e excluir conta.
 
-## Editar dados 
+## Editar dados
+
 Para o usuário editar os seus dados de perfil, ele deve se certificar de estar logado e clicar no Botão de perfil(destacado acima). 
 ![perfil](IMGS/mainpage.png)
 Após clicar, o usuário será redirecionado para página de perfil.
@@ -83,17 +85,17 @@ O usuário deve preencher os campos (destacados acima) com sua senha e confirma�
 Após preencher os campos, o usuário deve confirmar a exclusão clicando no botão excluir (destacado acima).
 
 ## Recuperação de senha
-![perfil](IMGS/mainpage.png)
+![recupera1](IMGS/mainpage.png)
 Para realizar a recuperação de senha o usuário deve clicar no botão de perfil (destacado acima). 
-![perfil](IMGS/mainpage.png)
+![recupera2](IMGS/mainpage.png)
 Após clicar no botão de perfil, o sistema exibirá um pop-up de login(destacado acima). 
-![perfil](IMGS/mainpage.png)
+![recupera3](IMGS/mainpage.png)
 Para o usuário recuperar sua senha ele deve clicar em esqueceu sua senha?(destacado acima). 
 Após clicar em esqueceu sua senha, o sistema irá redirecionar o usuário para uma página que exigirá o e-mail da conta que o usuário esqueceu a senha e irá enviar um código de recuperação para o mesmo. 
-![perfil](IMGS/mainpage.png)
+![recupera4](IMGS/mainpage.png)
 O usuário deverá checar a sua caixa de e-mail e digitar o código enviado pelo sistema no site.
-![perfil](IMGS/mainpage.png)
+![recupera5](IMGS/mainpage.png)
 Assim que o usuário preencher com o código correto, ele deverá clicar no botão prosseguir (destacado acima). 
-![perfil](IMGS/mainpage.png)
+![recupera6](IMGS/mainpage.png)
 Após isso o sistema irá redirecionar o usuário para uma nova página requisitando uma nova senha e a confirmação da mesma (destacado acima).
 Após a confirmação da senha, o usuário será redirecionado para tela principal.
