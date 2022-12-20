@@ -45,7 +45,7 @@
                     <li>
                         <a href="#alterardados" class="nav-link text-white">
                             <i class="fa-solid fa-pen fa-lg me-2" ></i>
-                            <span class="fs-6 d-none d-md-inline-block">Editar dados</span>
+                            <span class="fs-6 d-none d-md-inline-block">Editar Conta</span>
                         </a>
                     </li>
                     <hr class="d-sm-block d-md-none">
