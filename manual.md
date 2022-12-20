@@ -14,11 +14,11 @@
 ## Fazer login
 ![login1](IMGS/perfil.png)
 Para o usuário fazer login no site, o usuário deve clicar no botão (destacado acima). 
-![perfil](IMGS/mainpage.png)
+![login2](IMGS/entrar.jpg)
 Apos isso o usuário deve clicar na mensagem “Entrar”(destacado acima).
-![perfil](IMGS/mainpage.png)
+![login3](IMGS/entrar senha.jpg)
 Apos isso usuário deve preencher as caixas de texto (destacadas acima) com e-mail e senha respectivamente e apertar o botão entrar 
-![perfil](IMGS/mainpage.png)
+![login4](IMGS/pagina de perfil.jpeg)
 Se os dados forem corretos, o usuário dever ser redirecionado para a página de perfil 
 
 ## Fazer logout
