@@ -92,7 +92,7 @@ Após clicar no botão de perfil, o sistema exibirá um pop-up de login(destacad
 ![recupera3](IMGS/recuperacao.jpg)
 Para o usuário recuperar sua senha ele deve clicar em esqueceu sua senha?(destacado acima). 
 Após clicar em esqueceu sua senha, o sistema irá redirecionar o usuário para uma página que exigirá o e-mail da conta que o usuário esqueceu a senha e irá enviar um código de recuperação para o mesmo. 
-![recupera4](IMGS/recuperacao1.jpg)
+![recupera4](IMGS/recuperacao_1.jpg)
 O usuário deverá checar a sua caixa de e-mail e digitar o código enviado pelo sistema no site.
 ![recupera5](IMGS/recuperacao2.jpg)
 Assim que o usuário preencher com o código correto, ele deverá clicar no botão prosseguir (destacado acima). 
