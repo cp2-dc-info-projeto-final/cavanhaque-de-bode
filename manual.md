@@ -12,7 +12,7 @@
  - [Recuperação de senha](#Recuperação-de-senha)
 
 ## Fazer login
-![perfil](IMGS/mainpage.png)
+![login1](IMGS/perfil.png)
 Para o usuário fazer login no site, o usuário deve clicar no botão (destacado acima). 
 ![perfil](IMGS/mainpage.png)
 Apos isso o usuário deve clicar na mensagem “Entrar”(destacado acima).
