@@ -119,6 +119,8 @@
 #### Atores
  - Administrador
  - Cliente
+
+
 **Fluxo Principal**
 
 1. O usuário seleciona a opção "cadastre-se".
