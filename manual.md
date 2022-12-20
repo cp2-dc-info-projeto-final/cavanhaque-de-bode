@@ -1,7 +1,5 @@
 # Manual do Usuário
 
-Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nisl sed magna gravida, non elementum urna condimentum. Quisque porta tincidunt nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis at varius mauris. Quisque molestie ante imperdiet elit blandit, ac volutpat sem efficitur. Donec nec sem tempus, ullamcorper nisl non, blandit tortor. Etiam suscipit rutrum laoreet. Donec facilisis eros ultrices, venenatis quam nec, feugiat ante. Donec ante eros, consequat nec nibh vitae, porta vehicula orci. Duis nec eros et lorem malesuada sodales. Praesent auctor accumsan ipsum, et volutpat ex porttitor eu. Vestibulum facilisis elementum elit, hendrerit mollis velit pretium in. Curabitur tristique vel augue a sodales. Sed malesuada lacinia porttitor.
-
 **Lista das Funcionalidades:**
 
  - [Fazer Login](#Fazer-Login)
@@ -11,6 +9,7 @@ Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nis
  - [Abrir Perfil](#Abrir-Perfil)
  - [Editar dados](#Editar-dados)
  - [Excluir conta](#Excluir-conta)
+ - [Recuperação de senha](#Recuperação-de-senha)
 
 ## Fazer login
 ![perfil](IMGS/mainpage.png)
@@ -83,3 +82,18 @@ O usuário deve preencher os campos (destacados acima) com sua senha e confirma�
 ![perfil](IMGS/mainpage.png)
 Após preencher os campos, o usuário deve confirmar a exclusão clicando no botão excluir (destacado acima).
 
+## Recuperação de senha
+![perfil](IMGS/mainpage.png)
+Para realizar a recuperação de senha o usuário deve clicar no botão de perfil (destacado acima). 
+![perfil](IMGS/mainpage.png)
+Após clicar no botão de perfil, o sistema exibirá um pop-up de login(destacado acima). 
+![perfil](IMGS/mainpage.png)
+Para o usuário recuperar sua senha ele deve clicar em esqueceu sua senha?(destacado acima). 
+Após clicar em esqueceu sua senha, o sistema irá redirecionar o usuário para uma página que exigirá o e-mail da conta que o usuário esqueceu a senha e irá enviar um código de recuperação para o mesmo. 
+![perfil](IMGS/mainpage.png)
+O usuário deverá checar a sua caixa de e-mail e digitar o código enviado pelo sistema no site.
+![perfil](IMGS/mainpage.png)
+Assim que o usuário preencher com o código correto, ele deverá clicar no botão prosseguir (destacado acima). 
+![perfil](IMGS/mainpage.png)
+Após isso o sistema irá redirecionar o usuário para uma nova página requisitando uma nova senha e a confirmação da mesma (destacado acima).
+Após a confirmação da senha, o usuário será redirecionado para tela principal.
