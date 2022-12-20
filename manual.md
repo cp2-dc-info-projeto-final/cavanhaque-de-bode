@@ -12,9 +12,9 @@
  - [Recuperação de senha](#Recuperação-de-senha)
 
 ## Fazer login
-![perfil](IMGS/mainpage.png)
+![login1](IMGS/perfil.png)
 Para o usuário fazer login no site, o usuário deve clicar no botão (destacado acima). 
-![perfil](IMGS/mainpage.png)
+![login2](IMGS/entrar.jpg)
 Apos isso o usuário deve clicar na mensagem “Entrar”(destacado acima).
 ![login3](IMGS/entrar_senha.jpg)
 Apos isso usuário deve preencher as caixas de texto (destacadas acima) com e-mail e senha respectivamente e apertar o botão entrar 
@@ -22,13 +22,13 @@ Apos isso usuário deve preencher as caixas de texto (destacadas acima) com e-ma
 Se os dados forem corretos, o usuário dever ser redirecionado para a página de perfil 
 
 ## Fazer logout
-![logou1](IMGS/mainpage.png)
+![logout1](IMGS/perfil.png)
 Para o usuário efetuar o logout, ele deve clicar no botão de perfil (destacado acima).
-![perfil](IMGS/mainpage.png)
+![logout2](IMGS/sair.jpg)
 Apos isso o usuário deve clicar na mensagem “Sair”(destacado acima).
 
 ## Fazer Cadastro
-![perfil](IMGS/mainpage.png)
+![cadastro1](IMGS/perfil.png)
 Para o usuário realizar o cadastro ele deve clicar no botão de perfil (destacado acima). 
 ![perfil](IMGS/mainpage.png)
 Após a abertura do pop-up, o usuário deve clicar em “Cliente novo? Cadastre-se” (destacado acima). 
