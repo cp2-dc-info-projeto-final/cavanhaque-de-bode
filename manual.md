@@ -73,29 +73,29 @@ Após clicar em alterar dados, o usuário deve preencher os campos com os dados 
 Após preencher os campos, o usuário deve confirmar a alteração clicando no botão alterar.
 
 ## Excluir conta
-![perfil](IMGS/perfil.png)
+![exc1](IMGS/perfil.png)
 Para o usuário excluir sua conta, ele deve se certificar de estar logado e clicar no Botão de perfil(destacado acima).
- ![perfil](IMGS/pagina_de_perfil.jpeg)
+![exc2](IMGS/pagina_de_perfil.jpeg)
 Após clicar, o usuário será redirecionado para página de perfil. 
-![perfil](IMGS/excluir_conta_1.jpg)
+![exc3](IMGS/excluir_conta_1.jpg)
 Nessa página, o usuário deve clicar em excluir conta(destacado acima).
-![perfil](IMGS/excluir_conta_2.jpg)
+![exc4](IMGS/excluir_conta_2.jpg)
 O usuário deve preencher os campos (destacados acima) com sua senha e confirmação de senha. 
-![perfil](IMGS/excluir_conta_3.jpg)
+![exc5](IMGS/excluir_conta_3.jpg)
 Após preencher os campos, o usuário deve confirmar a exclusão clicando no botão excluir (destacado acima).
 
 ## Recuperação de senha
-![perfil](IMGS/mainpage.png)
+![rec1](IMGS/perfil.png)
 Para realizar a recuperação de senha o usuário deve clicar no botão de perfil (destacado acima). 
-![perfil](IMGS/mainpage.png)
+![rec2](IMGS/log.jpg)
 Após clicar no botão de perfil, o sistema exibirá um pop-up de login(destacado acima). 
-![perfil](IMGS/mainpage.png)
+![rec3](IMGS/esqueceusenha.jpg)
 Para o usuário recuperar sua senha ele deve clicar em esqueceu sua senha?(destacado acima). 
 Após clicar em esqueceu sua senha, o sistema irá redirecionar o usuário para uma página que exigirá o e-mail da conta que o usuário esqueceu a senha e irá enviar um código de recuperação para o mesmo. 
-![perfil](IMGS/mainpage.png)
+![rec4](IMGS/recuperacao_1.jpg)
 O usuário deverá checar a sua caixa de e-mail e digitar o código enviado pelo sistema no site.
-![perfil](IMGS/mainpage.png)
+![rec5](IMGS/recuperacao2.jpg)
 Assim que o usuário preencher com o código correto, ele deverá clicar no botão prosseguir (destacado acima). 
-![perfil](IMGS/mainpage.png)
+![rec6](IMGS/recuperacao3.jpg)
 Após isso o sistema irá redirecionar o usuário para uma nova página requisitando uma nova senha e a confirmação da mesma (destacado acima).
 Após a confirmação da senha, o usuário será redirecionado para tela principal.
