@@ -16,23 +16,23 @@
 Para o usuário fazer login no site, o usuário deve clicar no botão (destacado acima). 
 ![perfil](IMGS/mainpage.png)
 Apos isso o usuário deve clicar na mensagem “Entrar”(destacado acima).
-![perfil](IMGS/mainpage.png)
+![login3](IMGS/entrar_senha.jpg)
 Apos isso usuário deve preencher as caixas de texto (destacadas acima) com e-mail e senha respectivamente e apertar o botão entrar 
-![perfil](IMGS/mainpage.png)
+![login4](IMGS/pagina_de_perfil.jpeg)
 Se os dados forem corretos, o usuário dever ser redirecionado para a página de perfil 
 
 ## Fazer logout
-![perfil](IMGS/mainpage.png)
+![logou1](IMGS/mainpage.png)
 Para o usuário efetuar o logout, ele deve clicar no botão de perfil (destacado acima).
 ![perfil](IMGS/mainpage.png)
 Apos isso o usuário deve clicar na mensagem “Sair”(destacado acima).
 
 ## Fazer Cadastro
-![perfil](IMGS/perfil.png)
+![perfil](IMGS/mainpage.png)
 Para o usuário realizar o cadastro ele deve clicar no botão de perfil (destacado acima). 
-![perfil](IMGS/cadastrar.jpg)
+![perfil](IMGS/mainpage.png)
 Após a abertura do pop-up, o usuário deve clicar em “Cliente novo? Cadastre-se” (destacado acima). 
-![perfil](IMGS/cadastrar_2.jpg)
+![perfil](IMGS/mainpage.png)
 Após isso, o usuário deverá fornecer as informações necessárias(Nome, e-mail, senha e confirmação de senha) para o cadastro e confirmá-las, clicando no botão “Cadastrar”.
 ![perfil](IMGS/mainpage.png)
 Se os dados preenchidos forem corretos, o usuário será redirecionado para página de perfil.
