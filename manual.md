@@ -16,6 +16,7 @@
 Para o usuário fazer login no site, o usuário deve clicar no botão (destacado acima). 
 ![perfil](IMGS/mainpage.png)
 Apos isso o usuário deve clicar na mensagem “Entrar”(destacado acima).
+<<<<<<< HEAD
 ![perfil](IMGS/mainpage.png)
 Apos isso usuário deve preencher as caixas de texto (destacadas acima) com e-mail e senha respectivamente e apertar o botão entrar 
 ![perfil](IMGS/mainpage.png)
@@ -23,16 +24,33 @@ Se os dados forem corretos, o usuário dever ser redirecionado para a página de
 
 ## Fazer logout
 ![perfil](IMGS/mainpage.png)
+=======
+![login3](IMGS/entrar_senha.jpg)
+Apos isso usuário deve preencher as caixas de texto (destacadas acima) com e-mail e senha respectivamente e apertar o botão entrar 
+![login4](IMGS/pagina_de_perfil.jpeg)
+Se os dados forem corretos, o usuário dever ser redirecionado para a página de perfil 
+
+## Fazer logout
+![logou1](IMGS/mainpage.png)
+>>>>>>> 6d3d66cf5b0488ac7237babb56b0f0d023ea5653
 Para o usuário efetuar o logout, ele deve clicar no botão de perfil (destacado acima).
 ![perfil](IMGS/mainpage.png)
 Apos isso o usuário deve clicar na mensagem “Sair”(destacado acima).
 
 ## Fazer Cadastro
+<<<<<<< HEAD
 ![perfil](IMGS/perfil.png)
 Para o usuário realizar o cadastro ele deve clicar no botão de perfil (destacado acima). 
 ![perfil](IMGS/cadastrar.jpg)
 Após a abertura do pop-up, o usuário deve clicar em “Cliente novo? Cadastre-se” (destacado acima). 
 ![perfil](IMGS/cadastrar_2.jpg)
+=======
+![perfil](IMGS/mainpage.png)
+Para o usuário realizar o cadastro ele deve clicar no botão de perfil (destacado acima). 
+![perfil](IMGS/mainpage.png)
+Após a abertura do pop-up, o usuário deve clicar em “Cliente novo? Cadastre-se” (destacado acima). 
+![perfil](IMGS/mainpage.png)
+>>>>>>> 6d3d66cf5b0488ac7237babb56b0f0d023ea5653
 Após isso, o usuário deverá fornecer as informações necessárias(Nome, e-mail, senha e confirmação de senha) para o cadastro e confirmá-las, clicando no botão “Cadastrar”.
 ![perfil](IMGS/mainpage.png)
 Se os dados preenchidos forem corretos, o usuário será redirecionado para página de perfil.
