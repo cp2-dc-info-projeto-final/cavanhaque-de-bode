@@ -63,39 +63,40 @@ Após clicar, o usuário será redirecionado para uma página que exibirá todos
 
 ![edit0](IMGS/perfil.png)
 Para o usuário editar os seus dados de perfil, ele deve se certificar de estar logado e clicar no Botão de perfil(destacado acima). 
-![edit1](IMGS/pagina_de_perfil.jpeg)
+![edit1](IMGS/editar_dados_1.png)
 Após clicar, o usuário será redirecionado para página de perfil.
-![edit2](IMGS/editar_dados_1.jpg)
+![edit2](IMGS/editar_dados_2.png)
 Nessa página, o usuário deve clicar em editar dados(destacado acima)
-![edit3](IMGS/editar_dados_2.jpg)
+![edit3](IMGSeditar_dados_3.png)
 Após clicar em alterar dados, o usuário deve preencher os campos com os dados que deseja alterar. 
-![edit4](IMGS/editar_dados_3.jpg)
+![edit4](IMGS/mainpage.png)
 Após preencher os campos, o usuário deve confirmar a alteração clicando no botão alterar.
 
 ## Excluir conta
-![perfil](IMGS/perfil.png)
+![perfil](IMGS/mainpage.png)
 Para o usuário excluir sua conta, ele deve se certificar de estar logado e clicar no Botão de perfil(destacado acima).
- ![perfil](IMGS/pagina_de_perfil.jpeg)
+ ![perfil](IMGS/mainpage.png)
 Após clicar, o usuário será redirecionado para página de perfil. 
-![perfil](IMGS/excluir_conta_1.jpg)
+![perfil](IMGS/mainpage.png)
 Nessa página, o usuário deve clicar em excluir conta(destacado acima).
-![perfil](IMGS/excluir_conta_2.jpg)
+![perfil](IMGS/mainpage.png)
 O usuário deve preencher os campos (destacados acima) com sua senha e confirmação de senha. 
-![perfil](IMGS/excluir_conta_3.jpg)
+![perfil](IMGS/mainpage.png)
 Após preencher os campos, o usuário deve confirmar a exclusão clicando no botão excluir (destacado acima).
 
 ## Recuperação de senha
-![perfil](IMGS/mainpage.png)
+![recupera1](IMGS/perfil.png)
 Para realizar a recuperação de senha o usuário deve clicar no botão de perfil (destacado acima). 
-![perfil](IMGS/mainpage.png)
+![recupera2](IMGS/log.jpg)
 Após clicar no botão de perfil, o sistema exibirá um pop-up de login(destacado acima). 
-![perfil](IMGS/mainpage.png)
+![recupera3](IMGS/recuperacao.jpg)
 Para o usuário recuperar sua senha ele deve clicar em esqueceu sua senha?(destacado acima). 
 Após clicar em esqueceu sua senha, o sistema irá redirecionar o usuário para uma página que exigirá o e-mail da conta que o usuário esqueceu a senha e irá enviar um código de recuperação para o mesmo. 
-![recupera4](IMGS/recuperacao_1.jpg)
+![recupera4](IMGS/recuperacao1.jpg)
 O usuário deverá checar a sua caixa de e-mail e digitar o código enviado pelo sistema no site.
-![perfil](IMGS/mainpage.png)
+![recupera5](IMGS/recuperacao2.jpg)
 Assim que o usuário preencher com o código correto, ele deverá clicar no botão prosseguir (destacado acima). 
-![perfil](IMGS/mainpage.png)
+![recupera6](IMGS/recuperacao3.jpg)
 Após isso o sistema irá redirecionar o usuário para uma nova página requisitando uma nova senha e a confirmação da mesma (destacado acima).
+![recupera7](IMGS/mainpage.png)
 Após a confirmação da senha, o usuário será redirecionado para tela principal.
