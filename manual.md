@@ -12,7 +12,7 @@ Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nis
  - [Editar dados](#Editar-dados)
  - [Excluir conta](#Excluir-conta)
  - [Recuperação de senha](#Recuperação-de-senha)
-Recuperação de senha
+
 ## Fazer login
 ![perfil](IMGS/mainpage.png)
 Para o usuário fazer login no site, o usuário deve clicar no botão (destacado acima). 
