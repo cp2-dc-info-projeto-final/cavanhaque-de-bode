@@ -4,24 +4,82 @@ Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nis
 
 **Lista das Funcionalidades:**
 
- - [Funcionalidade x](#Funcionalidade-X)
- - [Funcionalidade Y](#Funcionalidade-Y)
- - [Funcionalidade Z](#Funcionalidade-Z)
+ - [Fazer Login](#Fazer-Login)
+ - [Fazer logout](#Fazer-logout)
+ - [Fazer Cadastro](#Fazer-Cadastro)
+ - [Fazer Agendamento](#Fazer-Agendamento)
+ - [Abrir Perfil](#Abrir-Perfil)
+ - [Editar dados](#Editar-dados)
+ - [Excluir conta](#Excluir-conta)
 
-## Funcionalidade X
+## Fazer login
+![perfil](IMGS/mainpage.png)
+Para o usuário fazer login no site, o usuário deve clicar no botão (destacado acima). 
+![perfil](IMGS/mainpage.png)
+Apos isso o usuário deve clicar na mensagem “Entrar”(destacado acima).
+![perfil](IMGS/mainpage.png)
+Apos isso usuário deve preencher as caixas de texto (destacadas acima) com e-mail e senha respectivamente e apertar o botão entrar 
+![perfil](IMGS/mainpage.png)
+Se os dados forem corretos, o usuário dever ser redirecionado para a página de perfil 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat molestie justo non tincidunt. Praesent tristique, elit convallis eleifend congue, nisl ex lobortis lorem, ac gravida tellus lacus eu enim. Aliquam urna turpis, convallis id turpis et, iaculis consequat nunc. Proin elit orci, imperdiet nec tristique nec, tincidunt ut nibh. Donec dignissim urna ut erat imperdiet aliquam. Vestibulum augue leo, pellentesque malesuada egestas quis, molestie at lacus. Donec rhoncus finibus lorem, accumsan interdum sapien facilisis sit amet. Integer odio magna, sodales at varius at, dapibus vitae ante. Sed ac ullamcorper ex. Ut in metus ipsum. Duis vulputate porta mi, id venenatis massa ornare vel. Nunc ornare malesuada elit sed feugiat.
+## Fazer logout
+![perfil](IMGS/mainpage.png)
+Para o usuário efetuar o logout, ele deve clicar no botão de perfil (destacado acima).
+![perfil](IMGS/mainpage.png)
+Apos isso o usuário deve clicar na mensagem “Sair”(destacado acima).
 
-Aliquam in convallis quam, egestas consectetur felis. Integer in dolor sit amet neque volutpat faucibus ut porttitor libero. Morbi faucibus non purus nec finibus. Pellentesque lacus nunc, ultricies quis enim at, vehicula semper nibh. Ut eget erat blandit, porta nibh sit amet, facilisis felis. Aliquam vitae consequat nisi, ut vestibulum sapien. Sed ornare quis leo quis cursus. Vestibulum ut quam odio. Donec sit amet risus augue. Curabitur venenatis a tortor ac placerat.
+## Fazer Cadastro
+![perfil](IMGS/mainpage.png)
+Para o usuário realizar o cadastro ele deve clicar no botão de perfil (destacado acima). 
+![perfil](IMGS/mainpage.png)
+Após a abertura do pop-up, o usuário deve clicar em “Cliente novo? Cadastre-se” (destacado acima). 
+![perfil](IMGS/mainpage.png)
+Após isso, o usuário deverá fornecer as informações necessárias(Nome, e-mail, senha e confirmação de senha) para o cadastro e confirmá-las, clicando no botão “Cadastrar”.
+![perfil](IMGS/mainpage.png)
+Se os dados preenchidos forem corretos, o usuário será redirecionado para página de perfil.
 
-## Funcionalidade Y
+## Fazer Agendamento
+![perfil](IMGS/mainpage.png)
+Para realizar o agendamento, o usuário deverá clicar no botão “Agendamento” (destacado acima).
+![perfil](IMGS/mainpage.png)
+ Após isso, o usuário será redirecionado para uma página exigindo que o usuário seleciona uma data e um serviço e aperte o botão “continuar” (destacado acima). 
+![perfil](IMGS/mainpage.png)
+Após selecionar data e serviço, o sistema redireciona o usuário a uma página exibindo horários disponíveis para a data selecionada, o usuário deverá selecionar um desses horários e apertar o botão “continuar” (destacado acima).
+![perfil](IMGS/mainpage.png)
+Assim que o usuário selecionar o horário desejado, ele deve selecionar o funcionário de sua preferência ou não, e apartar o botão “continuar”(destacado acima). 
+![perfil](IMGS/mainpage.png)
+Após selecionar o funcionário, o sistema exibirá um pop-up exibindo os dados do seu agendamento e exigindo uma confirmação ou um cancelamento do mesmo(destacado acima).
+![perfil](IMGS/mainpage.png)
+Após confirmar seu agendamento, o usuário será redirecionado para sua tela de perfil, que exibirá todos os agendamentos realizados pelo usuário.
 
-In vestibulum euismod orci, vitae mollis neque luctus vel. Aliquam erat volutpat. Pellentesque nulla elit, iaculis posuere interdum a, imperdiet sollicitudin dui. Morbi consectetur cursus dictum. Etiam vel feugiat tortor, non tempor nibh. Nam eu massa libero. Donec id eleifend justo, tempus consectetur augue. Phasellus porttitor ex leo. Proin efficitur ante vel tortor tempus ornare. Cras molestie, velit non laoreet lobortis, nisl metus volutpat augue, id dictum libero ipsum a mi. Quisque eget tristique felis.
+## Abrir Perfil
 
-Donec auctor a orci a semper. Nunc consequat dui vel eros faucibus molestie. Praesent euismod purus nec justo iaculis varius. Integer vehicula ac metus at ultricies. Maecenas pulvinar neque sed est sollicitudin, vitae dignissim magna posuere. Sed consectetur, mi nec bibendum sodales, urna sem aliquam leo, mollis vulputate justo leo vel nunc. Sed lacinia ipsum lacus, ultrices iaculis tellus efficitur at. Proin consectetur orci ac egestas aliquam. Proin dignissim euismod turpis sollicitudin interdum. Mauris pellentesque, orci non accumsan lobortis, nunc felis hendrerit tortor, non rutrum risus nisl id erat.
+Para o usuário abrir o seu perfil, primeiro ele deve se certificar de estar logado, assim que efetuar o login (ensinado no tópico 1) 
+![perfil](IMGS/mainpage.png)
+O usuário deverá clicar no botão perfil(destacado acima).
+![perfil](IMGS/mainpage.png)
+Após clicar, o usuário será redirecionado para uma página que exibirá todos os dados armazenados em seu perfil, como seus agendamentos, seus dados de usuário e as opções de editar dados e excluir conta.
 
-## Funcionalidade Z
+## Editar dados 
+Para o usuário editar os seus dados de perfil, ele deve se certificar de estar logado e clicar no Botão de perfil(destacado acima). 
+![perfil](IMGS/mainpage.png)
+Após clicar, o usuário será redirecionado para página de perfil.
+![perfil](IMGS/mainpage.png)
+Nessa página, o usuário deve clicar em editar dados(destacado acima)
+![perfil](IMGS/mainpage.png)
+Após clicar em alterar dados, o usuário deve preencher os campos com os dados que deseja alterar. 
+![perfil](IMGS/mainpage.png)
+Após preencher os campos, o usuário deve confirmar a alteração clicando no botão alterar.
 
-Sed consequat, diam in imperdiet fringilla, magna metus vehicula ipsum, eu tincidunt massa dolor eget lorem. Integer pellentesque in massa in eleifend. Phasellus a interdum enim. Nullam malesuada nulla eu mi vestibulum imperdiet. Maecenas diam dolor, commodo eget commodo at, congue in libero. Morbi non erat enim. Nunc faucibus lacus urna. Aliquam erat volutpat. Aliquam ex nunc, dictum vel libero sit amet, varius pulvinar risus. Aenean tempus magna at nulla elementum, vel feugiat turpis sodales. Vestibulum viverra congue nibh sed tempor. Morbi faucibus rhoncus dictum. Vestibulum rutrum, nisi id porttitor posuere, purus leo accumsan turpis, sit amet rutrum nulla turpis sit amet ex. Sed ultricies pharetra libero, sed tempor tellus hendrerit eget. Maecenas nibh sem, accumsan ullamcorper felis sed, pharetra semper dolor. Pellentesque ornare lorem eu condimentum tincidunt.
+## Excluir conta
+![perfil](IMGS/mainpage.png)
+Para o usuário excluir sua conta, ele deve se certificar de estar logado e clicar no Botão de perfil(destacado acima).
+ ![perfil](IMGS/mainpage.png)
+Após clicar, o usuário será redirecionado para página de perfil. 
+![perfil](IMGS/mainpage.png)
+Nessa página, o usuário deve clicar em excluir conta(destacado acima).
+![perfil](IMGS/mainpage.png)
+O usuário deve preencher os campos (destacados acima) com sua senha e confirmação de senha. 
+![perfil](IMGS/mainpage.png)
+Após preencher os campos, o usuário deve confirmar a exclusão clicando no botão excluir (destacado acima).
 
-Nam lacinia gravida velit et ultricies. Quisque blandit a ligula at tincidunt. Vestibulum id odio a lectus maximus tempor non in augue. Duis vulputate dui vitae lacus ornare, et eleifend erat cursus. Mauris viverra, massa vel eleifend tempus, nunc justo tempus quam, ac sollicitudin lorem arcu vitae magna. Aliquam eleifend diam neque, at sagittis eros scelerisque vitae. Sed convallis iaculis tempor. Pellentesque in varius velit. Cras ut risus at ligula tristique tincidunt ac a risus. Morbi egestas tincidunt nunc, molestie aliquam nisl imperdiet egestas. Morbi hendrerit augue ac accumsan posuere. Sed a sodales elit. Nullam pharetra rhoncus arcu, eget pharetra massa egestas ut. Sed accumsan auctor dictum. Duis leo enim, pulvinar ut enim a, tempor aliquam dui. Nunc aliquet quam justo, sed aliquet justo tincidunt sed.
