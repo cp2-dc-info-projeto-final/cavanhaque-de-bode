@@ -28,13 +28,13 @@ Para o usuário efetuar o logout, ele deve clicar no botão de perfil (destacado
 Apos isso o usuário deve clicar na mensagem “Sair”(destacado acima).
 
 ## Fazer Cadastro
-![perfil](IMGS/mainpage.png)
+![perfil](IMGS/perfil.png)
 Para o usuário realizar o cadastro ele deve clicar no botão de perfil (destacado acima). 
-![perfil](IMGS/mainpage.png)
+![perfil](IMGS/cadastrar.jpg)
 Após a abertura do pop-up, o usuário deve clicar em “Cliente novo? Cadastre-se” (destacado acima). 
-![perfil](IMGS/mainpage.png)
+![perfil](IMGS/cadastrar-2.jpg)
 Após isso, o usuário deverá fornecer as informações necessárias(Nome, e-mail, senha e confirmação de senha) para o cadastro e confirmá-las, clicando no botão “Cadastrar”.
-![perfil](IMGS/mainpage.png)
+![perfil](IMGS/pagina-de-perfil.jpeg)
 Se os dados preenchidos forem corretos, o usuário será redirecionado para página de perfil.
 
 ## Fazer Agendamento
