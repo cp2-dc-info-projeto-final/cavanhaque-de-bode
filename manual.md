@@ -99,3 +99,20 @@ Assim que o usuário preencher com o código correto, ele deverá clicar no bot�
 ![rec6](IMGS/recuperacao3.jpg)
 Após isso o sistema irá redirecionar o usuário para uma nova página requisitando uma nova senha e a confirmação da mesma (destacado acima).
 Após a confirmação da senha, o usuário será redirecionado para tela principal.
+
+
+
+Notas Para Uso (Banco de dados)
+
+Cliente: LUIZ
+email: luiz@g.com
+senha : 123
+
+Funcionario: Funcionario
+email: fun@g.com
+senha : 123
+
+Administrador:
+email: admin@admin.com
+senha : admcdb123
+
