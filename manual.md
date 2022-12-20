@@ -16,7 +16,7 @@
 Para o usuário fazer login no site, o usuário deve clicar no botão (destacado acima). 
 ![login2](IMGS/entrar.jpg)
 Apos isso o usuário deve clicar na mensagem “Entrar”(destacado acima).
-![login3](IMGS/entrar_senha.jpg)
+![login3](IMGS/log.jpg)
 Apos isso usuário deve preencher as caixas de texto (destacadas acima) com e-mail e senha respectivamente e apertar o botão entrar 
 ![login4](IMGS/pagina_de_perfil.jpeg)
 Se os dados forem corretos, o usuário dever ser redirecionado para a página de perfil 
@@ -32,7 +32,7 @@ Apos isso o usuário deve clicar na mensagem “Sair”(destacado acima).
 Para o usuário realizar o cadastro ele deve clicar no botão de perfil (destacado acima). 
 ![cadastro2](IMGS/cadastrar.jpg)
 Após a abertura do pop-up, o usuário deve clicar em “Cliente novo? Cadastre-se” (destacado acima). 
-![cadastro3](IMGS/cadastrar2.jpg)
+![cadastro3](IMGS/cadastrar_2.jpg)
 Após isso, o usuário deverá fornecer as informações necessárias(Nome, e-mail, senha e confirmação de senha) para o cadastro e confirmá-las, clicando no botão “Cadastrar”.
 ![cadastro4](IMGS/pagina_de_perfil.jpeg)
 Se os dados preenchidos forem corretos, o usuário será redirecionado para página de perfil.
@@ -99,3 +99,20 @@ Assim que o usuário preencher com o código correto, ele deverá clicar no bot�
 ![rec6](IMGS/recuperacao3.jpg)
 Após isso o sistema irá redirecionar o usuário para uma nova página requisitando uma nova senha e a confirmação da mesma (destacado acima).
 Após a confirmação da senha, o usuário será redirecionado para tela principal.
+
+
+
+Notas Para Uso (Banco de dados)
+
+Cliente: LUIZ
+email: luiz@g.com
+senha : 123
+
+Funcionario: Funcionario
+email: fun@g.com
+senha : 123
+
+Administrador:
+email: admin@admin.com
+senha : admcdb123
+
