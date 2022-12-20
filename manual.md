@@ -89,7 +89,7 @@ Após preencher os campos, o usuário deve confirmar a exclusão clicando no bot
 Para realizar a recuperação de senha o usuário deve clicar no botão de perfil (destacado acima). 
 ![recupera2](IMGS/log.jpg)
 Após clicar no botão de perfil, o sistema exibirá um pop-up de login(destacado acima). 
-![recupera3](IMGS/recuperacao.jpg)
+![recupera3](IMGS/esqueceusenha.jpg)
 Para o usuário recuperar sua senha ele deve clicar em esqueceu sua senha?(destacado acima). 
 Após clicar em esqueceu sua senha, o sistema irá redirecionar o usuário para uma página que exigirá o e-mail da conta que o usuário esqueceu a senha e irá enviar um código de recuperação para o mesmo. 
 ![recupera4](IMGS/recuperacao1.jpg)
